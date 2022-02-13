@@ -75,6 +75,26 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.08" />
 
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/accountButton_Homepage"
+        android:layout_width="264dp"
+        android:layout_height="47dp"
+        android:background="#E4855E"
+        android:backgroundTint="#F8885B"
+        android:foregroundTint="#FFFFFF"
+        android:text="Change Account Settings"
+        android:textColor="#FDFDFD"
+        android:textColorHighlight="#FDFDFD"
+        android:textColorHint="#D3D3D3"
+        android:textColorLink="#FFFFFF"
+        app:iconTint="#FA8888"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.874" />
+
     <TextView
         android:id="@+id/user_greating"
         android:layout_width="wrap_content"
