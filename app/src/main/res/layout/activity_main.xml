@@ -52,17 +52,23 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.729" />
 
-    <Button
-        android:id="@+id/SearchButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+    <!--
+    Use androidx.appcompat.widget.AppCompatButton instead of Button so that we can change the
+    color of the button (Button did not allow for color change)
+    -->
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/SearchButton_Homepage"
+        android:layout_width="264dp"
+        android:layout_height="47dp"
         android:background="#E4855E"
-        android:backgroundTint="#F1976E"
+        android:backgroundTint="#F8885B"
+        android:foregroundTint="#FFFFFF"
         android:text="Search for UTA Professors..."
         android:textColor="#FDFDFD"
         android:textColorHighlight="#FDFDFD"
         android:textColorHint="#D3D3D3"
         android:textColorLink="#FFFFFF"
+        app:iconTint="#FA8888"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
