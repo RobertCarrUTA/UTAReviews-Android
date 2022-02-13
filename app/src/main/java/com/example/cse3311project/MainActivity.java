@@ -9,7 +9,7 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Button SearchButton_Homepage;
+    private Button SearchButton_Homepage, accountButton_Homepage;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,18 +22,35 @@ public class MainActivity extends AppCompatActivity {
 
 
         SearchButton_Homepage = (Button) findViewById(R.id.SearchButton_Homepage);
+        accountButton_Homepage = (Button) findViewById(R.id.accountButton_Homepage);
+
+
+        accountButton_Homepage.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openAccountActivity();
+            }
+        });
+
         SearchButton_Homepage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                openNewActivity();
+                openReviewActivity();
             }
         });
     }
 
-    // Use this function to open any new activity as seen above
-    public void openNewActivity()
+    // Use this function to open any new review activity
+    public void openReviewActivity()
     {
         Intent intent = new Intent(this, ReviewActivity.class);
+        startActivity(intent);
+    }
+
+    // Use this function to open any new account activity
+    public void openAccountActivity()
+    {
+        Intent intent = new Intent(this, AccountActivity.class);
         startActivity(intent);
     }
 }

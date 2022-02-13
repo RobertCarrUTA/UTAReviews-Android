@@ -2,13 +2,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.cse3311project">
 
-    <!--
-     App Logo was made by Robert in Adobe Illustrator using Bebas font,
-     a freeware typeface allowing for commercial and non-commercial works for free.
-
-     Credit: Flat-it(http://flat-it.com/)
-     Copyright: Flat-it(http://flat-it.com/)
-     -->
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_utareviews_applogo"
@@ -16,7 +9,8 @@
         android:roundIcon="@mipmap/ic_utareviews_applogo"
         android:supportsRtl="true"
         android:theme="@style/Theme.CSE3311Project">
-        <activity android:name=".ReviewActivity"></activity>
+        <activity android:name=".AccountActivity"></activity>
+        <activity android:name=".ReviewActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
