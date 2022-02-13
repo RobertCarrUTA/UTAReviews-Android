@@ -11,27 +11,6 @@
     Use androidx.appcompat.widget.AppCompatButton instead of Button so that we can change the
     color of the button (Button did not allow for color change)
     -->
-
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/returnHomeButton_ReviewPage"
-        android:layout_width="264dp"
-        android:layout_height="47dp"
-        android:background="#E4855E"
-        android:backgroundTint="#F8885B"
-        android:foregroundTint="#FFFFFF"
-        android:text="Return Home"
-        android:textColor="#FDFDFD"
-        android:textColorHighlight="#FDFDFD"
-        android:textColorHint="#D3D3D3"
-        android:textColorLink="#FFFFFF"
-        app:iconTint="#FA8888"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.923" />
-
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/searchButton_ReviewPage"
         android:layout_width="264dp"
@@ -53,27 +32,27 @@
 
     <TextView
         android:id="@+id/Current_Professor_View"
-        android:layout_width="342dp"
-        android:layout_height="66dp"
+        android:layout_width="371dp"
+        android:layout_height="63dp"
         android:text="You are currently looking at reviews for George Rice"
         android:textColor="#FFFFFF"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.231"
+        app:layout_constraintHorizontal_bias="0.6"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.193" />
+        app:layout_constraintVertical_bias="0.211" />
 
     <ScrollView
-        android:layout_width="354dp"
-        android:layout_height="376dp"
+        android:layout_width="347dp"
+        android:layout_height="461dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.587">
+        app:layout_constraintVertical_bias="0.811">
 
         <LinearLayout
             android:layout_width="match_parent"
