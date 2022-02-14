@@ -15,7 +15,7 @@
         android:id="@+id/SearchButton_Homepage"
         android:layout_width="264dp"
         android:layout_height="47dp"
-        android:background="#E4855E"
+        android:background="#F48253"
         android:backgroundTint="#F8885B"
         android:foregroundTint="#FFFFFF"
         android:text="Search for UTA Professors..."
