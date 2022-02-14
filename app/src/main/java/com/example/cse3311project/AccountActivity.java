@@ -20,7 +20,8 @@ public class AccountActivity extends AppCompatActivity
         returnHomeButton_AccountPage = (Button) findViewById(R.id.returnHomeButton_AccountPage);
 
 
-        returnHomeButton_AccountPage.setOnClickListener(new View.OnClickListener() {
+        returnHomeButton_AccountPage.setOnClickListener(new View.OnClickListener()
+        {
             @Override
             public void onClick(View v) {
                 openHomeActivity();
