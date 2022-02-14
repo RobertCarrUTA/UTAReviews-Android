@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/blue"
+    
+
+    >
+
+    <TextView
+        android:id="@+id/page_header"
+        style="@style/boldWhite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:text="New Student Registration"
+        android:textSize="30sp"
+
+        />
+
+    <EditText
+        android:id="@+id/lastNameInput"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/lastName"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/custom_edit_text"
+        android:padding="10dp"
+        android:text="Last Name"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/lastName"
+        style="@style/boldWhite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/firstNameInput"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="30dp"
+        android:text="Last Name" />
+
+    <EditText
+        android:id="@+id/emailInput"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/email"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/custom_edit_text"
+        android:padding="10dp"
+        android:text="Email"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/email"
+        style="@style/boldWhite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lastNameInput"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="30dp"
+        android:text="Email Address" />
+
+    <EditText
+        android:id="@+id/idInput"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/id"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/custom_edit_text"
+        android:padding="10dp"
+        android:text="ID Number"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/submitButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/idInput"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/custom_edit_text"
+        android:text="Submit"
+
+        />
+
+    <Button
+        android:id="@+id/cancelButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/idInput"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="50dp"
+        android:layout_toRightOf="@id/submitButton"
+        android:background="@drawable/custom_edit_text"
+        android:text="Cancel"
+
+        />
+
+    <TextView
+        android:id="@+id/id"
+        style="@style/boldWhite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/emailInput"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="30dp"
+        android:text="Student ID Number" />
+
+    <EditText
+        android:id="@+id/firstNameInput"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/firstName"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="30dp"
+        android:background="@drawable/custom_edit_text"
+        android:padding="10dp"
+        android:text="First Name"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/firstName"
+        style="@style/boldWhite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/userRegistration"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="15dp"
+        android:text="First Name" />
+
+    <TextView
+        android:id="@+id/userRegistration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/page_header"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="10dp"
+        android:text="User Registration"
+        android:textColor="@color/white"
+        android:textSize="27dp"
+        android:textStyle="bold"
+
+        />
+</RelativeLayout>
+
