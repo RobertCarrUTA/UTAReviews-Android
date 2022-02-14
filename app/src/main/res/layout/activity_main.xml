@@ -98,7 +98,7 @@
         android:id="@+id/user_greating"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello, Robert!"
+        android:text="Hello, Maverick!"
         android:textColor="#FDFDFD"
         android:textColorLink="#FFFFFF"
         android:textStyle="bold"
@@ -125,15 +125,14 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="152dp"
-        android:layout_height="140dp"
-        android:src="@drawable/default_user_avatar"
+        android:layout_width="242dp"
+        android:layout_height="196dp"
+        android:src="@drawable/ic_default_avatar_clipart_foreground"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.252" />
+        app:layout_constraintVertical_bias="0.214" />
 
     <TextView
         android:id="@+id/First_Position"
