@@ -16,9 +16,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 
-public class ForgotPasswordPage extends AppCompatActivity
-{
-
+public class ForgotPasswordPage extends AppCompatActivity {
     EditText Email;
     Button ResetPassword;
 
@@ -29,17 +27,11 @@ public class ForgotPasswordPage extends AppCompatActivity
         setContentView(R.layout.activity_forgot_password_page);
 
         Email = findViewById(R.id.RecoveringEmail);
-        ResetPassword = findViewById(R.id.buttonSendingCode);
-
-        ResetPassword.setOnClickListener(new View.OnClickListener()
-        {
-            @Override
-            public void onClick(View v)
-            {
+        ResetPassword.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v){
                 Toast.makeText(ForgotPasswordPage.this, "Password Reset sent to Email", Toast.LENGTH_SHORT).show();
                 startActivity(new Intent(getApplicationContext(), LoginPage.class));
             }
         });
     }
 }
-
