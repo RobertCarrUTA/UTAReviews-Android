@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3F7CE4"
+    tools:context=".ReviewActivity">
+
+    <!--
+    Use androidx.appcompat.widget.AppCompatButton instead of Button so that we can change the
+    color of the button (Button did not allow for color change)
+    -->
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/returnHomeButton_ReviewPage"
+        android:layout_width="264dp"
+        android:layout_height="47dp"
+        android:background="#E4855E"
+        android:backgroundTint="#F8885B"
+        android:foregroundTint="#FFFFFF"
+        android:text="Return Home"
+        android:textColor="#FDFDFD"
+        android:textColorHighlight="#FDFDFD"
+        android:textColorHint="#D3D3D3"
+        android:textColorLink="#FFFFFF"
+        app:iconTint="#FA8888"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.923" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/searchButton_ReviewPage"
+        android:layout_width="264dp"
+        android:layout_height="47dp"
+        android:background="#E4855E"
+        android:backgroundTint="#F8885B"
+        android:foregroundTint="#FFFFFF"
+        android:text="Search for UTA Professors..."
+        android:textColor="#FDFDFD"
+        android:textColorHighlight="#FDFDFD"
+        android:textColorHint="#D3D3D3"
+        android:textColorLink="#FFFFFF"
+        app:iconTint="#FA8888"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.08" />
+
+    <TextView
+        android:id="@+id/Current_Professor_View"
+        android:layout_width="342dp"
+        android:layout_height="66dp"
+        android:text="You are currently looking at reviews for George Rice"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.231"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.193" />
+
+    <ScrollView
+        android:layout_width="354dp"
+        android:layout_height="376dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.587">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
