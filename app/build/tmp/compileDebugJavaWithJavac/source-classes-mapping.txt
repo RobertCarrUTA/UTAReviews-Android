@@ -1,0 +1,24 @@
+com/example/cse3311project/ReviewActivity.java
+ com.example.cse3311project.ReviewActivity
+ com.example.cse3311project.ReviewActivity$1
+com/example/cse3311project/MainActivity.java
+ com.example.cse3311project.MainActivity
+ com.example.cse3311project.MainActivity$1
+ com.example.cse3311project.MainActivity$2
+com/example/cse3311project/BuildConfig.java
+ com.example.cse3311project.BuildConfig
+com/example/cse3311project/AccountActivity.java
+ com.example.cse3311project.AccountActivity
+ com.example.cse3311project.AccountActivity$1
+com/example/cse3311project/LoginPage.java
+ com.example.cse3311project.LoginPage
+ com.example.cse3311project.LoginPage$1
+ com.example.cse3311project.LoginPage$2
+ com.example.cse3311project.LoginPage$3
+com/example/cse3311project/ForgotPasswordPage.java
+ com.example.cse3311project.ForgotPasswordPage
+ com.example.cse3311project.ForgotPasswordPage$1
+com/example/cse3311project/Registration.java
+ com.example.cse3311project.Registration
+ com.example.cse3311project.Registration$1
+ com.example.cse3311project.Registration$2
