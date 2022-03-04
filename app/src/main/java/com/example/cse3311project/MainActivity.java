@@ -6,10 +6,14 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
+
+import com.google.firebase.auth.FirebaseAuth;
 
 public class MainActivity extends AppCompatActivity
 {
-    private Button SearchButton_Homepage, accountButton_Homepage;
+    private Button SearchButton_Homepage, accountButton_Homepage, SignOutButton;
+    FirebaseAuth fAuth;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -31,15 +35,16 @@ public class MainActivity extends AppCompatActivity
         // Identifying our buttons that are located on the .xml file
         SearchButton_Homepage = (Button) findViewById(R.id.SearchButton_Homepage);
         accountButton_Homepage = (Button) findViewById(R.id.accountButton_Homepage);
+        SignOutButton = (Button) findViewById(R.id.SignOutButton);
 
+        fAuth = FirebaseAuth.getInstance();
 
-        // On click listeners that allow the user to go from page to page
-        // when clicking on a button
         accountButton_Homepage.setOnClickListener(new View.OnClickListener()
         {
             @Override
-            public void onClick(View v) {
-                openAccountActivity();
+            public void onClick(View v)
+            {
+                startActivity(new Intent(getApplicationContext(), AccountActivity.class));
             }
         });
 
@@ -47,22 +52,19 @@ public class MainActivity extends AppCompatActivity
         {
             @Override
             public void onClick(View v) {
-                openReviewActivity();
+                startActivity(new Intent(getApplicationContext(), ReviewActivity.class));
             }
         });
-    }
 
-    // Use this function to open any new review activity
-    public void openReviewActivity()
-    {
-        Intent intent = new Intent(this, ReviewActivity.class);
-        startActivity(intent);
-    }
-
-    // Use this function to open any new account activity
-    public void openAccountActivity()
-    {
-        Intent intent = new Intent(this, AccountActivity.class);
-        startActivity(intent);
+        SignOutButton.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View v)
+            {
+                FirebaseAuth.getInstance().signOut();
+                startActivity(new Intent(getApplicationContext(), LoginPage.class));
+                Toast.makeText(MainActivity.this, "Signed Out Successfully", Toast.LENGTH_SHORT).show();
+            }
+        });
     }
 }
