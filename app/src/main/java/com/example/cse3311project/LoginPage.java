@@ -1,25 +1,27 @@
 package com.example.cse3311project;
 
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-import androidx.appcompat.app.AppCompatActivity;
-
-import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
-import android.speech.RecognitionService;
-import android.util.Log;
+import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.TextView;
 import android.widget.Toast;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.auth.AuthResult;
+import com.google.firebase.auth.FirebaseAuth;
 
 public class LoginPage extends AppCompatActivity
 {
-
     EditText Email, Password;
     Button Login, signupButton, forgotPasswordButton;
+    FirebaseAuth auth;
+
 
     protected void onCreate(Bundle savedInstanceSate)
     {
@@ -30,14 +32,72 @@ public class LoginPage extends AppCompatActivity
         Login = findViewById(R.id.buttonLogin);
         signupButton = findViewById(R.id.signupButton);
         forgotPasswordButton = findViewById(R.id.forgotPasswordButton);
+        auth = FirebaseAuth.getInstance();
 
         Login.setOnClickListener(new View.OnClickListener()
         {
             @Override
+            public void onClick (View v)
+            {
+                String email = Email.getText().toString().trim();
+                String password = Password.getText().toString().trim();
+                String[] emailSplit = email.split("@");
+                if(TextUtils.isEmpty(email))
+                {
+                    Email.setError("Email is Required.");
+                    return;
+                }
+
+                if(!email.contains("@"))
+                {
+                    Email.setError("Please enter a UTA email");
+                    return;
+                }
+
+                if(emailSplit[1].equals("mavs.uta.edu") || emailSplit[1].equals("uta.edu"))
+                {
+                }
+                else
+                {
+                    Email.setError("Must be UTA email");
+                    return;
+                }
+
+                if (TextUtils.isEmpty(password))
+                {
+                    Password.setError("Password is Required.");
+                    return;
+                }
+
+                if (password.length() < 8) {
+                    Password.setError("Password must have 8 characters or more.");
+                    return;
+                }
+
+                auth.signInWithEmailAndPassword(email, password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+                    @Override
+                    public void onComplete(@NonNull Task<AuthResult> task) {
+                        if(task.isSuccessful())
+                        {
+                            Toast.makeText(LoginPage.this, "Login Successful", Toast.LENGTH_SHORT).show();
+                            startActivity(new Intent(getApplicationContext(), MainActivity.class));
+                        }
+                        else
+                        {
+                            Toast.makeText(LoginPage.this, "Wrong Email or Password" + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
+                        }
+                    }
+                });
+            }
+
+        });
+
+        forgotPasswordButton.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
             public void onClick(View v)
             {
-                Toast.makeText(LoginPage.this, "Login Successful", Toast.LENGTH_SHORT).show();
-                startActivity(new Intent(getApplicationContext(), MainActivity.class));
+                startActivity(new Intent(getApplicationContext(), ForgotPasswordPage.class));
             }
         });
 
@@ -50,13 +110,5 @@ public class LoginPage extends AppCompatActivity
             }
         });
 
-        forgotPasswordButton.setOnClickListener(new View.OnClickListener()
-        {
-            @Override
-            public void onClick(View v)
-            {
-                startActivity(new Intent(getApplicationContext(), ForgotPasswordPage.class));
-            }
-        });
     }
 }

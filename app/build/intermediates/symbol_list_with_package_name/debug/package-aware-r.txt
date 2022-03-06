@@ -2571,7 +2571,6 @@ id ALT
 id BOTTOM_END
 id BOTTOM_START
 id CTRL
-id Current_Professor_View
 id EmailAddress
 id FUNCTION
 id META
@@ -2938,6 +2937,7 @@ id percent
 id pin
 id position
 id postLayout
+id professorName_Review
 id professorSearchBar
 id professor_department
 id professor_name
@@ -2967,7 +2967,6 @@ id scrollIndicatorDown
 id scrollIndicatorUp
 id scrollView
 id scrollable
-id searchButton_ReviewPage
 id search_badge
 id search_bar
 id search_button
