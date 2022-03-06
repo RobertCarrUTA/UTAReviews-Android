@@ -93,6 +93,7 @@
         android:layout_marginLeft="30dp"
         android:layout_marginTop="5dp"
         android:hint="Password"
+        android:inputType="textPassword"
         android:padding="10dp"
         android:textAlignment="center"
         android:textColor="@color/white"
