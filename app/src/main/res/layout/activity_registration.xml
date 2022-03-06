@@ -37,11 +37,11 @@
         android:id="@+id/lastNameInput"
         android:layout_width="350dp"
         android:layout_height="50dp"
-        android:layout_below="@+id/lastName"
+        android:layout_below="@+id/titleBackGround"
         android:layout_gravity="center_horizontal"
         android:layout_marginLeft="30dp"
-        android:layout_marginTop="5dp"
-        android:hint="Last Name"
+        android:layout_marginTop="24dp"
+        android:hint="Username"
         android:padding="10dp"
         android:textAlignment="center"
         android:textColor="@color/white"
@@ -49,13 +49,14 @@
         android:textStyle="bold" />
 
     <TextView
-        android:id="@+id/lastName"
+        android:id="@+id/Username"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/firstNameInput"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="30dp"
-        android:text="Last Name"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="111dp"
+        android:text="Username"
         android:textColor="#FDFDFD" />
 
     <EditText
@@ -131,30 +132,6 @@
         android:layout_marginTop="30dp"
         android:text="Account Password (more than 8 characters)"
         android:textColor="#FFFFFF" />
-
-    <EditText
-        android:id="@+id/firstNameInput"
-        android:layout_width="350dp"
-        android:layout_height="50dp"
-        android:layout_below="@+id/firstName"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginLeft="30dp"
-        android:hint="First Name"
-        android:padding="10dp"
-        android:textAlignment="center"
-        android:textColor="@color/white"
-        android:textColorHint="#FFFFFF"
-        android:textStyle="bold" />
-
-    <TextView
-        android:id="@+id/firstName"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/userRegistration"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="15dp"
-        android:text="First Name"
-        android:textColor="#FAFAFA" />
 
     <TextView
         android:id="@+id/userRegistration"

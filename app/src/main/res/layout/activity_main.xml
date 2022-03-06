@@ -11,6 +11,7 @@
     Use androidx.appcompat.widget.AppCompatButton instead of Button so that we can change the
     color of the button (Button did not allow for color change)
     -->
+
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/SearchButton_Homepage"
         android:layout_width="264dp"
@@ -26,9 +27,10 @@
         app:iconTint="#FA8888"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.08" />
+        app:layout_constraintVertical_bias="0.464" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/accountButton_Homepage"
@@ -65,10 +67,10 @@
         app:iconTint="#FA8888"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintHorizontal_bias="0.503"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.976" />
+        app:layout_constraintTop_toBottomOf="@+id/accountButton_Homepage"
+        app:layout_constraintVertical_bias="0.407" />
 
     <TextView
         android:id="@+id/user_greating"
@@ -203,5 +205,45 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.239" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Professor Search"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.052"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/professorSearchBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Search..."
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.079"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.051" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/professor_search_result"
+        android:layout_width="407dp"
+        android:layout_height="484dp"
+        android:layout_marginTop="1dp"
+        android:background="#3F7CE4"
+        app:layout_constraintBottom_toTopOf="@+id/accountButton_Homepage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/professorSearchBar"
+        app:layout_constraintVertical_bias="1.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

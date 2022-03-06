@@ -18,7 +18,7 @@ import com.google.firebase.auth.FirebaseAuth;
 
 public class Registration extends AppCompatActivity
 {
-    EditText firstNameInput, lastNameInput, emailInput, idInput;
+    EditText lastNameInput, emailInput, idInput;
     Button submitButton, cancelButton;
     FirebaseAuth fAuth;
 
@@ -28,7 +28,6 @@ public class Registration extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_registration);
 
-        firstNameInput = findViewById(R.id.firstNameInput);
         lastNameInput = findViewById(R.id.lastNameInput);
         emailInput = findViewById(R.id.emailInput);
         idInput = findViewById(R.id.idInput);
@@ -51,15 +50,10 @@ public class Registration extends AppCompatActivity
             @Override
             public void onClick(View v)
             {
-                String firstName = firstNameInput.getText().toString().trim();
+                //String firstName = firstNameInput.getText().toString().trim();
                 String password = idInput.getText().toString().trim();
                 String lastName = lastNameInput.getText().toString().trim();
                 String email = emailInput.getText().toString().trim();
-
-                if(TextUtils.isEmpty(firstName))
-                {
-                    firstNameInput.setError("First name must not be empty");
-                }
 
                 if(TextUtils.isEmpty(lastName))
                 {

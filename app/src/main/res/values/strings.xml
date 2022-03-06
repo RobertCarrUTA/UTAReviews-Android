@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">UTA Reviews</string>
+
+    <string-array name="professor_names_array">
+        <item>Alexandra Stefan</item>
+        <item>Chance Eary</item>
+        <item>Christopher Csallner</item>
+        <item>Donna French</item>
+        <item>George Rice</item>
+        <item>Kelly French</item>
+        <item>Kyungseo Park</item>
+        <item>Ronald Cross</item>
+        <item>Trevor Bakker</item>
+    </string-array>
 </resources>
