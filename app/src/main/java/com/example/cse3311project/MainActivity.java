@@ -29,6 +29,8 @@ public class MainActivity extends AppCompatActivity
     private RecyclerView professor_search_result;
     private EditText professorSearchBar;
 
+    //private final  recyclerViewInterface;
+
     FirebaseAuth fAuth;
 
     private DatabaseReference ProfessorDatabase;
@@ -38,7 +40,6 @@ public class MainActivity extends AppCompatActivity
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
 
         /*
         Robert is putting these notes here for later use, ignore if you want.
@@ -77,16 +78,6 @@ public class MainActivity extends AppCompatActivity
                 startActivity(new Intent(getApplicationContext(), AccountActivity.class));
             }
         });
-
-        /*
-        SearchButton_Homepage.setOnClickListener(new View.OnClickListener()
-        {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(getApplicationContext(), ReviewActivity.class));
-            }
-        });
-         */
 
         SignOutButton.setOnClickListener(new View.OnClickListener()
         {
@@ -146,6 +137,28 @@ public class MainActivity extends AppCompatActivity
                 holder.professor_Name.setText(model.getName());
                 holder.professor_department.setText("Department: " + model.getDepartment());
                 holder.professor_rating.setText("Rating: " + model.getRating());
+
+                //Toast.makeText(MainActivity.this, "Now viewing reviews for " + model.getName(), Toast.LENGTH_SHORT).show();
+
+                // TODO: (Robert) Come back and make this better, this is not optimal but it works
+                holder.itemView.setOnClickListener(new View.OnClickListener()
+                {
+                    @Override
+                    public void onClick(View view)
+                    {
+                        // This is how we would get the selected professor name
+                        String professorNameIntent = model.getName();
+
+                        // To pass this name that the user has selected, This is the only way I could figure
+                        // out how to do it, we start the review activity with this intent or it cannot be passed
+                        Intent name_selection_intent = new Intent(getApplicationContext(), ReviewActivity.class);
+                        name_selection_intent.putExtra("professor_name_from_list", professorNameIntent);
+
+                        startActivity(name_selection_intent);
+                        Toast.makeText(MainActivity.this, "Now viewing reviews for " + model.getName(), Toast.LENGTH_SHORT).show();
+                    }
+                }
+                );
             }
         };
 
@@ -168,13 +181,6 @@ public class MainActivity extends AppCompatActivity
             professor_Name = (TextView) View1.findViewById(R.id.professor_name);
             professor_department = (TextView) View1.findViewById(R.id.professor_department);
             professor_rating = (TextView) View1.findViewById(R.id.professor_rating);
-
-            //View1.setOnClickListener(this);
         }
-    }
-
-    public interface listClickListener
-    {
-        void onListClick(int position);
     }
 }

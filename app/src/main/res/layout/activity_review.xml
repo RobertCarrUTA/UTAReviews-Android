@@ -32,39 +32,18 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.923" />
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/searchButton_ReviewPage"
-        android:layout_width="264dp"
-        android:layout_height="47dp"
-        android:background="#E4855E"
-        android:backgroundTint="#F8885B"
-        android:foregroundTint="#FFFFFF"
-        android:text="Search for UTA Professors..."
-        android:textColor="#FDFDFD"
-        android:textColorHighlight="#FDFDFD"
-        android:textColorHint="#D3D3D3"
-        android:textColorLink="#FFFFFF"
-        app:iconTint="#FA8888"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.08" />
-
     <TextView
-        android:id="@+id/Current_Professor_View"
-        android:layout_width="342dp"
-        android:layout_height="66dp"
-        android:text="You are currently looking at reviews for George Rice"
+        android:id="@+id/professorName_Review"
+        android:layout_width="375dp"
+        android:layout_height="125dp"
         android:textColor="#FFFFFF"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.231"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.193" />
+        app:layout_constraintVertical_bias="0.026" />
 
     <ScrollView
         android:layout_width="354dp"
@@ -80,4 +59,5 @@
             android:layout_height="wrap_content"
             android:orientation="vertical" />
     </ScrollView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
