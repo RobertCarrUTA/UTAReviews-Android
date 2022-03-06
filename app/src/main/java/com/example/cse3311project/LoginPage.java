@@ -54,13 +54,9 @@ public class LoginPage extends AppCompatActivity
                     return;
                 }
 
-                if(emailSplit[1].equals("mavs.uta.edu") || emailSplit[1].equals("uta.edu"))
-                {
-                }
-                else
+                else if (!(emailSplit[1].equals("mavs.uta.edu") || emailSplit[1].equals("uta.edu")))
                 {
                     Email.setError("Must be UTA email");
-                    return;
                 }
 
                 if (TextUtils.isEmpty(password))

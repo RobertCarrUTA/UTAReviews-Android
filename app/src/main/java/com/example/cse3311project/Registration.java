@@ -48,46 +48,51 @@ public class Registration extends AppCompatActivity
         submitButton.setOnClickListener(new View.OnClickListener()
         {
             @Override
-            public void onClick(View v)
-            {
-                //String firstName = firstNameInput.getText().toString().trim();
+            public void onClick(View v) {
                 String password = idInput.getText().toString().trim();
-                String lastName = lastNameInput.getText().toString().trim();
                 String email = emailInput.getText().toString().trim();
+                String[] emailSplit = email.split("@");
 
-                if(TextUtils.isEmpty(lastName))
-                {
-                    idInput.setError("Last name must not be empty");
-                }
-
-                if(TextUtils.isEmpty(password))
+                if (TextUtils.isEmpty(password))
                 {
                     idInput.setError("A password is required");
                 }
 
-                if(password.length() < 8)
+                if (password.length() < 8)
                 {
                     idInput.setError("Password must be 8 characters or greater");
                 }
 
-                // Registration of the user in the database. If the user is successfully registered, show a toast and redirect to login page
-                // if a user is not successfully registered, show the error that occurred
-                fAuth.createUserWithEmailAndPassword(email, password).addOnCompleteListener(new OnCompleteListener<AuthResult>()
+                if (TextUtils.isEmpty(email))
                 {
-                    @Override
-                    public void onComplete(@NonNull Task<AuthResult> task)
-                    {
-                        if(task.isSuccessful())
-                        {
-                            Toast.makeText(Registration.this, "Account Created Successfully", Toast.LENGTH_SHORT).show();
-                            startActivity(new Intent(getApplicationContext(), LoginPage.class));
+                    emailInput.setError("Email is Required.");
+                    //return;
+                }
+                else if (!email.contains("@"))
+                {
+                    emailInput.setError("Please enter a valid email address");
+                    //return;
+                }
+                else if (!(emailSplit[1].equals("mavs.uta.edu") || emailSplit[1].equals("uta.edu")))
+                {
+                    emailInput.setError("Must be a UTA email");
+                }
+                else
+                {
+                    // Registration of the user in the database. If the user is successfully registered, show a toast and redirect to login page
+                    // if a user is not successfully registered, show the error that occurred
+                    fAuth.createUserWithEmailAndPassword(email, password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+                        @Override
+                        public void onComplete(@NonNull Task<AuthResult> task) {
+                            if (task.isSuccessful()) {
+                                Toast.makeText(Registration.this, "Account Created Successfully", Toast.LENGTH_SHORT).show();
+                                startActivity(new Intent(getApplicationContext(), LoginPage.class));
+                            } else {
+                                Toast.makeText(Registration.this, "Error: " + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
+                            }
                         }
-                        else
-                        {
-                            Toast.makeText(Registration.this, "Error: " + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
-                        }
-                    }
-                });
+                    });
+                }
             }
         });
 
