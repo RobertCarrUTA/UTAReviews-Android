@@ -2,6 +2,7 @@ package com.example.cse3311project;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.DividerItemDecoration;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -13,6 +14,8 @@ import android.view.ViewGroup;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Filter;
+import android.widget.Filterable;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -23,13 +26,14 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.Query;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class MainActivity extends AppCompatActivity
 {
     private Button accountButton_Homepage, SignOutButton;
     private RecyclerView professor_search_result;
     private EditText professorSearchBar;
-
-    //private final  recyclerViewInterface;
 
     FirebaseAuth fAuth;
 
@@ -46,10 +50,6 @@ public class MainActivity extends AppCompatActivity
 
         For implementing user picked avatars, maybe look here:
         https://stackoverflow.com/questions/38352148/get-image-from-the-gallery-and-show-in-imageview
-
-        We will need a search bar eventually,
-        official documentation for that can be found here:
-        https://developer.android.com/guide/topics/search/search-dialog
         */
 
         // This needs to be here to keep all of our layout in place, without the line of code
@@ -58,17 +58,21 @@ public class MainActivity extends AppCompatActivity
 
         ProfessorDatabase = FirebaseDatabase.getInstance().getReference("Professors");
 
-        // Identifying our buttons that are located on the .xml file
-        //SearchButton_Homepage = (Button) findViewById(R.id.SearchButton_Homepage);
         accountButton_Homepage = (Button) findViewById(R.id.accountButton_Homepage);
         SignOutButton = (Button) findViewById(R.id.SignOutButton);
         professorSearchBar = (EditText) findViewById(R.id.professorSearchBar);
 
+        // This is are our RecyclerView
         professor_search_result = (RecyclerView) findViewById(R.id.professor_search_result);
         professor_search_result.setHasFixedSize(true);
         professor_search_result.setLayoutManager(new LinearLayoutManager(this));
+        // This divides our search results so they are more easily separated visually for the user
+        // Documentation: https://developer.android.com/reference/androidx/recyclerview/widget/DividerItemDecoration
+        professor_search_result.addItemDecoration(new DividerItemDecoration(professor_search_result.getContext(), DividerItemDecoration.VERTICAL));
 
-        fAuth = FirebaseAuth.getInstance();
+
+
+                fAuth = FirebaseAuth.getInstance();
 
         accountButton_Homepage.setOnClickListener(new View.OnClickListener()
         {
@@ -114,7 +118,7 @@ public class MainActivity extends AppCompatActivity
         // This is a search query that allows for the user to search and only find relevant results in the search options
         Query firebaseQuery = ProfessorDatabase.orderByChild("name").startAt(searchEntry).endAt(searchEntry + "\uf8ff");
 
-        // This must be included for
+        // This must be included for our FirebaseRecyclerAdapter options
         FirebaseRecyclerOptions<Professors> options =
                 new FirebaseRecyclerOptions.Builder<Professors>()
                 .setQuery(firebaseQuery, Professors.class)
@@ -137,8 +141,6 @@ public class MainActivity extends AppCompatActivity
                 holder.professor_Name.setText(model.getName());
                 holder.professor_department.setText("Department: " + model.getDepartment());
                 holder.professor_rating.setText("Rating: " + model.getRating());
-
-                //Toast.makeText(MainActivity.this, "Now viewing reviews for " + model.getName(), Toast.LENGTH_SHORT).show();
 
                 // TODO: (Robert) Come back and make this better, this is not optimal but it works
                 holder.itemView.setOnClickListener(new View.OnClickListener()
