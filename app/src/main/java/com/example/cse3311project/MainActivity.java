@@ -25,7 +25,7 @@ import com.google.firebase.database.Query;
 
 public class MainActivity extends AppCompatActivity
 {
-    private Button SearchButton_Homepage, accountButton_Homepage, SignOutButton;
+    private Button accountButton_Homepage, SignOutButton;
     private RecyclerView professor_search_result;
     private EditText professorSearchBar;
 
@@ -116,11 +116,14 @@ public class MainActivity extends AppCompatActivity
     // Robert is leaving this here for later use: https://developer.android.com/guide/topics/ui/layout/recyclerview-custom
 
     // This is our firebase search function
+    // Any documentation about Firebase UI can be found here: https://github.com/firebase/FirebaseUI-Android
     private void firebaseProfessorSearch(String searchEntry)
     {
 
+        // This is a search query that allows for the user to search and only find relevant results in the search options
         Query firebaseQuery = ProfessorDatabase.orderByChild("name").startAt(searchEntry).endAt(searchEntry + "\uf8ff");
 
+        // This must be included for
         FirebaseRecyclerOptions<Professors> options =
                 new FirebaseRecyclerOptions.Builder<Professors>()
                 .setQuery(firebaseQuery, Professors.class)
@@ -130,14 +133,16 @@ public class MainActivity extends AppCompatActivity
         {
             @NonNull
             @Override
-            public ProfessorViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+            public ProfessorViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType)
+            {
                 View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.professor_search_layout, parent, false);
                 ProfessorViewHolder viewHolder = new ProfessorViewHolder((view));
                 return viewHolder;
             }
 
             @Override
-            protected void onBindViewHolder(@NonNull ProfessorViewHolder holder, int position, @NonNull Professors model) {
+            protected void onBindViewHolder(@NonNull ProfessorViewHolder holder, int position, @NonNull Professors model)
+            {
                 holder.professor_Name.setText(model.getName());
                 holder.professor_department.setText("Department: " + model.getDepartment());
                 holder.professor_rating.setText("Rating: " + model.getRating());
@@ -149,19 +154,27 @@ public class MainActivity extends AppCompatActivity
     }
 
     // Making view holder class for our professors in the database
-    public class ProfessorViewHolder extends RecyclerView.ViewHolder {
-
+    public class ProfessorViewHolder extends RecyclerView.ViewHolder
+    {
         TextView professor_Name, professor_department, professor_rating;
         View View1;
 
-        public ProfessorViewHolder(@NonNull View itemView) {
+        public ProfessorViewHolder(@NonNull View itemView)
+        {
             super(itemView);
-
             View1 = itemView;
 
+            // This is where we get the information for onBindViewHolder(@NonNull ProfessorViewHolder holder, ...)
             professor_Name = (TextView) View1.findViewById(R.id.professor_name);
             professor_department = (TextView) View1.findViewById(R.id.professor_department);
             professor_rating = (TextView) View1.findViewById(R.id.professor_rating);
+
+            //View1.setOnClickListener(this);
         }
+    }
+
+    public interface listClickListener
+    {
+        void onListClick(int position);
     }
 }

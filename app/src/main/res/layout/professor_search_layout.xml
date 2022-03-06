@@ -8,8 +8,8 @@
 
     <TextView
         android:id="@+id/professor_name"
-        android:layout_width="363dp"
-        android:layout_height="55dp"
+        android:layout_width="387dp"
+        android:layout_height="54dp"
         android:baselineAligned="false"
         android:fontFamily="@font/brawler"
         android:textColor="#FFFFFF"
