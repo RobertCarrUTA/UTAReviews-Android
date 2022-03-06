@@ -13,26 +13,6 @@
     -->
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/SearchButton_Homepage"
-        android:layout_width="264dp"
-        android:layout_height="47dp"
-        android:background="#F48253"
-        android:backgroundTint="#F8885B"
-        android:foregroundTint="#FFFFFF"
-        android:text="Search for UTA Professors..."
-        android:textColor="#FDFDFD"
-        android:textColorHighlight="#FDFDFD"
-        android:textColorHint="#D3D3D3"
-        android:textColorLink="#FFFFFF"
-        app:iconTint="#FA8888"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.464" />
-
-    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/accountButton_Homepage"
         android:layout_width="264dp"
         android:layout_height="47dp"
@@ -73,145 +53,12 @@
         app:layout_constraintVertical_bias="0.407" />
 
     <TextView
-        android:id="@+id/user_greating"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello, Maverick!"
-        android:textColor="#FDFDFD"
-        android:textColorLink="#FFFFFF"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView"
-        app:layout_constraintVertical_bias="0.054" />
-
-    <TextView
-        android:id="@+id/Top_Professors"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Top Rated CSE Professors"
-        android:textColor="#FDFDFD"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.503"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/user_greating"
-        app:layout_constraintVertical_bias="0.115" />
-
-    <TextView
-        android:id="@+id/first_rating"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="27dp"
-        android:text="5"
-        android:textColor="#F8885B"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.696"
-        app:layout_constraintStart_toEndOf="@+id/First_Position"
-        app:layout_constraintTop_toBottomOf="@+id/Top_Professors"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <TextView
-        android:id="@+id/First_Position"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="27dp"
-        android:text="Christopher Csallner"
-        android:textColor="#F8885B"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.145"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Top_Professors"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <TextView
-        android:id="@+id/third_Position"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Trevor Bakker"
-        android:textColor="#F8885B"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.109"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/second_Position"
-        app:layout_constraintVertical_bias="0.144" />
-
-    <TextView
-        android:id="@+id/third_rating"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="4.5"
-        android:textColor="#F8885B"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.764"
-        app:layout_constraintStart_toEndOf="@+id/third_Position"
-        app:layout_constraintTop_toBottomOf="@+id/second_rating"
-        app:layout_constraintVertical_bias="0.14" />
-
-    <TextView
-        android:id="@+id/second_Position"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="33dp"
-        android:text="George Rice"
-        android:textColor="#F8885B"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.102"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/First_Position"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <TextView
-        android:id="@+id/second_rating"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="4.6"
-        android:textColor="#F8885B"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.819"
-        app:layout_constraintStart_toEndOf="@+id/second_Position"
-        app:layout_constraintTop_toBottomOf="@+id/first_rating"
-        app:layout_constraintVertical_bias="0.11" />
-
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="171dp"
-        android:layout_height="133dp"
-        android:src="@drawable/avatar_draft"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.501"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.239" />
-
-    <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:text="Professor Search"
+        android:textColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.052"
@@ -224,8 +71,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="Search..."
+        android:hint="Search Here..."
         android:inputType="textPersonName"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textColorLink="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.079"
@@ -235,15 +86,13 @@
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/professor_search_result"
-        android:layout_width="407dp"
-        android:layout_height="484dp"
-        android:layout_marginTop="1dp"
+        android:layout_width="379dp"
+        android:layout_height="445dp"
         android:background="#3F7CE4"
         app:layout_constraintBottom_toTopOf="@+id/accountButton_Homepage"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/professorSearchBar"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.781" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

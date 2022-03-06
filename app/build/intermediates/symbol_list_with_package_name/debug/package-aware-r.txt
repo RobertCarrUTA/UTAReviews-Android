@@ -2574,7 +2574,6 @@ id CTRL
 id Current_Professor_View
 id EmailAddress
 id FUNCTION
-id First_Position
 id META
 id NO_DEBUG
 id Password
@@ -2584,7 +2583,6 @@ id SHOW_ALL
 id SHOW_PATH
 id SHOW_PROGRESS
 id SYM
-id SearchButton_Homepage
 id SignOutButton
 id TOP_END
 id TOP_START
@@ -2592,7 +2590,6 @@ id Title
 id TitleBackGround
 id TitleBackground
 id TitleFP
-id Top_Professors
 id Username
 id accelerate
 id accessibility_action_clickable_span
@@ -2787,7 +2784,6 @@ id fill
 id fill_horizontal
 id fill_vertical
 id filled
-id first_rating
 id fitToContents
 id fixed
 id flip
@@ -2982,8 +2978,6 @@ id search_mag_icon
 id search_plate
 id search_src_text
 id search_voice_btn
-id second_Position
-id second_rating
 id select_dialog_listview
 id selected
 id selection_type
@@ -3064,8 +3058,6 @@ id textinput_helper_text
 id textinput_placeholder
 id textinput_prefix_text
 id textinput_suffix_text
-id third_Position
-id third_rating
 id time
 id title
 id titleBackGround
@@ -3089,7 +3081,6 @@ id unlabeled
 id up
 id useLogo
 id userRegistration
-id user_greating
 id vertical_only
 id view_offset_helper
 id view_transition

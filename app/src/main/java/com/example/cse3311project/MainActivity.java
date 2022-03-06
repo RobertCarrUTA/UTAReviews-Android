@@ -58,7 +58,7 @@ public class MainActivity extends AppCompatActivity
         ProfessorDatabase = FirebaseDatabase.getInstance().getReference("Professors");
 
         // Identifying our buttons that are located on the .xml file
-        SearchButton_Homepage = (Button) findViewById(R.id.SearchButton_Homepage);
+        //SearchButton_Homepage = (Button) findViewById(R.id.SearchButton_Homepage);
         accountButton_Homepage = (Button) findViewById(R.id.accountButton_Homepage);
         SignOutButton = (Button) findViewById(R.id.SignOutButton);
         professorSearchBar = (EditText) findViewById(R.id.professorSearchBar);
@@ -78,6 +78,7 @@ public class MainActivity extends AppCompatActivity
             }
         });
 
+        /*
         SearchButton_Homepage.setOnClickListener(new View.OnClickListener()
         {
             @Override
@@ -85,6 +86,7 @@ public class MainActivity extends AppCompatActivity
                 startActivity(new Intent(getApplicationContext(), ReviewActivity.class));
             }
         });
+         */
 
         SignOutButton.setOnClickListener(new View.OnClickListener()
         {

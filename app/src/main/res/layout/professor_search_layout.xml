@@ -3,12 +3,14 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    tools:visibility="invisible">
 
     <TextView
         android:id="@+id/professor_name"
         android:layout_width="363dp"
         android:layout_height="55dp"
+        android:baselineAligned="false"
         android:fontFamily="@font/brawler"
         android:textColor="#FFFFFF"
         android:textSize="30sp"
@@ -28,7 +30,8 @@
         android:layout_alignBottom="@+id/professor_name"
         android:layout_marginEnd="219dp"
         android:layout_marginBottom="-37dp"
-        android:textColor="#000000"
+        android:baselineAligned="false"
+        android:textColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.108"
@@ -44,12 +47,21 @@
         android:layout_alignBottom="@+id/professor_name"
         android:layout_marginEnd="-1dp"
         android:layout_marginBottom="-37dp"
-        android:textColor="#000000"
+        android:baselineAligned="true"
+        android:textColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.505"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.103" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="140dp"
+        android:layout_height="90dp"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/avatar_draft"
+        tools:visibility="invisible" />
 
 </RelativeLayout>
