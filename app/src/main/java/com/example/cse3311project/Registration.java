@@ -18,13 +18,17 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 public class Registration extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
     EditText lastNameInput, emailInput, idInput;
     Button submitButton, cancelButton;
     Spinner spinner;
     FirebaseAuth fAuth;
-
+    private FirebaseDatabase databaseStart;
+    private DatabaseReference database;
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
@@ -39,10 +43,9 @@ public class Registration extends AppCompatActivity implements AdapterView.OnIte
         submitButton = findViewById(R.id.submitButton);
         cancelButton = findViewById(R.id.cancelButton);
 
-        spinner = findViewById
-                (
-                        R.id.registrationTypeInput
-                );
+        spinner = findViewById(R.id.registrationTypeInput);
+
+
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource
                 (
                         this,
@@ -65,12 +68,16 @@ public class Registration extends AppCompatActivity implements AdapterView.OnIte
             startActivity(new Intent(getApplicationContext(), MainActivity.class));
         }
 
+
         submitButton.setOnClickListener(new View.OnClickListener()
         {
             @Override
             public void onClick(View v) {
+                databaseStart = FirebaseDatabase.getInstance();
+                //database = databaseStart.getReference( "users");
                 String password = idInput.getText().toString().trim();
                 String email = emailInput.getText().toString().trim();
+                String accountType = spinner.getSelectedItem().toString();
                 String[] emailSplit = email.split("@");
 
                 if (TextUtils.isEmpty(password))
@@ -105,7 +112,12 @@ public class Registration extends AppCompatActivity implements AdapterView.OnIte
                         @Override
                         public void onComplete(@NonNull Task<AuthResult> task) {
                             if (task.isSuccessful()) {
+                                FirebaseUser currentFirebaseUser = FirebaseAuth.getInstance().getCurrentUser() ;
+                               // Toast.makeText(this, "" + currentFirebaseUser.getUid(), Toast.LENGTH_SHORT).show();
+                                database = databaseStart.getReference( "userList");
+                                database.child(currentFirebaseUser.getUid()).setValue(accountType);
                                 Toast.makeText(Registration.this, "Account Created Successfully", Toast.LENGTH_SHORT).show();
+                                //Toast.makeText(Registration.this, "The selected type is: "+accountType, Toast.LENGTH_LONG).show();
                                 startActivity(new Intent(getApplicationContext(), LoginPage.class));
                             } else {
                                 Toast.makeText(Registration.this, "Error: " + task.getException().getMessage(), Toast.LENGTH_LONG).show();
@@ -127,7 +139,6 @@ public class Registration extends AppCompatActivity implements AdapterView.OnIte
             }
         });
     }
-
     @Override
     public void onItemSelected(AdapterView<?> parent, View view, int i, long l) {
         Toast.makeText(parent.getContext(),"Selection was made",Toast.LENGTH_SHORT).show();
@@ -138,4 +149,6 @@ public class Registration extends AppCompatActivity implements AdapterView.OnIte
     public void onNothingSelected(AdapterView<?> adapterView) {
 
     }
+
 }
+
