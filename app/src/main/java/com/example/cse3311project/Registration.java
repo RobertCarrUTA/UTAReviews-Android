@@ -7,8 +7,11 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Spinner;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -16,10 +19,10 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 
-public class Registration extends AppCompatActivity
-{
+public class Registration extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
     EditText lastNameInput, emailInput, idInput;
     Button submitButton, cancelButton;
+    Spinner spinner;
     FirebaseAuth fAuth;
 
     @Override
@@ -30,11 +33,28 @@ public class Registration extends AppCompatActivity
 
         lastNameInput = findViewById(R.id.lastNameInput);
         emailInput = findViewById(R.id.emailInput);
-        idInput = findViewById(R.id.idInput);
+        idInput = findViewById(R.id.passwordInput);
 
 
         submitButton = findViewById(R.id.submitButton);
         cancelButton = findViewById(R.id.cancelButton);
+
+        spinner = findViewById
+                (
+                        R.id.registrationTypeInput
+                );
+        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource
+                (
+                        this,
+                        R.array.registrationTypeArray,
+                        android.R.layout.simple_spinner_item
+                );
+        adapter.setDropDownViewResource
+                (
+                        android.R.layout.simple_spinner_dropdown_item
+                );
+        spinner.setAdapter(adapter);
+        spinner.setOnItemSelectedListener(this);
 
         fAuth = FirebaseAuth.getInstance();
 
@@ -88,10 +108,12 @@ public class Registration extends AppCompatActivity
                                 Toast.makeText(Registration.this, "Account Created Successfully", Toast.LENGTH_SHORT).show();
                                 startActivity(new Intent(getApplicationContext(), LoginPage.class));
                             } else {
-                                Toast.makeText(Registration.this, "Error: " + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
+                                Toast.makeText(Registration.this, "Error: " + task.getException().getMessage(), Toast.LENGTH_LONG).show();
                             }
                         }
                     });
+
+
                 }
             }
         });
@@ -104,5 +126,16 @@ public class Registration extends AppCompatActivity
                 startActivity(new Intent(getApplicationContext(), LoginPage.class));
             }
         });
+    }
+
+    @Override
+    public void onItemSelected(AdapterView<?> parent, View view, int i, long l) {
+        Toast.makeText(parent.getContext(),"Selection was made",Toast.LENGTH_SHORT).show();
+
+    }
+
+    @Override
+    public void onNothingSelected(AdapterView<?> adapterView) {
+
     }
 }

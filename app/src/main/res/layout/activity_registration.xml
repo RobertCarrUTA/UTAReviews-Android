@@ -28,7 +28,8 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:layout_marginTop="10dp"
-        android:text="New Student Registration"
+        android:text="New Account Registration"
+        android:textStyle="bold"
         android:textColor="#F8F8F8"
 
         android:textSize="30sp" />
@@ -85,7 +86,7 @@
         android:textColor="#FFFFFF" />
 
     <EditText
-        android:id="@+id/idInput"
+        android:id="@+id/passwordInput"
         android:layout_width="350dp"
         android:layout_height="50dp"
         android:layout_below="@+id/id"
@@ -104,21 +105,47 @@
         android:id="@+id/submitButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/idInput"
+        android:layout_below="@id/registrationTypeInput"
         android:layout_marginLeft="100dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="30dp"
         android:background="#F8885B"
         android:text="Register"
+
+        />
+    <TextView
+        android:id="@+id/accountType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/passwordInput"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="30dp"
+        android:text="Account Type"
+        android:textColor="#FFFFFF"
+        />
+
+    <Spinner
+        android:id="@+id/registrationTypeInput"
+        android:layout_width="355dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/accountType"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:autofillHints="Account Type"
+        android:padding="10dp"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textStyle="bold"
 
         />
 
     <Button
         android:id="@+id/cancelButton"
         android:layout_width="wrap_content"
-        android:layout_height="60dp"
-        android:layout_below="@id/idInput"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/registrationTypeInput"
         android:layout_marginLeft="35dp"
-        android:layout_marginTop="45dp"
+        android:layout_marginTop="30dp"
         android:layout_toRightOf="@id/submitButton"
         android:text="Cancel"
 
@@ -140,11 +167,11 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/page_header"
         android:layout_marginStart="40dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="5dp"
         android:text="User Registration"
         android:textColor="@color/white"
-        android:textSize="27dp"
-        android:textStyle="bold"
+        android:textSize="22dp"
+        android:textStyle="italic"
 
         />
 </RelativeLayout>

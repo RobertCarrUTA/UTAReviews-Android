@@ -22,10 +22,17 @@
         android:testOnly="true"
         android:theme="@style/Theme.CSE3311Project" >
         <activity
+            android:name="com.example.cse3311project.RegistrationProfessor"
+            android:exported="false" />
+        <activity
             android:name="com.example.cse3311project.RegistrationType"
             android:exported="true" />
-        <activity android:name="com.example.cse3311project.Registration" />
-        <activity android:name="com.example.cse3311project.LoginPage" >
+        <activity
+            android:name="com.example.cse3311project.Registration"
+            android:exported="true" />
+        <activity
+            android:name="com.example.cse3311project.LoginPage"
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -35,7 +42,9 @@
         <activity android:name="com.example.cse3311project.ForgotPasswordPage" />
         <activity android:name="com.example.cse3311project.AccountActivity" />
         <activity android:name="com.example.cse3311project.ReviewActivity" />
-        <activity android:name="com.example.cse3311project.MainActivity" >
+        <activity
+            android:name="com.example.cse3311project.MainActivity"
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
