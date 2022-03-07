@@ -21,6 +21,9 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/Theme.CSE3311Project" >
+        <activity
+            android:name="com.example.cse3311project.RegistrationType"
+            android:exported="true" />
         <activity android:name="com.example.cse3311project.Registration" />
         <activity android:name="com.example.cse3311project.LoginPage" >
             <intent-filter>

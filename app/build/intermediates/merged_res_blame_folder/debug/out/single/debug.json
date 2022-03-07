@@ -260,6 +260,10 @@
         "source": "C:\\Users\\zaky\\AndroidStudioProjects\\CSE-3311-Spring-2022\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_default_avatar_clipart.png"
     },
     {
+        "merged": "C:\\Users\\zaky\\AndroidStudioProjects\\CSE-3311-Spring-2022\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_registration_type.xml.flat",
+        "source": "C:\\Users\\zaky\\AndroidStudioProjects\\CSE-3311-Spring-2022\\app\\src\\main\\res\\layout\\activity_registration_type.xml"
+    },
+    {
         "merged": "C:\\Users\\zaky\\AndroidStudioProjects\\CSE-3311-Spring-2022\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_utareviews_applogo_foreground.png.flat",
         "source": "C:\\Users\\zaky\\AndroidStudioProjects\\CSE-3311-Spring-2022\\app\\src\\main\\res\\mipmap-xhdpi\\ic_utareviews_applogo_foreground.png"
     },

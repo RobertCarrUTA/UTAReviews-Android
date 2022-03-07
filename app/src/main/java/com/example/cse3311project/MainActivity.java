@@ -6,11 +6,15 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
+import android.widget.AdapterView;
+import android.widget.Spinner;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.WindowManager;
+import android.widget.Adapter;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -23,8 +27,7 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.Query;
 
-public class MainActivity extends AppCompatActivity
-{
+public class MainActivity extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
     private Button accountButton_Homepage, SignOutButton;
     private RecyclerView professor_search_result;
     private EditText professorSearchBar;
@@ -41,6 +44,11 @@ public class MainActivity extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        Spinner spinner = findViewById(R.id.registrationTypeInput);
+        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,R.array.registrationTypeArray, android.R.layout.simple_spinner_item);
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        spinner.setAdapter(adapter);
+        spinner.setOnItemSelectedListener(this);
         /*
         Robert is putting these notes here for later use, ignore if you want.
 
@@ -164,6 +172,17 @@ public class MainActivity extends AppCompatActivity
 
         professor_search_result.setAdapter(firebaseRecyclerAdapter);
         firebaseRecyclerAdapter.startListening();
+    }
+
+    @Override
+    public void onItemSelected(AdapterView<?> parent, View view, int i, long l) {
+        //String text = parent.getItemAtPosition(parent).toString();
+        Toast.makeText(parent.getContext(),"Selection was made",Toast.LENGTH_SHORT);
+    }
+
+    @Override
+    public void onNothingSelected(AdapterView<?> adapterView) {
+
     }
 
     // Making view holder class for our professors in the database
