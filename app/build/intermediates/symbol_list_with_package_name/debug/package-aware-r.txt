@@ -2988,6 +2988,8 @@ id registrationTypeInput
 id returnHomeButton_AccountPage
 id returnHomeButton_ReviewPage
 id reverseSawtooth
+id review_section
+id review_text
 id right
 id rightToLeft
 id right_icon
