@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- The below is when there is focus on the editText -->
+    <item android:state_enabled="true" android:state_focused="true">
+        <shape android:shape="rectangle">
+            <solid android:color="#4987F1"/>
+            <corners android:radius="10dp"/>
+            <stroke android:color="#FDFDFD"/>
+        </shape>
+    </item>
+
+    <!-- The below is when there is no focus on the editText -->
+    <item android:state_enabled="true">
+        <shape android:shape="rectangle">
+            <solid android:color="#4987F1"/>
+            <corners android:radius="10dp"/>
+            <stroke android:color="#FDFDFD"/>
+        </shape>
+    </item>
+</selector>

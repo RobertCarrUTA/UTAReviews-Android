@@ -2498,6 +2498,7 @@ drawable common_google_signin_btn_text_light
 drawable common_google_signin_btn_text_light_focused
 drawable common_google_signin_btn_text_light_normal
 drawable common_google_signin_btn_text_light_normal_background
+drawable custom_edit_texts
 drawable default_user_avatar
 drawable design_fab_background
 drawable design_ic_visibility
@@ -2510,9 +2511,11 @@ drawable ic_clock_black_24dp
 drawable ic_default_avatar_background
 drawable ic_default_avatar_clipart_background
 drawable ic_default_avatar_clipart_foreground
+drawable ic_email
 drawable ic_keyboard_black_24dp
 drawable ic_launcher_background
 drawable ic_launcher_foreground
+drawable ic_lock
 drawable ic_m3_chip_check
 drawable ic_m3_chip_checked_circle
 drawable ic_m3_chip_close
