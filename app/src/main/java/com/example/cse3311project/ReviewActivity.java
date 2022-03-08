@@ -61,13 +61,16 @@ public class ReviewActivity extends AppCompatActivity
         ref = FirebaseDatabase.getInstance().getReference("Reviews");
 
 
-        ref.child("0").addValueEventListener(new ValueEventListener()
+        ref.child(professor_selected_name).addValueEventListener(new ValueEventListener()
         {
             @Override
             public void onDataChange(DataSnapshot snapshot)
             {
-                String postedReview = snapshot.child("review").getValue().toString();
-                posted_Review.setText(postedReview);
+                for(DataSnapshot snapShot_looper : snapshot.getChildren())
+                {
+                    String postedReview = snapShot_looper.child("review").getValue().toString();
+                    posted_Review.setText(postedReview);
+                }
             }
 
             @Override
@@ -83,6 +86,9 @@ public class ReviewActivity extends AppCompatActivity
             public void onClick(View v)
             {
                 String review_text_submission = review_text.getText().toString().trim();
+                float ratingfloat = ratingStar.getRating();
+                String ratingString = String.valueOf(ratingfloat);
+
 
                 if(review_text_submission.length() > 1000)
                 {
@@ -95,8 +101,8 @@ public class ReviewActivity extends AppCompatActivity
 
                 review.setReview(review_text_submission);
                 review.setProfessor(professor_selected_name);
-                review.setRating("4");
-                DatabaseReference newRef = ref.push();
+                review.setRating(ratingString);
+                DatabaseReference newRef = ref.child(professor_selected_name).push();
                 newRef.setValue(review);
 
                 review_text.setText("");
