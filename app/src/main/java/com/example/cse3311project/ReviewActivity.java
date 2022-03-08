@@ -57,6 +57,23 @@ public class ReviewActivity extends AppCompatActivity
         final FirebaseDatabase database = FirebaseDatabase.getInstance();
         ref = FirebaseDatabase.getInstance().getReference("Reviews");
 
+        //ref.child("review").setValue(dataS);
+
+        ref.child("0").addValueEventListener(new ValueEventListener()
+        {
+            @Override
+            public void onDataChange(DataSnapshot snapshot)
+            {
+                String postedreview = snapshot.child("review").getValue().toString();
+                posted_Review.setText(postedreview);
+            }
+            @Override
+            public void onCancelled(DatabaseError databaseError)
+            {
+
+            }
+        });
+
         //ref = database.getInstance().getReference("Reviews");
 
         //Reviews review = new Reviews();

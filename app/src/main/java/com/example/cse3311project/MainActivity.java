@@ -36,7 +36,6 @@ public class MainActivity extends AppCompatActivity  {
     //private final  recyclerViewInterface;
 
     FirebaseAuth fAuth;
-
     private DatabaseReference ProfessorDatabase;
 
     @Override
