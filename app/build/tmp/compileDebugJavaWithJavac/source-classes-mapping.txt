@@ -1,5 +1,6 @@
-com/example/cse3311project/databinding/ColorSpinnerBinding.java
- com.example.cse3311project.databinding.ColorSpinnerBinding
+com/example/cse3311project/ReviewActivity.java
+ com.example.cse3311project.ReviewActivity
+ com.example.cse3311project.ReviewActivity$1
 com/example/cse3311project/databinding/ActivityMainBinding.java
  com.example.cse3311project.databinding.ActivityMainBinding
 com/example/cse3311project/databinding/ActivityAccountBinding.java
@@ -10,8 +11,9 @@ com/example/cse3311project/databinding/ActivityForgotPasswordPageBinding.java
  com.example.cse3311project.databinding.ActivityForgotPasswordPageBinding
 com/example/cse3311project/databinding/ActivityReviewBinding.java
  com.example.cse3311project.databinding.ActivityReviewBinding
-com/example/cse3311project/RegistrationType.java
- com.example.cse3311project.RegistrationType
+com/example/cse3311project/AccountActivity.java
+ com.example.cse3311project.AccountActivity
+ com.example.cse3311project.AccountActivity$1
 com/example/cse3311project/BuildConfig.java
  com.example.cse3311project.BuildConfig
 com/example/cse3311project/databinding/ActivityRegistrationTypeBinding.java
@@ -29,13 +31,6 @@ com/example/cse3311project/Professors.java
  com.example.cse3311project.Professors
 com/example/cse3311project/databinding/ActivityRegistrationBinding.java
  com.example.cse3311project.databinding.ActivityRegistrationBinding
-com/example/cse3311project/RegistrationProfessor.java
- com.example.cse3311project.RegistrationProfessor
-com/example/cse3311project/databinding/ProfessorSearchLayoutBinding.java
- com.example.cse3311project.databinding.ProfessorSearchLayoutBinding
-com/example/cse3311project/ReviewActivity.java
- com.example.cse3311project.ReviewActivity
- com.example.cse3311project.ReviewActivity$1
 com/example/cse3311project/MainActivity.java
  com.example.cse3311project.MainActivity
  com.example.cse3311project.MainActivity$1
@@ -44,9 +39,14 @@ com/example/cse3311project/MainActivity.java
  com.example.cse3311project.MainActivity$4
  com.example.cse3311project.MainActivity$4$1
  com.example.cse3311project.MainActivity$ProfessorViewHolder
-com/example/cse3311project/AccountActivity.java
- com.example.cse3311project.AccountActivity
- com.example.cse3311project.AccountActivity$1
+com/example/cse3311project/databinding/ProfessorSearchLayoutBinding.java
+ com.example.cse3311project.databinding.ProfessorSearchLayoutBinding
+com/example/cse3311project/databinding/ColorSpinnerBinding.java
+ com.example.cse3311project.databinding.ColorSpinnerBinding
+com/example/cse3311project/RegistrationType.java
+ com.example.cse3311project.RegistrationType
+com/example/cse3311project/RegistrationProfessor.java
+ com.example.cse3311project.RegistrationProfessor
 com/example/cse3311project/LoginPage.java
  com.example.cse3311project.LoginPage
  com.example.cse3311project.LoginPage$1

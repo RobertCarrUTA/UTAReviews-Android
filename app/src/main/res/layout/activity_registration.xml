@@ -86,7 +86,7 @@
         android:textColor="#FFFFFF" />
 
     <EditText
-        android:id="@+id/passwordInput"
+        android:id="@+id/idInput"
         android:layout_width="350dp"
         android:layout_height="50dp"
         android:layout_below="@+id/id"
@@ -116,7 +116,7 @@
         android:id="@+id/accountType"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/passwordInput"
+        android:layout_below="@+id/idInput"
         android:layout_marginStart="40dp"
         android:layout_marginTop="30dp"
         android:text="Account Type"
