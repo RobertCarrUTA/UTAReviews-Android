@@ -43,7 +43,7 @@ public class ReviewActivity extends AppCompatActivity
         returnHomeButton_ReviewPage = (Button) findViewById(R.id.returnHomeButton_ReviewPage);
         postReview_Button = (Button) findViewById(R.id.postReview_Button);
         professorName = (TextView) findViewById(R.id.professorName_Review);
-        posted_Review = (TextView) findViewById(R.id.review_text_holder);
+        posted_Review = (TextView) findViewById(R.id.posted_review_text);
         review_text = (EditText) findViewById(R.id.review_text);
 
         professorName.setText("You are currently looking at reviews for " + professor_selected_name);
@@ -52,61 +52,26 @@ public class ReviewActivity extends AppCompatActivity
         // below, everything will be moved up once the keyboard is opened
         getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_ADJUST_PAN);
 
-
         fAuth = FirebaseAuth.getInstance();
         final FirebaseDatabase database = FirebaseDatabase.getInstance();
         ref = FirebaseDatabase.getInstance().getReference("Reviews");
 
-        //ref.child("review").setValue(dataS);
 
         ref.child("0").addValueEventListener(new ValueEventListener()
         {
             @Override
             public void onDataChange(DataSnapshot snapshot)
             {
-                String postedreview = snapshot.child("review").getValue().toString();
-                posted_Review.setText(postedreview);
+                String postedReview = snapshot.child("review").getValue().toString();
+                posted_Review.setText(postedReview);
             }
+
             @Override
             public void onCancelled(DatabaseError databaseError)
             {
 
             }
         });
-
-        //ref = database.getInstance().getReference("Reviews");
-
-        //Reviews review = new Reviews();
-        //review.getReview();
-        //posted_Review.setText(review.review);
-
-        /*
-        ref.addValueEventListener(new ValueEventListener()
-        {
-            @Override
-            public void onDataChange(DataSnapshot dataSnapshot)
-            {
-                if (dataSnapshot.exists())
-                {
-                    for (DataSnapshot dataS : dataSnapshot.getChildren())
-                    {
-                        //Reviews review = new Reviews();
-                        //Reviews reviews = dataSnapshot.getValue(Reviews.class);
-                        ref.child("review").setValue(dataS);
-                        System.out.println(reviews);
-                        review.getReview();
-                        posted_Review.setText(review.review);
-                    }
-                }
-            }
-
-            @Override
-            public void onCancelled(DatabaseError databaseError) {
-                System.out.println("The read failed: " + databaseError.getCode());
-            }
-        });
-
-         */
 
         postReview_Button.setOnClickListener(new View.OnClickListener()
         {
@@ -122,17 +87,13 @@ public class ReviewActivity extends AppCompatActivity
 
                 // For making a new review each time
                 // To overwrite review, do differently
-                //Reviews review = new Reviews();
+                Reviews review = new Reviews();
 
-                //review.setReview(review_text_submission);
-                //review.setProfessor("George Rice");
-                //review.setRating("4");
-                //DatabaseReference newRef = ref.child("Reviews").push();
-                //newRef.setValue(review);
-
-                //Reviews detail = postSnapshot.getValue(Detail.class);
-
-                posted_Review.setText(review_text_submission);
+                review.setReview(review_text_submission);
+                review.setProfessor(professor_selected_name);
+                review.setRating("4");
+                DatabaseReference newRef = ref.push();
+                newRef.setValue(review);
 
                 review_text.setText("");
             }

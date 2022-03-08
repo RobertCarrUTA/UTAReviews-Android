@@ -80,20 +80,23 @@
         app:layout_constraintTop_toBottomOf="@+id/professorName_Review"
         app:layout_constraintVertical_bias="0.296" />
 
-    <EditText
-        android:id="@+id/review_text_holder"
-        android:layout_width="286dp"
-        android:layout_height="136dp"
-        android:ems="10"
-        android:gravity="start|top"
-        android:inputType="textMultiLine"
-        android:shadowColor="#FFFFFF"
-        android:textColor="#FFFFFF"
+    <ScrollView
+        android:id="@+id/review_scroller"
+        android:layout_width="376dp"
+        android:layout_height="240dp"
+        android:fillViewport="true"
+        android:scrollbars="vertical"
         app:layout_constraintBottom_toTopOf="@+id/returnHomeButton_ReviewPage"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/professorName_Review"
-        app:layout_constraintVertical_bias="0.792" />
+        app:layout_constraintTop_toBottomOf="@+id/postReview_Button">
+
+        <TextView
+            android:id="@+id/posted_review_text"
+            android:textColor="#FFFFFF"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0" />
+    </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
