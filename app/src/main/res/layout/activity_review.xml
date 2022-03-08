@@ -65,23 +65,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.026" />
 
-    <ScrollView
-        android:id="@+id/review_section"
-        android:layout_width="350dp"
-        android:layout_height="183dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.491"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.832">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical" />
-    </ScrollView>
-
     <EditText
         android:id="@+id/review_text"
         android:layout_width="286dp"
@@ -89,11 +72,27 @@
         android:ems="10"
         android:gravity="start|top"
         android:inputType="textMultiLine"
-        app:layout_constraintBottom_toTopOf="@+id/review_section"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/postReview_Button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/professorName_Review"
         app:layout_constraintVertical_bias="0.296" />
+
+    <EditText
+        android:id="@+id/review_text_holder"
+        android:layout_width="286dp"
+        android:layout_height="136dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        android:shadowColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/returnHomeButton_ReviewPage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/professorName_Review"
+        app:layout_constraintVertical_bias="0.792" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
