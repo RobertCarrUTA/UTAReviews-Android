@@ -66,6 +66,7 @@ public class ReviewActivity extends AppCompatActivity
             @Override
             public void onDataChange(DataSnapshot snapshot)
             {
+                // TODO: We need to make this not erase the last child. Maybe make a list of strings
                 for(DataSnapshot snapShot_looper : snapshot.getChildren())
                 {
                     String postedReview = snapShot_looper.child("review").getValue().toString();
@@ -91,6 +92,11 @@ public class ReviewActivity extends AppCompatActivity
 
 
                 if(review_text_submission.length() > 1000)
+                {
+                    review_text.setError("Please enter a review that is no longer than 1000 characters long");
+                }
+
+                if(review_text_submission.length() == 0)
                 {
                     review_text.setError("Please enter a review that is no longer than 1000 characters long");
                 }
