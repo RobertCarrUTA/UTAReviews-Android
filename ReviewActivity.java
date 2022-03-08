@@ -69,6 +69,9 @@ public class ReviewActivity extends AppCompatActivity
             {
                 String postedreview = snapshot.child("review").getValue().toString();
                 posted_Review.setText(postedreview);
+                float ratingfloat = ratingStar.getRating();
+                String ratingString = String.valueOf(ratingfloat);
+                ratingString = snapshot.child("rating").getValue().toString();
             }
             @Override
             public void onCancelled(DatabaseError databaseError)
