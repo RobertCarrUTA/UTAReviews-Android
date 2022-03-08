@@ -2984,6 +2984,7 @@ id professor_search_result
 id progress_circular
 id progress_horizontal
 id radio
+id ratingBar
 id ratio
 id rectangles
 id registrationTypeInput

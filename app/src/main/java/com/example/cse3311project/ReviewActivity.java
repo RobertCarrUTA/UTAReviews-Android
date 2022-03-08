@@ -8,6 +8,7 @@ import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.RatingBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -30,6 +31,8 @@ public class ReviewActivity extends AppCompatActivity
     FirebaseAuth fAuth;
     private DatabaseReference ref;
 
+    RatingBar ratingStar;
+
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
@@ -45,6 +48,7 @@ public class ReviewActivity extends AppCompatActivity
         professorName = (TextView) findViewById(R.id.professorName_Review);
         posted_Review = (TextView) findViewById(R.id.posted_review_text);
         review_text = (EditText) findViewById(R.id.review_text);
+        ratingStar = findViewById(R.id.ratingBar);
 
         professorName.setText("You are currently looking at reviews for " + professor_selected_name);
 

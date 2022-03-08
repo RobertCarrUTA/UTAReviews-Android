@@ -50,12 +50,12 @@
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.482" />
+        app:layout_constraintVertical_bias="0.513" />
 
     <TextView
         android:id="@+id/professorName_Review"
-        android:layout_width="375dp"
-        android:layout_height="125dp"
+        android:layout_width="372dp"
+        android:layout_height="112dp"
         android:textColor="#FFFFFF"
         android:textSize="24sp"
         android:textStyle="bold"
@@ -78,12 +78,12 @@
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/professorName_Review"
-        app:layout_constraintVertical_bias="0.296" />
+        app:layout_constraintVertical_bias="0.865" />
 
     <ScrollView
         android:id="@+id/review_scroller"
         android:layout_width="376dp"
-        android:layout_height="240dp"
+        android:layout_height="190dp"
         android:fillViewport="true"
         android:scrollbars="vertical"
         app:layout_constraintBottom_toTopOf="@+id/returnHomeButton_ReviewPage"
@@ -93,10 +93,21 @@
 
         <TextView
             android:id="@+id/posted_review_text"
-            android:textColor="#FFFFFF"
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
-            android:layout_weight="1.0" />
+            android:layout_weight="1.0"
+            android:textColor="#FFFFFF" />
     </ScrollView>
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/review_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.888" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
