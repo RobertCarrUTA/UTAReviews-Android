@@ -44,16 +44,20 @@
         "source": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\src\\main\\res\\mipmap-mdpi\\ic_default_avatar_foreground.png"
     },
     {
-        "merged": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_default_avatar.png.flat",
-        "source": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\src\\main\\res\\mipmap-xhdpi\\ic_default_avatar.png"
-    },
-    {
         "merged": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher.png.flat",
         "source": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
     },
     {
+        "merged": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_default_avatar.png.flat",
+        "source": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\src\\main\\res\\mipmap-xhdpi\\ic_default_avatar.png"
+    },
+    {
         "merged": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
         "source": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\build\\intermediates\\res\\merged\\debug\\layout_color_spinner.xml.flat",
+        "source": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\src\\main\\res\\layout\\color_spinner.xml"
     },
     {
         "merged": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_default_avatar_round.png.flat",
@@ -140,12 +144,20 @@
         "source": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_default_avatar_foreground.png"
     },
     {
+        "merged": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_registration_type.xml.flat",
+        "source": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\src\\main\\res\\layout\\activity_registration_type.xml"
+    },
+    {
         "merged": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_utareviews_applogo.xml.flat",
         "source": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_utareviews_applogo.xml"
     },
     {
         "merged": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_default_avatar_clipart_round.png.flat",
         "source": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\src\\main\\res\\mipmap-hdpi\\ic_default_avatar_clipart_round.png"
+    },
+    {
+        "merged": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_registration_professor.xml.flat",
+        "source": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\src\\main\\res\\layout\\activity_registration_professor.xml"
     },
     {
         "merged": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\build\\intermediates\\res\\merged\\debug\\drawable_avatar_draft.png.flat",
@@ -218,6 +230,10 @@
     {
         "merged": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_default_avatar_clipart.png.flat",
         "source": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_default_avatar_clipart.png"
+    },
+    {
+        "merged": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\build\\intermediates\\res\\merged\\debug\\layout_spinner_drop_layout.xml.flat",
+        "source": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\src\\main\\res\\layout\\spinner_drop_layout.xml"
     },
     {
         "merged": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_utareviews_applogo.png.flat",

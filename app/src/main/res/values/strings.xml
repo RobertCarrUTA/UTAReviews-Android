@@ -12,4 +12,9 @@
         <item>Ronald Cross</item>
         <item>Trevor Bakker</item>
     </string-array>
+
+    <string-array name="registrationTypeArray">
+        <item>Student</item>
+        <item>Professor</item>
+    </string-array>
 </resources>
