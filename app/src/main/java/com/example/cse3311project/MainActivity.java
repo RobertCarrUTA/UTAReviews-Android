@@ -36,7 +36,6 @@ public class MainActivity extends AppCompatActivity
     private EditText professorSearchBar;
 
     FirebaseAuth fAuth;
-
     private DatabaseReference ProfessorDatabase;
 
     @Override

@@ -88,6 +88,7 @@
         android:gravity="start|top"
         android:inputType="textMultiLine"
         android:shadowColor="#FFFFFF"
+        android:textColor="#FFFFFF"
         app:layout_constraintBottom_toTopOf="@+id/returnHomeButton_ReviewPage"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
