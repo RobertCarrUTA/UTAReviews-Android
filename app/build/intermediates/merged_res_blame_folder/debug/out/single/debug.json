@@ -44,12 +44,12 @@
         "source": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\src\\main\\res\\mipmap-mdpi\\ic_default_avatar_foreground.png"
     },
     {
-        "merged": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_default_avatar.png.flat",
-        "source": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\src\\main\\res\\mipmap-xhdpi\\ic_default_avatar.png"
-    },
-    {
         "merged": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher.png.flat",
         "source": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_default_avatar.png.flat",
+        "source": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\src\\main\\res\\mipmap-xhdpi\\ic_default_avatar.png"
     },
     {
         "merged": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
@@ -162,6 +162,10 @@
     {
         "merged": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_review.xml.flat",
         "source": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\src\\main\\res\\layout\\activity_review.xml"
+    },
+    {
+        "merged": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\build\\intermediates\\res\\merged\\debug\\layout_review_layout.xml.flat",
+        "source": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\src\\main\\res\\layout\\review_layout.xml"
     },
     {
         "merged": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_default_avatar_clipart_round.xml.flat",

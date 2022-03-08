@@ -2940,6 +2940,7 @@ id percent
 id pin
 id position
 id postLayout
+id postReview_Button
 id professorName_Review
 id professorSearchBar
 id professor_department
@@ -2954,8 +2955,9 @@ id rectangles
 id returnHomeButton_AccountPage
 id returnHomeButton_ReviewPage
 id reverseSawtooth
-id review_section
 id review_text
+id review_text_holder
+id review_text_reviewLayout
 id right
 id rightToLeft
 id right_icon
@@ -3277,6 +3279,7 @@ layout notification_template_media_custom
 layout notification_template_part_chronometer
 layout notification_template_part_time
 layout professor_search_layout
+layout review_layout
 layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material

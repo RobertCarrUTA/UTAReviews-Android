@@ -66,12 +66,10 @@ public class Registration extends AppCompatActivity
                 if (TextUtils.isEmpty(email))
                 {
                     emailInput.setError("Email is Required.");
-                    //return;
                 }
                 else if (!email.contains("@"))
                 {
                     emailInput.setError("Please enter a valid email address");
-                    //return;
                 }
                 else if (!(emailSplit[1].equals("mavs.uta.edu") || emailSplit[1].equals("uta.edu")))
                 {

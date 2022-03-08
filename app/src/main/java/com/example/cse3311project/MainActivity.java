@@ -70,9 +70,7 @@ public class MainActivity extends AppCompatActivity
         // Documentation: https://developer.android.com/reference/androidx/recyclerview/widget/DividerItemDecoration
         professor_search_result.addItemDecoration(new DividerItemDecoration(professor_search_result.getContext(), DividerItemDecoration.VERTICAL));
 
-
-
-                fAuth = FirebaseAuth.getInstance();
+        fAuth = FirebaseAuth.getInstance();
 
         accountButton_Homepage.setOnClickListener(new View.OnClickListener()
         {
