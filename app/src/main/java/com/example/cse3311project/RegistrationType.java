@@ -9,10 +9,11 @@ import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 import android.widget.Toast;
 
-public class RegistrationType extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
-
+public class RegistrationType extends AppCompatActivity implements AdapterView.OnItemSelectedListener
+{
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState)
+    {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_registration_type);
 
@@ -25,12 +26,14 @@ public class RegistrationType extends AppCompatActivity implements AdapterView.O
     }
 
     @Override
-    public void onItemSelected(AdapterView<?> parent, View view, int i, long l) {
+    public void onItemSelected(AdapterView<?> parent, View view, int i, long l)
+    {
         Toast.makeText(parent.getContext(),"Selection was made",Toast.LENGTH_SHORT).show();
     }
 
     @Override
-    public void onNothingSelected(AdapterView<?> adapterView) {
+    public void onNothingSelected(AdapterView<?> adapterView)
+    {
 
     }
 }

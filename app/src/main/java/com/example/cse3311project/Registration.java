@@ -128,8 +128,6 @@ public class Registration extends AppCompatActivity implements AdapterView.OnIte
                             }
                         }
                     });
-
-
                 }
             }
         });
