@@ -91,7 +91,7 @@ public class ReviewActivity extends AppCompatActivity
                 String ratingString = String.valueOf(ratingfloat);
 
 
-                if(review_text_submission.length() > 1000)
+                if(review_text_submission.length() > 2000)
                 {
                     review_text.setError("Please enter a review that is no longer than 1000 characters long");
                 }
