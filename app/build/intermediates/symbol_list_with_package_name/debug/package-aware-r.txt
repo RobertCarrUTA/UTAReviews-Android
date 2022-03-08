@@ -2941,6 +2941,7 @@ id pin
 id position
 id postLayout
 id postReview_Button
+id posted_review_text
 id professorName_Review
 id professorSearchBar
 id professor_department
@@ -2955,8 +2956,8 @@ id rectangles
 id returnHomeButton_AccountPage
 id returnHomeButton_ReviewPage
 id reverseSawtooth
+id review_scroller
 id review_text
-id review_text_holder
 id review_text_reviewLayout
 id right
 id rightToLeft
