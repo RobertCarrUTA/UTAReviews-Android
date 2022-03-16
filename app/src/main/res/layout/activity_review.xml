@@ -92,10 +92,11 @@
         app:layout_constraintTop_toBottomOf="@+id/postReview_Button">
 
         <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/reviews_from_database"
+            android:id="@+id/review_database_result"
             android:layout_width="379dp"
             android:layout_height="445dp"
             android:background="#3F7CE4"
+            app:layout_constraintBottom_toTopOf="@+id/accountButton_Homepage"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"

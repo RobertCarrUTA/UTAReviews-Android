@@ -2,8 +2,6 @@ package com.example.cse3311project;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.DividerItemDecoration;
-import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
@@ -33,8 +31,7 @@ public class ReviewActivity extends AppCompatActivity
     private Button returnHomeButton_ReviewPage, postReview_Button;
     private TextView professorName, posted_Review;
     private EditText review_text;
-
-    private RecyclerView reviews_from_database;
+    private RecyclerView review_database_result;
 
 
     // Might be helpful in the future:
@@ -57,20 +54,11 @@ public class ReviewActivity extends AppCompatActivity
         returnHomeButton_ReviewPage = (Button) findViewById(R.id.returnHomeButton_ReviewPage);
         postReview_Button = (Button) findViewById(R.id.postReview_Button);
         professorName = (TextView) findViewById(R.id.professorName_Review);
-        //posted_Review = (TextView) findViewById(R.id.posted_review_text);
+        review_database_result = (RecyclerView) findViewById(R.id.review_database_result);
         review_text = (EditText) findViewById(R.id.review_text);
         ratingStar = findViewById(R.id.ratingBar);
 
         professorName.setText("You are currently looking at reviews for " + professor_selected_name);
-
-        // This is are our RecyclerView
-        reviews_from_database = (RecyclerView) findViewById(R.id.reviews_from_database);
-        reviews_from_database.setHasFixedSize(true);
-        reviews_from_database.setLayoutManager(new LinearLayoutManager(this));
-        // This divides our search results so they are more easily separated visually for the user
-        // Documentation: https://developer.android.com/reference/androidx/recyclerview/widget/DividerItemDecoration
-        reviews_from_database.addItemDecoration(new DividerItemDecoration(reviews_from_database.getContext(), DividerItemDecoration.VERTICAL));
-
 
         // This needs to be here to keep all of our layout in place, without the line of code
         // below, everything will be moved up once the keyboard is opened
@@ -80,17 +68,17 @@ public class ReviewActivity extends AppCompatActivity
         final FirebaseDatabase database = FirebaseDatabase.getInstance();
         ref = FirebaseDatabase.getInstance().getReference("Reviews");
 
+        firebaseProfessorSearch("5");
 
-        firebaseReviewSearch();
 
+        /*
         ref.child(professor_selected_name).addValueEventListener(new ValueEventListener()
         {
             @Override
             public void onDataChange(DataSnapshot snapshot)
             {
                 // TODO: We need to make this not erase the last child. Maybe make a list of strings
-                for(DataSnapshot snapShot_looper : snapshot.getChildren())
-                {
+                for (DataSnapshot snapShot_looper : snapshot.getChildren()) {
                     String postedReview = snapShot_looper.child("review").getValue().toString();
                     posted_Review.setText(postedReview);
                 }
@@ -103,6 +91,8 @@ public class ReviewActivity extends AppCompatActivity
             }
         });
 
+         */
+
         postReview_Button.setOnClickListener(new View.OnClickListener()
         {
             @Override
@@ -113,14 +103,14 @@ public class ReviewActivity extends AppCompatActivity
                 String ratingString = String.valueOf(ratingfloat);
 
 
-                if(review_text_submission.length() > 2000)
+                if (review_text_submission.length() > 2000)
                 {
-                    review_text.setError("Please enter a review that is no longer than 1000 characters long");
+                    review_text.setError("Please enter a review that is no longer than 000 characters long");
                 }
 
-                if(review_text_submission.length() == 0)
+                if (review_text_submission.length() == 0)
                 {
-                    review_text.setError("Please enter a review that is no longer than 1000 characters long");
+                    review_text.setError("Please enter a review that is no longer than 000 characters long");
                 }
 
                 // For making a new review each time
@@ -133,7 +123,7 @@ public class ReviewActivity extends AppCompatActivity
                 DatabaseReference newRef = ref.child(professor_selected_name).push();
                 newRef.setValue(review);
 
-                review_text.setText("");
+                //review_text.setText("");
             }
         });
 
@@ -145,86 +135,87 @@ public class ReviewActivity extends AppCompatActivity
                 startActivity(new Intent(getApplicationContext(), MainActivity.class));
             }
         });
+
     }
 
-    // Robert is leaving this here for later use: https://developer.android.com/guide/topics/ui/layout/recyclerview-custom
+        // Robert is leaving this here for later use: https://developer.android.com/guide/topics/ui/layout/recyclerview-custom
 
-    // This is our firebase search function
-    // Any documentation about Firebase UI can be found here: https://github.com/firebase/FirebaseUI-Android
-    private void firebaseReviewSearch(String searchEntry)
-    {
-
-        // This is a search query that allows for the user to search and only find relevant results in the search options
-        Query firebaseQuery = ref.orderByChild("rating").startAt(searchEntry).endAt(searchEntry + "\uf8ff");
-
-        // This must be included for our FirebaseRecyclerAdapter options
-        FirebaseRecyclerOptions<Reviews> options =
-                new FirebaseRecyclerOptions.Builder<Reviews>()
-                        .setQuery(firebaseQuery, Reviews.class)
-                        .build();
-
-        FirebaseRecyclerAdapter<Reviews, ReviewActivity.ReviewViewHolder> firebaseRecyclerAdapter = new FirebaseRecyclerAdapter<Reviews, ReviewActivity.ReviewViewHolder>(options)
+        // This is our firebase search function
+        // Any documentation about Firebase UI can be found here: https://github.com/firebase/FirebaseUI-Android
+        private void firebaseProfessorSearch(String searchEntry)
         {
-            @NonNull
-            @Override
-            public ReviewActivity.ReviewViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType)
+
+            // This is a search query that allows for the user to search and only find relevant results in the search options
+            Query firebaseQuery = ref.orderByChild("rating");
+
+            // This must be included for our FirebaseRecyclerAdapter options
+            FirebaseRecyclerOptions<Reviews> options =
+                    new FirebaseRecyclerOptions.Builder<Reviews>()
+                            .setQuery(firebaseQuery, Reviews.class)
+                            .build();
+
+            FirebaseRecyclerAdapter<Reviews, ReviewActivity.ReviewViewHolder> firebaseRecyclerAdapter = new FirebaseRecyclerAdapter<Reviews, ReviewActivity.ReviewViewHolder>(options)
             {
-                View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.reviews_from_database_layout, parent, false);
-                ReviewActivity.ReviewViewHolder viewHolder = new ReviewActivity().ReviewViewHolder((view));
-                return viewHolder;
-            }
+                @NonNull
+                @Override
+                public ReviewActivity.ReviewViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType)
+                {
+                    View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.reviews_from_database_layout, parent, false);
+                    ReviewActivity.ReviewViewHolder viewHolder = new ReviewActivity.ReviewViewHolder((view));
+                    return viewHolder;
+                }
 
-            @Override
-            protected void onBindViewHolder(@NonNull ReviewActivity.ReviewViewHolder holder, int position, @NonNull Reviews model)
-            {
-                holder.Username_from_database.setText(model.getProfessor());
-                holder.review_from_database_text.setText("Review: " + model.getReview());
-                holder.rating_from_database.setText("Rating: " + model.getRating());
+                @Override
+                protected void onBindViewHolder(@NonNull ReviewActivity.ReviewViewHolder holder, int position, @NonNull Reviews model)
+                {
+                    holder.review_username.setText(model.getProfessor());
+                    holder.review_text_from_database.setText("Review: " + model.getReview());
+                    holder.review_rating_from_database.setText("Rating: " + model.getRating());
 
-                /*
-                // TODO: (Robert) Come back and make this better, this is not optimal but it works
-                holder.itemView.setOnClickListener(new View.OnClickListener()
-                                                   {
-                                                       @Override
-                                                       public void onClick(View view)
-                                                       {
-                                                           // This is how we would get the selected professor name
-                                                           String professorNameIntent = model.getName();
+                    /*
+                    // TODO: (Robert) Come back and make this better, this is not optimal but it works
+                    holder.itemView.setOnClickListener(new View.OnClickListener()
+                    {
+                        @Override
+                        public void onClick(View view)
+                        {
+                            // This is how we would get the selected professor name
+                            //String professorNameIntent = model.getName();
 
-                                                           // To pass this name that the user has selected, This is the only way I could figure
-                                                           // out how to do it, we start the review activity with this intent or it cannot be passed
-                                                           Intent name_selection_intent = new Intent(getApplicationContext(), ReviewActivity.class);
-                                                           name_selection_intent.putExtra("professor_name_from_list", professorNameIntent);
+                            // To pass this name that the user has selected, This is the only way I could figure
+                            // out how to do it, we start the review activity with this intent or it cannot be passed
+                            //Intent name_selection_intent = new Intent(getApplicationContext(), ReviewActivity.class);
+                            //name_selection_intent.putExtra("professor_name_from_list", professorNameIntent);
 
-                                                           startActivity(name_selection_intent);
-                                                           //Toast.makeText(ReviewActivity.this, "Now viewing reviews for " + model.getName(), Toast.LENGTH_SHORT).show();
-                                                       }
-                                                   }
-                );
+                            //startActivity(name_selection_intent);
+                            //Toast.makeText(MainActivity.this, "Now viewing reviews for " + model.getName(), Toast.LENGTH_SHORT).show();
+                        }
+                    }
+                    );
 
-                 */
-            }
-        };
+                     */
+                }
+            };
 
-        reviews_from_database.setAdapter(firebaseRecyclerAdapter);
-        firebaseRecyclerAdapter.startListening();
-    }
-
-    // Making view holder class for our professors in the database
-    public class ReviewViewHolder extends RecyclerView.ViewHolder
-    {
-        TextView Username_from_database, review_from_database_text, rating_from_database;
-        View View1;
-
-        public ReviewViewHolder(@NonNull View itemView)
-        {
-            super(itemView);
-            View1 = itemView;
-
-            // This is where we get the information for onBindViewHolder(@NonNull ProfessorViewHolder holder, ...)
-            Username_from_database = (TextView) View1.findViewById(R.id.Username_from_database);
-            review_from_database_text = (TextView) View1.findViewById(R.id.review_from_database_text);
-            rating_from_database = (TextView) View1.findViewById(R.id.rating_from_database);
+            review_database_result.setAdapter(firebaseRecyclerAdapter);
+            firebaseRecyclerAdapter.startListening();
         }
-    }
+
+        // Making view holder class for our professors in the database
+        public class ReviewViewHolder extends RecyclerView.ViewHolder
+        {
+            TextView review_username, review_text_from_database, review_rating_from_database;
+            View View1;
+
+            public ReviewViewHolder(@NonNull View itemView)
+            {
+                super(itemView);
+                View1 = itemView;
+
+                // This is where we get the information for onBindViewHolder(@NonNull ProfessorViewHolder holder, ...)
+                review_username = (TextView) View1.findViewById(R.id.username_from_database_reviews);
+                review_text_from_database = (TextView) View1.findViewById(R.id.review_text_from_database);
+                review_rating_from_database = (TextView) View1.findViewById(R.id.rating_from_database);
+            }
+        }
 }
