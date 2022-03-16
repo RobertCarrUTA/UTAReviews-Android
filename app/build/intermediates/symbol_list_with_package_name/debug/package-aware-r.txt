@@ -2737,6 +2737,7 @@ id customPanel
 id cut
 id dark
 id date_picker_actions
+id date_the_review_was_posted
 id decelerate
 id decelerateAndComplete
 id decor_content_parent
@@ -2821,6 +2822,9 @@ id ignore
 id ignoreRequest
 id image
 id imageView
+id imageView2
+id imageView3
+id imageView4
 id immediateStop
 id included
 id info
@@ -2943,7 +2947,6 @@ id pin
 id position
 id postLayout
 id postReview_Button
-id posted_review_text
 id professorName_Review
 id professorSearchBar
 id professor_department
@@ -2954,14 +2957,16 @@ id progress_circular
 id progress_horizontal
 id radio
 id ratingBar
+id rating_from_database
 id ratio
 id rectangles
 id registrationTypeInput
 id returnHomeButton_AccountPage
 id returnHomeButton_ReviewPage
 id reverseSawtooth
-id review_scroller
+id review_database_result
 id review_text
+id review_text_from_database
 id review_text_reviewLayout
 id right
 id rightToLeft
@@ -3094,6 +3099,7 @@ id unlabeled
 id up
 id useLogo
 id userRegistration
+id username_from_database_reviews
 id vertical_only
 id view_offset_helper
 id view_transition
@@ -3288,6 +3294,7 @@ layout notification_template_part_chronometer
 layout notification_template_part_time
 layout professor_search_layout
 layout review_layout
+layout reviews_from_database_layout
 layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
