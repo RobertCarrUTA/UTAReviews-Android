@@ -1,25 +1,17 @@
 package com.example.cse3311project;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
-import com.google.firebase.database.DatabaseReference;
 
 public class AccountActivity extends AppCompatActivity
 {
-    private Button returnHomeButton_AccountPage;
-    private EditText editTextTextEmailAddress, editTextTextUsername;
-
-    FirebaseAuth fAuth;
-
-    private DatabaseReference ProfessorDatabase;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -27,9 +19,9 @@ public class AccountActivity extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_account);
 
-        returnHomeButton_AccountPage = (Button) findViewById(R.id.returnHomeButton_AccountPage);
-        editTextTextEmailAddress = (EditText)  findViewById(R.id.editTextTextEmailAddress);
-        editTextTextUsername = (EditText) findViewById(R.id.editTextTextUsername);
+        Button returnHomeButton_AccountPage = (Button) findViewById(R.id.returnHomeButton_AccountPage);
+        EditText editTextTextEmailAddress = (EditText) findViewById(R.id.editTextTextEmailAddress);
+        EditText editTextTextUsername = (EditText) findViewById(R.id.editTextTextUsername);
 
         editTextTextEmailAddress.setEnabled(false);
         editTextTextUsername.setEnabled(false);
@@ -42,17 +34,13 @@ public class AccountActivity extends AppCompatActivity
             editTextTextEmailAddress.setText(userEmail);
 
             //String username = editTextTextEmailAddress.toString();
+            assert userEmail != null;
             String[] splits = userEmail.split("@");
-            editTextTextUsername.setText("@" + splits[0]);
+            String usernameString = "@" + splits[0];
+            editTextTextUsername.setText(usernameString);
         }
 
-        returnHomeButton_AccountPage.setOnClickListener(new View.OnClickListener()
-        {
-            @Override
-            public void onClick(View v) {
-                openHomeActivity();
-            }
-        });
+        returnHomeButton_AccountPage.setOnClickListener(v -> openHomeActivity());
     }
 
     // Use this function to open the home (Main) activity
