@@ -91,12 +91,16 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/postReview_Button">
 
-        <TextView
-            android:id="@+id/posted_review_text"
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            android:layout_weight="1.0"
-            android:textColor="#FFFFFF" />
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/review_database_result"
+            android:layout_width="379dp"
+            android:layout_height="445dp"
+            android:background="#3F7CE4"
+            app:layout_constraintBottom_toTopOf="@+id/accountButton_Homepage"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.866" />
     </ScrollView>
 
     <RatingBar
