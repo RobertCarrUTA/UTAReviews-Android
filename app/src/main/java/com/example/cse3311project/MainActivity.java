@@ -120,7 +120,8 @@ public class MainActivity extends AppCompatActivity
                 holder.professor_rating.setText(professor_rating_setText);
 
                 // TODO: (Robert) Come back and make this better, this is not optimal but it works
-                holder.itemView.setOnClickListener(view -> {
+                holder.itemView.setOnClickListener(view ->
+                {
                     // This is how we would get the selected professor name
                     String professorNameIntent = model.getName();
 
