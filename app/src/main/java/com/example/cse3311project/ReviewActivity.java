@@ -2,6 +2,8 @@ package com.example.cse3311project;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.DividerItemDecoration;
+import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
@@ -39,6 +41,9 @@ public class ReviewActivity extends AppCompatActivity
     FirebaseAuth fAuth;
     private DatabaseReference ref;
 
+    //private Intent intent = getIntent();
+    //private String professor_selected_name = intent.getStringExtra("professor_name_from_list");
+
     RatingBar ratingStar;
 
     @Override
@@ -54,7 +59,7 @@ public class ReviewActivity extends AppCompatActivity
         returnHomeButton_ReviewPage = (Button) findViewById(R.id.returnHomeButton_ReviewPage);
         postReview_Button = (Button) findViewById(R.id.postReview_Button);
         professorName = (TextView) findViewById(R.id.professorName_Review);
-        review_database_result = (RecyclerView) findViewById(R.id.review_database_result);
+        //review_database_result = (RecyclerView) findViewById(R.id.review_database_result);
         review_text = (EditText) findViewById(R.id.review_text);
         ratingStar = findViewById(R.id.ratingBar);
 
@@ -68,7 +73,15 @@ public class ReviewActivity extends AppCompatActivity
         final FirebaseDatabase database = FirebaseDatabase.getInstance();
         ref = FirebaseDatabase.getInstance().getReference("Reviews");
 
-        firebaseProfessorSearch("5");
+        // This is are our RecyclerView
+        review_database_result = (RecyclerView) findViewById(R.id.review_database_result);
+        review_database_result.setHasFixedSize(true);
+        review_database_result.setLayoutManager(new LinearLayoutManager(this));
+        // This divides our search results so they are more easily separated visually for the user
+        // Documentation: https://developer.android.com/reference/androidx/recyclerview/widget/DividerItemDecoration
+        review_database_result.addItemDecoration(new DividerItemDecoration(review_database_result.getContext(), DividerItemDecoration.VERTICAL));
+
+        firebaseProfessorSearch(professor_selected_name);
 
 
         /*
@@ -123,7 +136,8 @@ public class ReviewActivity extends AppCompatActivity
                 DatabaseReference newRef = ref.child(professor_selected_name).push();
                 newRef.setValue(review);
 
-                //review_text.setText("");
+                review_text.setText("");
+                ratingStar.setRating(0);
             }
         });
 
@@ -142,11 +156,11 @@ public class ReviewActivity extends AppCompatActivity
 
         // This is our firebase search function
         // Any documentation about Firebase UI can be found here: https://github.com/firebase/FirebaseUI-Android
-        private void firebaseProfessorSearch(String searchEntry)
+        private void firebaseProfessorSearch(String professor_selected_name)
         {
 
             // This is a search query that allows for the user to search and only find relevant results in the search options
-            Query firebaseQuery = ref.orderByChild("rating");
+            Query firebaseQuery = ref.child(professor_selected_name).orderByChild("rating");
 
             // This must be included for our FirebaseRecyclerAdapter options
             FirebaseRecyclerOptions<Reviews> options =

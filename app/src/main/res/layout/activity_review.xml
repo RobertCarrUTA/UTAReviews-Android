@@ -80,28 +80,17 @@
         app:layout_constraintTop_toBottomOf="@+id/professorName_Review"
         app:layout_constraintVertical_bias="0.865" />
 
-    <ScrollView
-        android:id="@+id/review_scroller"
-        android:layout_width="376dp"
-        android:layout_height="190dp"
-        android:fillViewport="true"
-        android:scrollbars="vertical"
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/review_database_result"
+        android:layout_width="386dp"
+        android:layout_height="202dp"
+        android:background="#3F7CE4"
         app:layout_constraintBottom_toTopOf="@+id/returnHomeButton_ReviewPage"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.48"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/postReview_Button">
-
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/review_database_result"
-            android:layout_width="379dp"
-            android:layout_height="445dp"
-            android:background="#3F7CE4"
-            app:layout_constraintBottom_toTopOf="@+id/accountButton_Homepage"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.866" />
-    </ScrollView>
+        app:layout_constraintTop_toBottomOf="@+id/postReview_Button"
+        app:layout_constraintVertical_bias="0.473" />
 
     <RatingBar
         android:id="@+id/ratingBar"
