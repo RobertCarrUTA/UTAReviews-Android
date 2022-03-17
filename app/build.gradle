@@ -40,6 +40,9 @@ dependencies {
     // FirebaseUI for Firebase Realtime Database: https://github.com/firebase/FirebaseUI-Android
     implementation 'com.firebaseui:firebase-ui-database:8.0.0'
 
+    // Lottie dependency
+    implementation "com.airbnb.android:lottie:3.4.0"
+
     implementation 'androidx.appcompat:appcompat:1.4.1'
     implementation 'com.google.android.material:material:1.5.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.3'
