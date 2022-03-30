@@ -63,6 +63,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/avatar_draft"
-        tools:visibility="invisible" />
+        tools:visibility="invisible"
+        android:contentDescription="@string/professor_profile_photo" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

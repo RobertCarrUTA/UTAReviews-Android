@@ -48,13 +48,14 @@ public class ReviewActivity extends AppCompatActivity
 
         String professor_selected_name = intent.getStringExtra("professor_name_from_list");
 
-        Button returnHomeButton_ReviewPage = (Button) findViewById(R.id.returnHomeButton_ReviewPage);
-        Button postReview_Button = (Button) findViewById(R.id.postReview_Button);
-        TextView professorName = (TextView) findViewById(R.id.professorName_Review);
-        review_text = (EditText) findViewById(R.id.review_text);
+        Button returnHomeButton_ReviewPage = findViewById(R.id.returnHomeButton_ReviewPage);
+        Button postReview_Button = findViewById(R.id.postReview_Button);
+        TextView professorName = findViewById(R.id.professorName_Review);
+        review_text = findViewById(R.id.review_text);
         ratingStar = findViewById(R.id.ratingBar);
 
         String professor_Name_set_text = "You are currently looking at reviews for " + professor_selected_name;
+
 
         professorName.setText(professor_Name_set_text);
 
@@ -66,7 +67,7 @@ public class ReviewActivity extends AppCompatActivity
         ref = FirebaseDatabase.getInstance().getReference("Reviews");
 
         // This is are our RecyclerView
-        review_database_result = (RecyclerView) findViewById(R.id.review_database_result);
+        review_database_result = findViewById(R.id.review_database_result);
         review_database_result.setHasFixedSize(true);
         // This reverses the order of the RecyclerView (descending order)
         LinearLayoutManager layoutManager = new LinearLayoutManager(this);
@@ -159,28 +160,6 @@ public class ReviewActivity extends AppCompatActivity
                 String rating_text = "Rating: " + model.getRating();
                 holder.review_rating_from_database.setText(rating_text);
                 holder.date_the_review_was_posted.setText(model.getDate());
-
-                /* We can use the below maybe to work with comments and votes
-                    // TODO: (Robert) Come back and make this better, this is not optimal but it works
-                    holder.itemView.setOnClickListener(new View.OnClickListener()
-                    {
-                        @Override
-                        public void onClick(View view)
-                        {
-                            // This is how we would get the selected professor name
-                            //String professorNameIntent = model.getName();
-
-                            // To pass this name that the user has selected, This is the only way I could figure
-                            // out how to do it, we start the review activity with this intent or it cannot be passed
-                            //Intent name_selection_intent = new Intent(getApplicationContext(), ReviewActivity.class);
-                            //name_selection_intent.putExtra("professor_name_from_list", professorNameIntent);
-
-                            //startActivity(name_selection_intent);
-                            //Toast.makeText(MainActivity.this, "Now viewing reviews for " + model.getName(), Toast.LENGTH_SHORT).show();
-                        }
-                    }
-                    );
-                    */
             }
         };
 
@@ -200,10 +179,10 @@ public class ReviewActivity extends AppCompatActivity
             View1 = itemView;
 
             // This is where we get the information for onBindViewHolder(@NonNull ReviewViewHolder holder, ...)
-            review_username = (TextView) View1.findViewById(R.id.username_from_database_reviews);
-            review_text_from_database = (TextView) View1.findViewById(R.id.review_text_from_database);
-            review_rating_from_database = (TextView) View1.findViewById(R.id.rating_from_database);
-            date_the_review_was_posted = (TextView) View1.findViewById(R.id.date_the_review_was_posted);
+            review_username = View1.findViewById(R.id.username_from_database_reviews);
+            review_text_from_database = View1.findViewById(R.id.review_text_from_database);
+            review_rating_from_database = View1.findViewById(R.id.rating_from_database);
+            date_the_review_was_posted = View1.findViewById(R.id.date_the_review_was_posted);
         }
     }
 }

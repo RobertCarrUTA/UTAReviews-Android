@@ -14,8 +14,8 @@
         android:drawableStart="@drawable/ic_email"
         android:drawablePadding="12dp"
         android:ems="10"
-        android:hint="Email Address"
-        android:inputType="textPersonName"
+        android:hint="@string/email_address"
+        android:inputType="textEmailAddress"
         android:paddingStart="12dp"
         android:paddingEnd="12dp"
         android:textColor="#FFFFFF"
@@ -27,7 +27,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.559" />
+        app:layout_constraintVertical_bias="0.559"
+        android:autofillHints="" />
 
     <EditText
         android:id="@+id/Password"
@@ -36,7 +37,7 @@
         android:drawableStart="@drawable/ic_lock"
         android:drawablePadding="12dp"
         android:ems="10"
-        android:hint="Password"
+        android:hint="@string/password"
         android:inputType="textPassword"
         android:paddingStart="12dp"
         android:paddingEnd="12dp"
@@ -49,13 +50,14 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/EmailAddress"
-        app:layout_constraintVertical_bias="0.217" />
+        app:layout_constraintVertical_bias="0.217"
+        android:autofillHints="" />
 
     <Button
         android:id="@+id/buttonLogin"
         android:layout_width="197dp"
         android:layout_height="39dp"
-        android:text="Login"
+        android:text="@string/login"
         android:textColor="#FFFFFF"
         android:textColorHint="#F8F1F1"
         app:backgroundTint="#F8885B"
@@ -76,7 +78,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.943"
-        app:srcCompat="@drawable/uta_reviews_logo" />
+        app:srcCompat="@drawable/uta_reviews_logo"
+        android:contentDescription="@string/a_small_white_image_showing_an_email" />
 
     <com.airbnb.lottie.LottieAnimationView
         android:id="@+id/animation_view"
@@ -94,7 +97,7 @@
         android:id="@+id/signupButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="No Account? Sign-Up"
+        android:text="@string/no_account_sign_up"
         android:textColor="#FFFCFC"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -108,7 +111,7 @@
         android:id="@+id/forgotPasswordButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="I Forgot My Password"
+        android:text="@string/i_forgot_my_password"
         android:textColor="#FFFCFC"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"

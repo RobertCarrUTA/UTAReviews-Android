@@ -3,6 +3,7 @@ plugins {
 }
 
 apply plugin: 'com.google.gms.google-services'
+apply plugin: "com.github.spotbugs" // <- Add this
 
 android {
     compileSdkVersion 31
@@ -52,4 +53,11 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
     implementation platform('com.google.firebase:firebase-bom:29.1.0')
+}
+
+spotbugs {
+    ignoreFailures = true
+    reportsDir = file("$project.buildDir/SpotBugsReports")
+    effort = "max"
+    reportLevel = "high"
 }

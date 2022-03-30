@@ -51,12 +51,12 @@ public class MainActivity extends AppCompatActivity
 
         ProfessorDatabase = FirebaseDatabase.getInstance().getReference("Professors");
 
-        Button accountButton_Homepage = (Button) findViewById(R.id.accountButton_Homepage);
-        Button signOutButton = (Button) findViewById(R.id.SignOutButton);
-        professorSearchBar = (EditText) findViewById(R.id.professorSearchBar);
+        Button accountButton_Homepage = findViewById(R.id.accountButton_Homepage);
+        Button signOutButton = findViewById(R.id.SignOutButton);
+        professorSearchBar = findViewById(R.id.professorSearchBar);
 
         // This is are our RecyclerView
-        professor_search_result = (RecyclerView) findViewById(R.id.professor_search_result);
+        professor_search_result = findViewById(R.id.professor_search_result);
         professor_search_result.setHasFixedSize(true);
         professor_search_result.setLayoutManager(new LinearLayoutManager(this));
         // This divides our search results so they are more easily separated visually for the user
@@ -153,9 +153,9 @@ public class MainActivity extends AppCompatActivity
             View1 = itemView;
 
             // This is where we get the information for onBindViewHolder(@NonNull ProfessorViewHolder holder, ...)
-            professor_Name = (TextView) View1.findViewById(R.id.professor_name);
-            professor_department = (TextView) View1.findViewById(R.id.professor_department);
-            professor_rating = (TextView) View1.findViewById(R.id.professor_rating);
+            professor_Name = View1.findViewById(R.id.professor_name);
+            professor_department = View1.findViewById(R.id.professor_department);
+            professor_rating = View1.findViewById(R.id.professor_rating);
         }
     }
 }
