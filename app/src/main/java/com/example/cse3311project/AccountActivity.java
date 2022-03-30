@@ -19,9 +19,9 @@ public class AccountActivity extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_account);
 
-        Button returnHomeButton_AccountPage = (Button) findViewById(R.id.returnHomeButton_AccountPage);
-        EditText editTextTextEmailAddress = (EditText) findViewById(R.id.editTextTextEmailAddress);
-        EditText editTextTextUsername = (EditText) findViewById(R.id.editTextTextUsername);
+        Button returnHomeButton_AccountPage = findViewById(R.id.returnHomeButton_AccountPage);
+        EditText editTextTextEmailAddress = findViewById(R.id.editTextTextEmailAddress);
+        EditText editTextTextUsername = findViewById(R.id.editTextTextUsername);
 
         editTextTextEmailAddress.setEnabled(false);
         editTextTextUsername.setEnabled(false);

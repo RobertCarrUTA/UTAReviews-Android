@@ -1,5 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">UTA Reviews</string>
     <string name="professor_profile_photo">Professor Profile Photo</string>
     <string name="return_home">Return Home</string>
     <string name="change_user_avatar">Change User Avatar</string>
@@ -11,7 +11,6 @@
     <string name="email_address">Email Address</string>
     <string name="password">Password</string>
     <string name="login">Login</string>
-    <string name="a_small_white_image_showing_an_email">A small white image showing an email</string>
     <string name="no_account_sign_up">No Account? Sign-Up</string>
     <string name="i_forgot_my_password">I Forgot My Password</string>
     <string name="change_account_settings">Change Account Settings</string>
@@ -24,7 +23,6 @@
     <string name="enter_your_email_address">Enter your email address</string>
     <string name="reset_password">Reset Password</string>
     <string name="new_professor_registration">New Professor Registration</string>
-    <string name="username">Username</string>
     <string name="register">Register</string>
     <string name="cancel">Cancel</string>
     <string name="account_password_more_than_8_characters">Account Password (more than 8 characters)</string>
@@ -37,22 +35,4 @@
     <string name="class_from_database_text">Class</string>
     <string name="account_type">Account Type</string>
     <string name="user_registration">User Registration</string>
-
-    <string-array name="professor_names_array">
-        <item>Alexandra Stefan</item>
-        <item>Chance Eary</item>
-        <item>Christopher Csallner</item>
-        <item>Donna French</item>
-        <item>George Rice</item>
-        <item>Kelly French</item>
-        <item>Kyungseo Park</item>
-        <item>Ronald Cross</item>
-        <item>Trevor Bakker</item>
-    </string-array>
-
-    <string-array name="registrationTypeArray">
-        <item>Student</item>
-        <item>Professor</item>
-    </string-array>
-
 </resources>
