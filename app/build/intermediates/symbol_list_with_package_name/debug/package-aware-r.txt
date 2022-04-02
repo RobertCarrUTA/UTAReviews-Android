@@ -3106,6 +3106,7 @@ id titleBackGround
 id titleDividerNoCustom
 id title_template
 id toggle
+id togglebutton
 id top
 id topPanel
 id touch_outside
@@ -3548,6 +3549,7 @@ string search_here
 string search_menu_title
 string sign_out
 string status_bar_notification_info_overflow
+string togglebutton
 string user_registration
 string username
 string uta_reviews

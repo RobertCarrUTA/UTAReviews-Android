@@ -132,8 +132,7 @@ public class MainActivity extends AppCompatActivity
 
                     startActivity(name_selection_intent);
                     Toast.makeText(MainActivity.this, "Now viewing reviews for " + model.getName(), Toast.LENGTH_SHORT).show();
-                }
-                );
+                });
             }
         };
 

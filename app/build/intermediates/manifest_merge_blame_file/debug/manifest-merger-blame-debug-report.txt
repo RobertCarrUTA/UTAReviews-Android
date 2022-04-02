@@ -36,7 +36,7 @@
 23        android:theme="@style/Theme.CSE3311Project" >
 23-->C:\Users\Robert\AndroidStudioProjects\CSE3311Project\app\src\main\AndroidManifest.xml:11:9-52
 24        <activity android:name="com.example.cse3311project.Registration" />
-24-->C:\Users\Robert\AndroidStudioProjects\CSE3311Project\app\src\main\AndroidManifest.xml:12:9-59
+24-->C:\Users\Robert\AndroidStudioProjects\CSE3311Project\app\src\main\AndroidManifest.xml:12:9-50
 24-->C:\Users\Robert\AndroidStudioProjects\CSE3311Project\app\src\main\AndroidManifest.xml:12:19-47
 25        <activity android:name="com.example.cse3311project.LoginPage" >
 25-->C:\Users\Robert\AndroidStudioProjects\CSE3311Project\app\src\main\AndroidManifest.xml:13:9-19:20

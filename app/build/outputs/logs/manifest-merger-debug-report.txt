@@ -134,7 +134,7 @@ MERGED from [androidx.startup:startup-runtime:1.0.0] C:\Users\Robert\.gradle\cac
 	android:theme
 		ADDED from C:\Users\Robert\AndroidStudioProjects\CSE3311Project\app\src\main\AndroidManifest.xml:11:9-52
 activity#com.example.cse3311project.Registration
-ADDED from C:\Users\Robert\AndroidStudioProjects\CSE3311Project\app\src\main\AndroidManifest.xml:12:9-59
+ADDED from C:\Users\Robert\AndroidStudioProjects\CSE3311Project\app\src\main\AndroidManifest.xml:12:9-50
 	android:name
 		ADDED from C:\Users\Robert\AndroidStudioProjects\CSE3311Project\app\src\main\AndroidManifest.xml:12:19-47
 activity#com.example.cse3311project.LoginPage

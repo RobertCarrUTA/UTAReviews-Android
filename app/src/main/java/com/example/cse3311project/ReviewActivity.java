@@ -10,6 +10,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.RatingBar;
 import android.widget.TextView;
+import android.widget.ToggleButton;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -34,6 +35,7 @@ public class ReviewActivity extends AppCompatActivity
     private EditText review_text;
     private RecyclerView review_database_result;
     RatingBar ratingStar;
+    ToggleButton toggle;
 
     FirebaseAuth fAuth;
     private DatabaseReference ref;
@@ -53,6 +55,7 @@ public class ReviewActivity extends AppCompatActivity
         TextView professorName = findViewById(R.id.professorName_Review);
         review_text = findViewById(R.id.review_text);
         ratingStar = findViewById(R.id.ratingBar);
+        toggle = (ToggleButton) findViewById(R.id.togglebutton);
 
         String professor_Name_set_text = "You are currently looking at reviews for " + professor_selected_name;
 
@@ -82,6 +85,16 @@ public class ReviewActivity extends AppCompatActivity
         // show up in the app as soon as those changes are reflected in the database
         firebaseReviewResults(professor_selected_name);
 
+        //ToggleButton toggle = (ToggleButton) findViewById(R.id.togglebutton);
+        final boolean[] finalAnonymous_review = {false};
+        // Documentation for toggle button: https://developer.android.com/guide/topics/ui/controls/togglebutton
+        toggle.setOnCheckedChangeListener((buttonView, isChecked) ->
+        {
+            // The toggle is enabled
+            // The toggle is disabled
+            finalAnonymous_review[0] = isChecked;
+        });
+
         postReview_Button.setOnClickListener(v ->
         {
             String review_text_submission = review_text.getText().toString().trim();
@@ -91,12 +104,12 @@ public class ReviewActivity extends AppCompatActivity
 
             if (review_text_submission.length() > 2000)
             {
-                review_text.setError("Please enter a review that is no longer than 000 characters long");
+                review_text.setError("Please enter a review that is no longer than 2,000 characters long");
             }
 
             if (review_text_submission.length() == 0)
             {
-                review_text.setError("Please enter a review that is no longer than 000 characters long");
+                review_text.setError("Please enter a review that is not empty");
             }
 
             FirebaseUser currentUser = FirebaseAuth.getInstance().getCurrentUser();
@@ -115,7 +128,20 @@ public class ReviewActivity extends AppCompatActivity
             review.setReview(review_text_submission);
             review.setRating(ratingString);
             review.setDate(currentDate);
-            review.setUsername(username);
+            //review.setUsername(username);
+
+
+
+            if (finalAnonymous_review[0] == true)
+            {
+                String anonymous_username = "Anonymous";
+                review.setUsername(anonymous_username);
+            }
+            else
+            {
+                review.setUsername(username);
+            }
+
             DatabaseReference newRef = ref.child(professor_selected_name).push();
             newRef.setValue(review);
 

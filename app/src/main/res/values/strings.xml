@@ -37,6 +37,7 @@
     <string name="class_from_database_text">Class</string>
     <string name="account_type">Account Type</string>
     <string name="user_registration">User Registration</string>
+    <string name="togglebutton">ToggleButton</string>
 
     <string-array name="professor_names_array">
         <item>Alexandra Stefan</item>
