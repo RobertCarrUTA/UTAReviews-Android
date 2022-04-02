@@ -3,15 +3,16 @@ package com.example.cse3311project;
 public class Reviews
 {
     // For Windows, ALT + INSERT to do constructors, getters, setters, etc.
-    public String review, rating, date, username;
+    public String review, rating, date, username, classTaken;
 
     // This is the non-empty constructor
-    public Reviews(String review, String rating, String date, String username)
+    public Reviews(String review, String rating, String date, String username, String classTaken)
     {
         this.review = review;
         this.rating = rating;
         this.date = date;
         this.username = username;
+        this.classTaken = classTaken;
     }
 
     // We must have an empty constructor
@@ -58,5 +59,15 @@ public class Reviews
     public void setUsername(String username)
     {
         this.username = username;
+    }
+
+    public String getClassTaken()
+    {
+        return classTaken;
+    }
+
+    public void setClassTaken(String classTaken)
+    {
+        this.classTaken = classTaken;
     }
 }
