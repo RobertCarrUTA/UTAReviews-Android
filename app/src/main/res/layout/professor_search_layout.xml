@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout  xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -8,8 +8,9 @@
 
     <TextView
         android:id="@+id/professor_name"
-        android:layout_width="387dp"
-        android:layout_height="54dp"
+        android:layout_width="378dp"
+        android:layout_height="90dp"
+        android:layout_alignParentEnd="true"
         android:baselineAligned="false"
         android:fontFamily="@font/brawler"
         android:textColor="#FFFFFF"
@@ -17,51 +18,52 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.604"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.025" />
+        app:layout_constraintVertical_bias="0.173" />
 
     <TextView
         android:id="@+id/professor_department"
-        android:layout_width="143dp"
+        android:layout_width="298dp"
         android:layout_height="36dp"
         android:layout_alignEnd="@+id/professor_name"
         android:layout_alignBottom="@+id/professor_name"
-        android:layout_marginEnd="219dp"
-        android:layout_marginBottom="-37dp"
         android:baselineAligned="false"
         android:textColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.108"
+        app:layout_constraintHorizontal_bias="0.141"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.103" />
+        app:layout_constraintVertical_bias="0.815" />
 
     <TextView
         android:id="@+id/professor_rating"
-        android:layout_width="69dp"
+        android:layout_width="65dp"
         android:layout_height="36dp"
         android:layout_alignEnd="@+id/professor_name"
         android:layout_alignBottom="@+id/professor_name"
-        android:layout_marginEnd="-1dp"
-        android:layout_marginBottom="-37dp"
         android:baselineAligned="true"
         android:textColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintHorizontal_bias="0.953"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.103" />
+        app:layout_constraintVertical_bias="0.815" />
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="140dp"
-        android:layout_height="90dp"
+        android:layout_width="195dp"
+        android:layout_height="182dp"
         android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.074"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/avatar_draft"
-        tools:visibility="invisible" />
+        tools:visibility="invisible"
+        android:contentDescription="@string/professor_profile_photo" />
 
-</RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

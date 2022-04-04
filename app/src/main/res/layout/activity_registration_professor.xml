@@ -26,7 +26,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:layout_marginTop="10dp"
-        android:text="New Professor Registration"
+        android:text="@string/new_professor_registration"
         android:textColor="#F8F8F8"
 
         android:textSize="30sp" />
@@ -37,14 +37,16 @@
         android:layout_height="50dp"
         android:layout_below="@+id/titleBackGround"
         android:layout_gravity="center_horizontal"
-        android:layout_marginLeft="30dp"
+        android:layout_marginStart="30dp"
         android:layout_marginTop="24dp"
-        android:hint="Username"
+        android:hint="@string/username"
         android:padding="10dp"
         android:textAlignment="center"
         android:textColor="@color/white"
         android:textColorHint="#FFFFFF"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:autofillHints=""
+        android:inputType="textPersonName" />
 
     <TextView
         android:id="@+id/Username"
@@ -54,7 +56,7 @@
         android:layout_alignParentTop="true"
         android:layout_marginStart="37dp"
         android:layout_marginTop="111dp"
-        android:text="Username"
+        android:text="@string/username"
         android:textColor="#FDFDFD" />
 
     <EditText
@@ -63,14 +65,16 @@
         android:layout_height="50dp"
         android:layout_below="@+id/email"
         android:layout_gravity="center_horizontal"
-        android:layout_marginLeft="30dp"
+        android:layout_marginStart="30dp"
         android:layout_marginTop="5dp"
-        android:hint="Email"
+        android:hint="@string/email"
         android:padding="10dp"
         android:textAlignment="center"
         android:textColor="@color/white"
         android:textColorHint="#FFFFFF"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:autofillHints=""
+        android:inputType="textEmailAddress" />
 
     <TextView
         android:id="@+id/email"
@@ -79,7 +83,7 @@
         android:layout_below="@+id/lastNameInput"
         android:layout_marginStart="40dp"
         android:layout_marginTop="30dp"
-        android:text="Email Address"
+        android:text="@string/email_address"
         android:textColor="#FFFFFF" />
 
     <EditText
@@ -88,39 +92,36 @@
         android:layout_height="50dp"
         android:layout_below="@+id/id"
         android:layout_gravity="center_horizontal"
-        android:layout_marginLeft="30dp"
+        android:layout_marginStart="30dp"
         android:layout_marginTop="5dp"
-        android:hint="Password"
+        android:hint="@string/password"
         android:inputType="textPassword"
         android:padding="10dp"
         android:textAlignment="center"
         android:textColor="@color/white"
         android:textColorHint="#FFFFFF"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:autofillHints="" />
 
     <Button
         android:id="@+id/submitButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/idInput"
-        android:layout_marginLeft="100dp"
+        android:layout_marginStart="100dp"
         android:layout_marginTop="50dp"
         android:background="#F8885B"
-        android:text="Register"
-
-        />
+        android:text="@string/register" />
 
     <Button
         android:id="@+id/cancelButton"
         android:layout_width="wrap_content"
         android:layout_height="60dp"
         android:layout_below="@id/idInput"
-        android:layout_marginLeft="35dp"
+        android:layout_marginStart="35dp"
         android:layout_marginTop="45dp"
-        android:layout_toRightOf="@id/submitButton"
-        android:text="Cancel"
-
-        />
+        android:layout_toEndOf="@id/submitButton"
+        android:text="@string/cancel" />
 
     <TextView
         android:id="@+id/id"
@@ -129,7 +130,7 @@
         android:layout_below="@+id/emailInput"
         android:layout_marginStart="40dp"
         android:layout_marginTop="30dp"
-        android:text="Account Password (more than 8 characters)"
+        android:text="@string/account_password_more_than_8_characters"
         android:textColor="#FFFFFF" />
 
     <TextView
@@ -139,9 +140,9 @@
         android:layout_below="@+id/page_header"
         android:layout_marginStart="40dp"
         android:layout_marginTop="10dp"
-        android:text="User Registration"
+        android:text="@string/user_registration"
         android:textColor="@color/white"
-        android:textSize="27dp"
+        android:textSize="27sp"
         android:textStyle="bold"
 
         />

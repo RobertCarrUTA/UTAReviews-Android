@@ -714,6 +714,22 @@ attr listPreferredItemPaddingRight
 attr listPreferredItemPaddingStart
 attr logo
 attr logoDescription
+attr lottie_autoPlay
+attr lottie_cacheComposition
+attr lottie_colorFilter
+attr lottie_enableMergePathsForKitKatAndAbove
+attr lottie_fallbackRes
+attr lottie_fileName
+attr lottie_imageAssetsFolder
+attr lottie_loop
+attr lottie_progress
+attr lottie_rawRes
+attr lottie_renderMode
+attr lottie_repeatCount
+attr lottie_repeatMode
+attr lottie_scale
+attr lottie_speed
+attr lottie_url
 attr marginHorizontal
 attr materialAlertDialogBodyTextStyle
 attr materialAlertDialogButtonSpacerVisibility
@@ -2500,7 +2516,6 @@ drawable common_google_signin_btn_text_light_focused
 drawable common_google_signin_btn_text_light_normal
 drawable common_google_signin_btn_text_light_normal_background
 drawable custom_edit_texts
-drawable default_user_avatar
 drawable design_fab_background
 drawable design_ic_visibility
 drawable design_ic_visibility_off
@@ -2524,6 +2539,7 @@ drawable ic_mtrl_checked_circle
 drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
+drawable ic_uta_reviews_logo_login_background
 drawable ic_utareviews_applogo_background
 drawable m3_appbar_background
 drawable m3_popupmenu_background_overlay
@@ -2570,6 +2586,7 @@ drawable test_custom_background
 drawable test_level_drawable
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
+drawable uta_reviews_logo
 font brawler
 id ALT
 id BOTTOM_END
@@ -2589,8 +2606,6 @@ id SYM
 id SignOutButton
 id TOP_END
 id TOP_START
-id Title
-id TitleBackGround
 id TitleBackground
 id TitleFP
 id Username
@@ -2664,6 +2679,7 @@ id allStates
 id always
 id animateToEnd
 id animateToStart
+id animation_view
 id antiClockwise
 id anticipate
 id arc
@@ -2673,6 +2689,7 @@ id auto
 id autoComplete
 id autoCompleteToEnd
 id autoCompleteToStart
+id automatic
 id barrier
 id baseline
 id beginOnFirstDraw
@@ -2695,6 +2712,7 @@ id buttonSendingCode
 id cache_measures
 id callMeasure
 id cancelButton
+id cancelReviewButton
 id cancel_action
 id cancel_button
 id carryVelocity
@@ -2714,6 +2732,8 @@ id chip3
 id chip_group
 id chronometer
 id circle_center
+id classTakenTextEntryBox
+id class_from_database
 id clear_text
 id clip_horizontal
 id clip_vertical
@@ -2737,6 +2757,7 @@ id customPanel
 id cut
 id dark
 id date_picker_actions
+id date_the_review_was_posted
 id decelerate
 id decelerateAndComplete
 id decor_content_parent
@@ -2805,6 +2826,7 @@ id group_divider
 id grouping
 id groups
 id guideline
+id hardware
 id header_title
 id hideable
 id home
@@ -2821,6 +2843,10 @@ id ignore
 id ignoreRequest
 id image
 id imageView
+id imageView2
+id imageView3
+id imageView4
+id imageView6
 id immediateStop
 id included
 id info
@@ -2846,6 +2872,7 @@ id line3
 id linear
 id listMode
 id list_item
+id lottie_layer_name
 id masked
 id match_constraint
 id match_parent
@@ -2943,7 +2970,8 @@ id pin
 id position
 id postLayout
 id postReview_Button
-id posted_review_text
+id postReview_redirect
+id professorName_PostReview
 id professorName_Review
 id professorSearchBar
 id professor_department
@@ -2953,15 +2981,20 @@ id professor_search_result
 id progress_circular
 id progress_horizontal
 id radio
-id ratingBar
+id rating
+id ratingBar_review
+id rating_from_database
 id ratio
 id rectangles
 id registrationTypeInput
+id restart
 id returnHomeButton_AccountPage
 id returnHomeButton_ReviewPage
+id reverse
 id reverseSawtooth
-id review_scroller
+id review_database_result
 id review_text
+id review_text_from_database
 id review_text_reviewLayout
 id right
 id rightToLeft
@@ -3007,6 +3040,7 @@ id snackbar_action
 id snackbar_text
 id snap
 id snapMargins
+id software
 id south
 id spacer
 id special_effects_controller_view_tag
@@ -3062,6 +3096,9 @@ id textView
 id textView2
 id textView3
 id textView4
+id textView5
+id textView6
+id textView7
 id text_input_end_icon
 id text_input_error_icon
 id text_input_start_icon
@@ -3077,6 +3114,7 @@ id titleBackGround
 id titleDividerNoCustom
 id title_template
 id toggle
+id togglebutton
 id top
 id topPanel
 id touch_outside
@@ -3094,6 +3132,7 @@ id unlabeled
 id up
 id useLogo
 id userRegistration
+id username_from_database_reviews
 id vertical_only
 id view_offset_helper
 id view_transition
@@ -3202,6 +3241,7 @@ layout activity_account
 layout activity_forgot_password_page
 layout activity_login_page
 layout activity_main
+layout activity_post_review
 layout activity_registration
 layout activity_registration_professor
 layout activity_registration_type
@@ -3288,6 +3328,7 @@ layout notification_template_part_chronometer
 layout notification_template_part_time
 layout professor_search_layout
 layout review_layout
+layout reviews_from_database_layout
 layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
@@ -3321,6 +3362,11 @@ mipmap ic_utareviews_applogo
 mipmap ic_utareviews_applogo_foreground
 mipmap ic_utareviews_applogo_round
 plurals mtrl_badge_content_description
+raw female_student_with_books
+raw loading_light_colors
+raw login_monster
+raw search_icon_floating
+string a_small_white_image_showing_an_email
 string abc_action_bar_home_description
 string abc_action_bar_up_description
 string abc_action_menu_overflow_description
@@ -3348,15 +3394,22 @@ string abc_searchview_description_voice
 string abc_shareactionprovider_share_with
 string abc_shareactionprovider_share_with_application
 string abc_toolbar_collapse_description
+string account_password_more_than_8_characters
+string account_type
 string androidx_startup
 string app_name
 string appbar_scrolling_view_behavior
 string bottom_sheet_behavior
 string bottomsheet_action_expand_halfway
+string cancel
+string change_account_credentials
+string change_account_settings
+string change_user_avatar
 string character_counter_content_description
 string character_counter_overflowed_content_description
 string character_counter_pattern
 string chip_text
+string class_from_database_text
 string clear_text_end_icon_content_description
 string common_google_play_services_enable_button
 string common_google_play_services_enable_text
@@ -3376,7 +3429,15 @@ string common_google_play_services_wear_update_text
 string common_open_on_phone
 string common_signin_button_text
 string common_signin_button_text_long
+string current_email
+string current_user_email
+string current_username
+string currently_viewing_account_page
+string date
 string default_web_client_id
+string email
+string email_address
+string enter_your_email_address
 string error_icon_content_description
 string exposed_dropdown_menu_content_description
 string fab_transformation_scrim_behavior
@@ -3388,8 +3449,10 @@ string google_app_id
 string google_crash_reporting_api_key
 string google_storage_bucket
 string hide_bottom_view_on_scroll_behavior
+string i_forgot_my_password
 string icon_content_description
 string item_view_role_description
+string login
 string m3_ref_typeface_brand_display_regular
 string m3_ref_typeface_brand_medium
 string m3_ref_typeface_brand_regular
@@ -3415,6 +3478,7 @@ string m3_sys_typescale_label_small_font
 string m3_sys_typescale_title_large_font
 string m3_sys_typescale_title_medium_font
 string m3_sys_typescale_title_small_font
+string make_a_selection
 string material_clock_display_divider
 string material_clock_toggle_content_description
 string material_hour_selection
@@ -3471,14 +3535,33 @@ string mtrl_picker_toggle_to_day_selection
 string mtrl_picker_toggle_to_text_input_mode
 string mtrl_picker_toggle_to_year_selection
 string mtrl_timepicker_confirm
+string new_account_registration
+string new_professor_registration
+string no_account_sign_up
+string no_description_image_is_invisible
+string password
 string password_toggle_content_description
 string path_password_eye
 string path_password_eye_mask_strike_through
 string path_password_eye_mask_visible
 string path_password_strike_through
+string post_review
+string professor_profile_photo
+string professor_search
 string project_id
+string rating
+string register
+string reset_password
+string return_home
+string review
+string search_here
 string search_menu_title
+string sign_out
 string status_bar_notification_info_overflow
+string togglebutton
+string user_registration
+string username
+string uta_reviews
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light
 style AndroidThemeColorAccentYellow
@@ -4580,6 +4663,7 @@ styleable LinearLayoutCompat_Layout android_layout_gravity android_layout_width 
 styleable LinearProgressIndicator indeterminateAnimationType indicatorDirectionLinear
 styleable ListPopupWindow android_dropDownHorizontalOffset android_dropDownVerticalOffset
 styleable LoadingImageView circleCrop imageAspectRatio imageAspectRatioAdjust
+styleable LottieAnimationView lottie_autoPlay lottie_cacheComposition lottie_colorFilter lottie_enableMergePathsForKitKatAndAbove lottie_fallbackRes lottie_fileName lottie_imageAssetsFolder lottie_loop lottie_progress lottie_rawRes lottie_renderMode lottie_repeatCount lottie_repeatMode lottie_scale lottie_speed lottie_url
 styleable MaterialAlertDialog backgroundInsetBottom backgroundInsetEnd backgroundInsetStart backgroundInsetTop
 styleable MaterialAlertDialogTheme materialAlertDialogBodyTextStyle materialAlertDialogButtonSpacerVisibility materialAlertDialogTheme materialAlertDialogTitleIconStyle materialAlertDialogTitlePanelStyle materialAlertDialogTitleTextStyle
 styleable MaterialAutoCompleteTextView android_inputType

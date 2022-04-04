@@ -1,11 +1,5 @@
 package com.example.cse3311project;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.DividerItemDecoration;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -14,10 +8,14 @@ import android.view.ViewGroup;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.Filter;
-import android.widget.Filterable;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.DividerItemDecoration;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
 import com.firebase.ui.database.FirebaseRecyclerOptions;
@@ -26,12 +24,8 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.Query;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class MainActivity extends AppCompatActivity
 {
-    private Button accountButton_Homepage, SignOutButton;
     private RecyclerView professor_search_result;
     private EditText professorSearchBar;
 
@@ -57,12 +51,12 @@ public class MainActivity extends AppCompatActivity
 
         ProfessorDatabase = FirebaseDatabase.getInstance().getReference("Professors");
 
-        accountButton_Homepage = (Button) findViewById(R.id.accountButton_Homepage);
-        SignOutButton = (Button) findViewById(R.id.SignOutButton);
-        professorSearchBar = (EditText) findViewById(R.id.professorSearchBar);
+        Button accountButton_Homepage = findViewById(R.id.accountButton_Homepage);
+        Button signOutButton = findViewById(R.id.SignOutButton);
+        professorSearchBar = findViewById(R.id.professorSearchBar);
 
         // This is are our RecyclerView
-        professor_search_result = (RecyclerView) findViewById(R.id.professor_search_result);
+        professor_search_result = findViewById(R.id.professor_search_result);
         professor_search_result.setHasFixedSize(true);
         professor_search_result.setLayoutManager(new LinearLayoutManager(this));
         // This divides our search results so they are more easily separated visually for the user
@@ -71,37 +65,22 @@ public class MainActivity extends AppCompatActivity
 
         fAuth = FirebaseAuth.getInstance();
 
-        accountButton_Homepage.setOnClickListener(new View.OnClickListener()
+        accountButton_Homepage.setOnClickListener(v -> startActivity(new Intent(getApplicationContext(), AccountActivity.class)));
+
+        signOutButton.setOnClickListener(v ->
         {
-            @Override
-            public void onClick(View v)
-            {
-                startActivity(new Intent(getApplicationContext(), AccountActivity.class));
-            }
+            FirebaseAuth.getInstance().signOut();
+            startActivity(new Intent(getApplicationContext(), LoginPage.class));
+            Toast.makeText(MainActivity.this, "Signed Out Successfully", Toast.LENGTH_SHORT).show();
         });
 
-        SignOutButton.setOnClickListener(new View.OnClickListener()
+        professorSearchBar.setOnClickListener(v ->
         {
-            @Override
-            public void onClick(View v)
-            {
-                FirebaseAuth.getInstance().signOut();
-                startActivity(new Intent(getApplicationContext(), LoginPage.class));
-                Toast.makeText(MainActivity.this, "Signed Out Successfully", Toast.LENGTH_SHORT).show();
-            }
-        });
+            // This string needs to be passed to our firebaseProfessorSearch method so that we can use it to search the database
+            // and show the results to the user (the string in question is the text inside the search bar)
+            String searchEntry = professorSearchBar.getText().toString();
 
-        professorSearchBar.setOnClickListener(new View.OnClickListener()
-        {
-            @Override
-            public void onClick(View v)
-            {
-                // This string needs to be passed to our firebaseProfessorSearch method so that we can use it to search the database
-                // and show the results to the user (the string in question is the text inside the search bar)
-                String searchEntry = professorSearchBar.getText().toString();
-
-                firebaseProfessorSearch(searchEntry);
-            }
+            firebaseProfessorSearch(searchEntry);
         });
     }
 
@@ -128,36 +107,32 @@ public class MainActivity extends AppCompatActivity
             public ProfessorViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType)
             {
                 View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.professor_search_layout, parent, false);
-                ProfessorViewHolder viewHolder = new ProfessorViewHolder((view));
-                return viewHolder;
+                return new ProfessorViewHolder((view));
             }
 
             @Override
             protected void onBindViewHolder(@NonNull ProfessorViewHolder holder, int position, @NonNull Professors model)
             {
                 holder.professor_Name.setText(model.getName());
-                holder.professor_department.setText("Department: " + model.getDepartment());
-                holder.professor_rating.setText("Rating: " + model.getRating());
+                String professor_department_text = "Department: " + model.getDepartment();
+                holder.professor_department.setText(professor_department_text);
+                String professor_rating_setText = "Rating: " + model.getRating();
+                holder.professor_rating.setText(professor_rating_setText);
 
                 // TODO: (Robert) Come back and make this better, this is not optimal but it works
-                holder.itemView.setOnClickListener(new View.OnClickListener()
+                holder.itemView.setOnClickListener(view ->
                 {
-                    @Override
-                    public void onClick(View view)
-                    {
-                        // This is how we would get the selected professor name
-                        String professorNameIntent = model.getName();
+                    // This is how we would get the selected professor name
+                    String professorNameIntent = model.getName();
 
-                        // To pass this name that the user has selected, This is the only way I could figure
-                        // out how to do it, we start the review activity with this intent or it cannot be passed
-                        Intent name_selection_intent = new Intent(getApplicationContext(), ReviewActivity.class);
-                        name_selection_intent.putExtra("professor_name_from_list", professorNameIntent);
+                    // To pass this name that the user has selected, This is the only way I could figure
+                    // out how to do it, we start the review activity with this intent or it cannot be passed
+                    Intent name_selection_intent = new Intent(getApplicationContext(), ReviewActivity.class);
+                    name_selection_intent.putExtra("professor_name_from_list", professorNameIntent);
 
-                        startActivity(name_selection_intent);
-                        Toast.makeText(MainActivity.this, "Now viewing reviews for " + model.getName(), Toast.LENGTH_SHORT).show();
-                    }
-                }
-                );
+                    startActivity(name_selection_intent);
+                    Toast.makeText(MainActivity.this, "Now viewing reviews for " + model.getName(), Toast.LENGTH_SHORT).show();
+                });
             }
         };
 
@@ -166,7 +141,7 @@ public class MainActivity extends AppCompatActivity
     }
 
     // Making view holder class for our professors in the database
-    public class ProfessorViewHolder extends RecyclerView.ViewHolder
+    public static class ProfessorViewHolder extends RecyclerView.ViewHolder
     {
         TextView professor_Name, professor_department, professor_rating;
         View View1;
@@ -177,9 +152,9 @@ public class MainActivity extends AppCompatActivity
             View1 = itemView;
 
             // This is where we get the information for onBindViewHolder(@NonNull ProfessorViewHolder holder, ...)
-            professor_Name = (TextView) View1.findViewById(R.id.professor_name);
-            professor_department = (TextView) View1.findViewById(R.id.professor_department);
-            professor_rating = (TextView) View1.findViewById(R.id.professor_rating);
+            professor_Name = View1.findViewById(R.id.professor_name);
+            professor_department = View1.findViewById(R.id.professor_department);
+            professor_rating = View1.findViewById(R.id.professor_rating);
         }
     }
 }
