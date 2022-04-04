@@ -7,10 +7,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.WindowManager;
 import android.widget.Button;
-import android.widget.EditText;
-import android.widget.RatingBar;
 import android.widget.TextView;
-import android.widget.ToggleButton;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -21,21 +19,18 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
 import com.firebase.ui.database.FirebaseRecyclerOptions;
 import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.Query;
 
-import java.text.SimpleDateFormat;
-import java.util.Date;
-import java.util.Locale;
+import org.w3c.dom.Text;
 
 public class ReviewActivity extends AppCompatActivity
 {
-    private EditText review_text;
     private RecyclerView review_database_result;
-    RatingBar ratingStar;
-    ToggleButton toggle;
+    private TextView postReview_redirect;
+
+    //public static final String EXTRA_TEXT = "com.example.cse3311project.EXTRA_TEXT";
 
     FirebaseAuth fAuth;
     private DatabaseReference ref;
@@ -47,20 +42,16 @@ public class ReviewActivity extends AppCompatActivity
         setContentView(R.layout.activity_review);
 
         Intent intent = getIntent();
-
         String professor_selected_name = intent.getStringExtra("professor_name_from_list");
 
         Button returnHomeButton_ReviewPage = findViewById(R.id.returnHomeButton_ReviewPage);
-        Button postReview_Button = findViewById(R.id.postReview_Button);
         TextView professorName = findViewById(R.id.professorName_Review);
-        review_text = findViewById(R.id.review_text);
-        ratingStar = findViewById(R.id.ratingBar);
-        toggle = (ToggleButton) findViewById(R.id.togglebutton);
+        postReview_redirect = findViewById(R.id.postReview_redirect);
 
         String professor_Name_set_text = "You are currently looking at reviews for " + professor_selected_name;
-
-
         professorName.setText(professor_Name_set_text);
+
+
 
         // This needs to be here to keep all of our layout in place, without the line of code
         // below, everything will be moved up once the keyboard is opened
@@ -85,68 +76,11 @@ public class ReviewActivity extends AppCompatActivity
         // show up in the app as soon as those changes are reflected in the database
         firebaseReviewResults(professor_selected_name);
 
-        //ToggleButton toggle = (ToggleButton) findViewById(R.id.togglebutton);
-        final boolean[] finalAnonymous_review = {false};
-        // Documentation for toggle button: https://developer.android.com/guide/topics/ui/controls/togglebutton
-        toggle.setOnCheckedChangeListener((buttonView, isChecked) ->
+        postReview_redirect.setOnClickListener(v ->
         {
-            // The toggle is enabled
-            // The toggle is disabled
-            finalAnonymous_review[0] = isChecked;
-        });
-
-        postReview_Button.setOnClickListener(v ->
-        {
-            String review_text_submission = review_text.getText().toString().trim();
-            float ratingFloat = ratingStar.getRating();
-            String ratingString = String.valueOf(ratingFloat);
-
-
-            if (review_text_submission.length() > 2000)
-            {
-                review_text.setError("Please enter a review that is no longer than 2,000 characters long");
-            }
-
-            if (review_text_submission.length() == 0)
-            {
-                review_text.setError("Please enter a review that is not empty");
-            }
-
-            FirebaseUser currentUser = FirebaseAuth.getInstance().getCurrentUser();
-            assert currentUser != null;
-            String userEmail = currentUser.getEmail();
-            assert userEmail != null;
-            String[] splits = userEmail.split("@");
-            String username = splits[0];
-
-            String currentDate = new SimpleDateFormat("MM-dd-yyyy", Locale.getDefault()).format(new Date());
-
-            // For making a new review each time
-            // To overwrite review, do differently
-            Reviews review = new Reviews();
-
-            review.setReview(review_text_submission);
-            review.setRating(ratingString);
-            review.setDate(currentDate);
-            //review.setUsername(username);
-
-
-
-            if (finalAnonymous_review[0] == true)
-            {
-                String anonymous_username = "Anonymous";
-                review.setUsername(anonymous_username);
-            }
-            else
-            {
-                review.setUsername(username);
-            }
-
-            DatabaseReference newRef = ref.child(professor_selected_name).push();
-            newRef.setValue(review);
-
-            review_text.setText("");
-            ratingStar.setRating(0);
+            Intent i = new Intent (this, PostReviewActivity.class);
+            i.putExtra("teacher_name", professor_selected_name);
+            startActivity(i);
         });
 
         returnHomeButton_ReviewPage.setOnClickListener(v -> startActivity(new Intent(getApplicationContext(), MainActivity.class)));
@@ -186,6 +120,7 @@ public class ReviewActivity extends AppCompatActivity
                 String rating_text = "Rating: " + model.getRating();
                 holder.review_rating_from_database.setText(rating_text);
                 holder.date_the_review_was_posted.setText(model.getDate());
+                holder.classTaken_from_database.setText(model.getClassTaken());
             }
         };
 
@@ -196,7 +131,7 @@ public class ReviewActivity extends AppCompatActivity
     // Making view holder class for our reviews in the database
     public static class ReviewViewHolder extends RecyclerView.ViewHolder
     {
-        TextView review_username, review_text_from_database, review_rating_from_database, date_the_review_was_posted;
+        TextView review_username, review_text_from_database, review_rating_from_database, date_the_review_was_posted, classTaken_from_database;
         View View1;
 
         public ReviewViewHolder(@NonNull View itemView)
@@ -209,6 +144,7 @@ public class ReviewActivity extends AppCompatActivity
             review_text_from_database = View1.findViewById(R.id.review_text_from_database);
             review_rating_from_database = View1.findViewById(R.id.rating_from_database);
             date_the_review_was_posted = View1.findViewById(R.id.date_the_review_was_posted);
+            classTaken_from_database = View1.findViewById(R.id.class_from_database);
         }
     }
 }

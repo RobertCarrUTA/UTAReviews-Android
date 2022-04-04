@@ -2712,6 +2712,7 @@ id buttonSendingCode
 id cache_measures
 id callMeasure
 id cancelButton
+id cancelReviewButton
 id cancel_action
 id cancel_button
 id carryVelocity
@@ -2731,6 +2732,7 @@ id chip3
 id chip_group
 id chronometer
 id circle_center
+id classTakenTextEntryBox
 id class_from_database
 id clear_text
 id clip_horizontal
@@ -2968,6 +2970,8 @@ id pin
 id position
 id postLayout
 id postReview_Button
+id postReview_redirect
+id professorName_PostReview
 id professorName_Review
 id professorSearchBar
 id professor_department
@@ -2977,7 +2981,8 @@ id professor_search_result
 id progress_circular
 id progress_horizontal
 id radio
-id ratingBar
+id rating
+id ratingBar_review
 id rating_from_database
 id ratio
 id rectangles
@@ -3091,6 +3096,9 @@ id textView
 id textView2
 id textView3
 id textView4
+id textView5
+id textView6
+id textView7
 id text_input_end_icon
 id text_input_error_icon
 id text_input_start_icon
@@ -3233,6 +3241,7 @@ layout activity_account
 layout activity_forgot_password_page
 layout activity_login_page
 layout activity_main
+layout activity_post_review
 layout activity_registration
 layout activity_registration_professor
 layout activity_registration_type

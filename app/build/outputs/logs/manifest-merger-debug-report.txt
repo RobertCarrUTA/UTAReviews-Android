@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\Robert\AndroidStudioProjects\CSE3311Project\app\src\main\AndroidManifest.xml:2:1-36:12
-INJECTED from C:\Users\Robert\AndroidStudioProjects\CSE3311Project\app\src\main\AndroidManifest.xml:2:1-36:12
-INJECTED from C:\Users\Robert\AndroidStudioProjects\CSE3311Project\app\src\main\AndroidManifest.xml:2:1-36:12
-INJECTED from C:\Users\Robert\AndroidStudioProjects\CSE3311Project\app\src\main\AndroidManifest.xml:2:1-36:12
+ADDED from C:\Users\Robert\AndroidStudioProjects\CSE3311Project\app\src\main\AndroidManifest.xml:2:1-37:12
+INJECTED from C:\Users\Robert\AndroidStudioProjects\CSE3311Project\app\src\main\AndroidManifest.xml:2:1-37:12
+INJECTED from C:\Users\Robert\AndroidStudioProjects\CSE3311Project\app\src\main\AndroidManifest.xml:2:1-37:12
+INJECTED from C:\Users\Robert\AndroidStudioProjects\CSE3311Project\app\src\main\AndroidManifest.xml:2:1-37:12
 MERGED from [com.firebaseui:firebase-ui-database:8.0.0] C:\Users\Robert\.gradle\caches\transforms-2\files-2.1\4bd35017e2224dff65ec21151df23879\jetified-firebase-ui-database-8.0.0\AndroidManifest.xml:2:1-11:12
 MERGED from [com.google.android.material:material:1.5.0] C:\Users\Robert\.gradle\caches\transforms-2\files-2.1\3ea091e8b482ff994ee77ca4c42a4aea\material-1.5.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\Robert\.gradle\caches\transforms-2\files-2.1\001490804fa1b984a44d003f37b218e6\jetified-viewpager2-1.0.0\AndroidManifest.xml:17:1-24:12
@@ -66,25 +66,25 @@ MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\Robert\.gradle\c
 MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\Robert\.gradle\caches\transforms-2\files-2.1\0ed1a0dab5a4e373ec57fef8befeda45\documentfile-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.print:print:1.0.0] C:\Users\Robert\.gradle\caches\transforms-2\files-2.1\c51a6a4ac6550c7890bf46bb4727d7ce\print-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.annotation:annotation-experimental:1.1.0] C:\Users\Robert\.gradle\caches\transforms-2\files-2.1\b0d98432988b3ffd407fca796a9924e5\jetified-annotation-experimental-1.1.0\AndroidManifest.xml:17:1-24:12
-INJECTED from C:\Users\Robert\AndroidStudioProjects\CSE3311Project\app\src\main\AndroidManifest.xml:2:1-36:12
-INJECTED from C:\Users\Robert\AndroidStudioProjects\CSE3311Project\app\src\main\AndroidManifest.xml:2:1-36:12
-INJECTED from C:\Users\Robert\AndroidStudioProjects\CSE3311Project\app\src\main\AndroidManifest.xml:2:1-36:12
+INJECTED from C:\Users\Robert\AndroidStudioProjects\CSE3311Project\app\src\main\AndroidManifest.xml:2:1-37:12
+INJECTED from C:\Users\Robert\AndroidStudioProjects\CSE3311Project\app\src\main\AndroidManifest.xml:2:1-37:12
+INJECTED from C:\Users\Robert\AndroidStudioProjects\CSE3311Project\app\src\main\AndroidManifest.xml:2:1-37:12
 	package
 		ADDED from C:\Users\Robert\AndroidStudioProjects\CSE3311Project\app\src\main\AndroidManifest.xml:3:5-41
 		INJECTED from C:\Users\Robert\AndroidStudioProjects\CSE3311Project\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\Robert\AndroidStudioProjects\CSE3311Project\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\Users\Robert\AndroidStudioProjects\CSE3311Project\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Robert\AndroidStudioProjects\CSE3311Project\app\src\main\AndroidManifest.xml:2:1-36:12
+		ADDED from C:\Users\Robert\AndroidStudioProjects\CSE3311Project\app\src\main\AndroidManifest.xml:2:1-37:12
 		INJECTED from C:\Users\Robert\AndroidStudioProjects\CSE3311Project\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from C:\Users\Robert\AndroidStudioProjects\CSE3311Project\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Robert\AndroidStudioProjects\CSE3311Project\app\src\main\AndroidManifest.xml:2:1-36:12
+		ADDED from C:\Users\Robert\AndroidStudioProjects\CSE3311Project\app\src\main\AndroidManifest.xml:2:1-37:12
 		INJECTED from C:\Users\Robert\AndroidStudioProjects\CSE3311Project\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Users\Robert\AndroidStudioProjects\CSE3311Project\app\src\main\AndroidManifest.xml:2:11-69
 application
-ADDED from C:\Users\Robert\AndroidStudioProjects\CSE3311Project\app\src\main\AndroidManifest.xml:5:5-34:19
+ADDED from C:\Users\Robert\AndroidStudioProjects\CSE3311Project\app\src\main\AndroidManifest.xml:5:5-35:19
 MERGED from [com.google.android.material:material:1.5.0] C:\Users\Robert\.gradle\caches\transforms-2\files-2.1\3ea091e8b482ff994ee77ca4c42a4aea\material-1.5.0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.5.0] C:\Users\Robert\.gradle\caches\transforms-2\files-2.1\3ea091e8b482ff994ee77ca4c42a4aea\material-1.5.0\AndroidManifest.xml:22:5-20
 MERGED from [com.airbnb.android:lottie:3.4.0] C:\Users\Robert\.gradle\caches\transforms-2\files-2.1\f1be1e6856700a3ce9e990fc32885356\jetified-lottie-3.4.0\AndroidManifest.xml:9:5-20
@@ -133,46 +133,50 @@ MERGED from [androidx.startup:startup-runtime:1.0.0] C:\Users\Robert\.gradle\cac
 		ADDED from C:\Users\Robert\AndroidStudioProjects\CSE3311Project\app\src\main\AndroidManifest.xml:6:9-35
 	android:theme
 		ADDED from C:\Users\Robert\AndroidStudioProjects\CSE3311Project\app\src\main\AndroidManifest.xml:11:9-52
+activity#com.example.cse3311project.PostReviewActivity
+ADDED from C:\Users\Robert\AndroidStudioProjects\CSE3311Project\app\src\main\AndroidManifest.xml:12:9-65
+	android:name
+		ADDED from C:\Users\Robert\AndroidStudioProjects\CSE3311Project\app\src\main\AndroidManifest.xml:12:19-53
 activity#com.example.cse3311project.Registration
-ADDED from C:\Users\Robert\AndroidStudioProjects\CSE3311Project\app\src\main\AndroidManifest.xml:12:9-50
+ADDED from C:\Users\Robert\AndroidStudioProjects\CSE3311Project\app\src\main\AndroidManifest.xml:13:9-50
 	android:name
-		ADDED from C:\Users\Robert\AndroidStudioProjects\CSE3311Project\app\src\main\AndroidManifest.xml:12:19-47
+		ADDED from C:\Users\Robert\AndroidStudioProjects\CSE3311Project\app\src\main\AndroidManifest.xml:13:19-47
 activity#com.example.cse3311project.LoginPage
-ADDED from C:\Users\Robert\AndroidStudioProjects\CSE3311Project\app\src\main\AndroidManifest.xml:13:9-19:20
+ADDED from C:\Users\Robert\AndroidStudioProjects\CSE3311Project\app\src\main\AndroidManifest.xml:14:9-20:20
 	android:name
-		ADDED from C:\Users\Robert\AndroidStudioProjects\CSE3311Project\app\src\main\AndroidManifest.xml:13:19-44
+		ADDED from C:\Users\Robert\AndroidStudioProjects\CSE3311Project\app\src\main\AndroidManifest.xml:14:19-44
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\Robert\AndroidStudioProjects\CSE3311Project\app\src\main\AndroidManifest.xml:14:13-18:29
+ADDED from C:\Users\Robert\AndroidStudioProjects\CSE3311Project\app\src\main\AndroidManifest.xml:15:13-19:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\Robert\AndroidStudioProjects\CSE3311Project\app\src\main\AndroidManifest.xml:15:17-69
+ADDED from C:\Users\Robert\AndroidStudioProjects\CSE3311Project\app\src\main\AndroidManifest.xml:16:17-69
 	android:name
-		ADDED from C:\Users\Robert\AndroidStudioProjects\CSE3311Project\app\src\main\AndroidManifest.xml:15:25-66
+		ADDED from C:\Users\Robert\AndroidStudioProjects\CSE3311Project\app\src\main\AndroidManifest.xml:16:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\Robert\AndroidStudioProjects\CSE3311Project\app\src\main\AndroidManifest.xml:17:17-77
+ADDED from C:\Users\Robert\AndroidStudioProjects\CSE3311Project\app\src\main\AndroidManifest.xml:18:17-77
 	android:name
-		ADDED from C:\Users\Robert\AndroidStudioProjects\CSE3311Project\app\src\main\AndroidManifest.xml:17:27-74
+		ADDED from C:\Users\Robert\AndroidStudioProjects\CSE3311Project\app\src\main\AndroidManifest.xml:18:27-74
 activity#com.example.cse3311project.ForgotPasswordPage
-ADDED from C:\Users\Robert\AndroidStudioProjects\CSE3311Project\app\src\main\AndroidManifest.xml:20:9-56
+ADDED from C:\Users\Robert\AndroidStudioProjects\CSE3311Project\app\src\main\AndroidManifest.xml:21:9-56
 	android:name
-		ADDED from C:\Users\Robert\AndroidStudioProjects\CSE3311Project\app\src\main\AndroidManifest.xml:20:19-53
+		ADDED from C:\Users\Robert\AndroidStudioProjects\CSE3311Project\app\src\main\AndroidManifest.xml:21:19-53
 activity#com.example.cse3311project.AccountActivity
-ADDED from C:\Users\Robert\AndroidStudioProjects\CSE3311Project\app\src\main\AndroidManifest.xml:21:9-53
+ADDED from C:\Users\Robert\AndroidStudioProjects\CSE3311Project\app\src\main\AndroidManifest.xml:22:9-53
 	android:name
-		ADDED from C:\Users\Robert\AndroidStudioProjects\CSE3311Project\app\src\main\AndroidManifest.xml:21:19-50
+		ADDED from C:\Users\Robert\AndroidStudioProjects\CSE3311Project\app\src\main\AndroidManifest.xml:22:19-50
 activity#com.example.cse3311project.ReviewActivity
-ADDED from C:\Users\Robert\AndroidStudioProjects\CSE3311Project\app\src\main\AndroidManifest.xml:22:9-52
+ADDED from C:\Users\Robert\AndroidStudioProjects\CSE3311Project\app\src\main\AndroidManifest.xml:23:9-52
 	android:name
-		ADDED from C:\Users\Robert\AndroidStudioProjects\CSE3311Project\app\src\main\AndroidManifest.xml:22:19-49
+		ADDED from C:\Users\Robert\AndroidStudioProjects\CSE3311Project\app\src\main\AndroidManifest.xml:23:19-49
 activity#com.example.cse3311project.MainActivity
-ADDED from C:\Users\Robert\AndroidStudioProjects\CSE3311Project\app\src\main\AndroidManifest.xml:23:9-29:20
+ADDED from C:\Users\Robert\AndroidStudioProjects\CSE3311Project\app\src\main\AndroidManifest.xml:24:9-30:20
 	android:name
-		ADDED from C:\Users\Robert\AndroidStudioProjects\CSE3311Project\app\src\main\AndroidManifest.xml:23:19-47
+		ADDED from C:\Users\Robert\AndroidStudioProjects\CSE3311Project\app\src\main\AndroidManifest.xml:24:19-47
 meta-data#preloaded_fonts
-ADDED from C:\Users\Robert\AndroidStudioProjects\CSE3311Project\app\src\main\AndroidManifest.xml:31:9-33:57
+ADDED from C:\Users\Robert\AndroidStudioProjects\CSE3311Project\app\src\main\AndroidManifest.xml:32:9-34:57
 	android:resource
-		ADDED from C:\Users\Robert\AndroidStudioProjects\CSE3311Project\app\src\main\AndroidManifest.xml:33:13-54
+		ADDED from C:\Users\Robert\AndroidStudioProjects\CSE3311Project\app\src\main\AndroidManifest.xml:34:13-54
 	android:name
-		ADDED from C:\Users\Robert\AndroidStudioProjects\CSE3311Project\app\src\main\AndroidManifest.xml:32:13-43
+		ADDED from C:\Users\Robert\AndroidStudioProjects\CSE3311Project\app\src\main\AndroidManifest.xml:33:13-43
 uses-sdk
 INJECTED from C:\Users\Robert\AndroidStudioProjects\CSE3311Project\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\Robert\AndroidStudioProjects\CSE3311Project\app\src\main\AndroidManifest.xml
