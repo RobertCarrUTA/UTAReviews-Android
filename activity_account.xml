@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3F7CE4"
+    tools:context=".AccountActivity">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/returnHomeButton_AccountPage"
+        android:layout_width="264dp"
+        android:layout_height="47dp"
+        android:background="#E4855E"
+        android:backgroundTint="#F8885B"
+        android:foregroundTint="#FFFFFF"
+        android:text="Return Home"
+        android:textColor="#FDFDFD"
+        android:textColorHighlight="#FDFDFD"
+        android:textColorHint="#D3D3D3"
+        android:textColorLink="#FFFFFF"
+        app:iconTint="#FA8888"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.893" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/changeAvatarButton_AccountPage"
+        android:layout_width="264dp"
+        android:layout_height="47dp"
+        android:background="#E4855E"
+        android:backgroundTint="#F8885B"
+        android:foregroundTint="#FFFFFF"
+        android:text="Change User Avatar"
+        android:textColor="#FDFDFD"
+        android:textColorHighlight="#FDFDFD"
+        android:textColorHint="#D3D3D3"
+        android:textColorLink="#FFFFFF"
+        android:textSize="14sp"
+        app:iconTint="#FA8888"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.692" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Currently Viewing Account Page"
+        android:textColor="#FBFAFA"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.074" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Current User Email:"
+        android:textColor="#FBFAFA"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.208"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.197" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Current Username:"
+        android:textColor="#FBFAFA"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.213"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.337" />
+
+    <EditText
+        android:id="@+id/editTextTextEmailAddress"
+        android:layout_width="327dp"
+        android:layout_height="51dp"
+        android:backgroundTint="#FAF8F8"
+        android:editable="false"
+        android:ems="10"
+        android:hint="Current Email"
+        android:inputType="textEmailAddress"
+        android:textColor="#FFFEFE"
+        android:textColorHint="#ECECEC"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.249" />
+
+    <EditText
+        android:id="@+id/editTextTextUsername"
+        android:layout_width="325dp"
+        android:layout_height="54dp"
+        android:backgroundTint="#FAF8F8"
+        android:editable="false"
+        android:ems="10"
+        android:hint="Current Username"
+        android:inputType="textEmailAddress"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#ECECEC"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.396" />
+
+    <Button
+        android:id="@+id/resendCode"
+        android:layout_width="258dp"
+        android:layout_height="45dp"
+        android:text="Verify Now"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.485"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.793" />
+
+    <Button
+        android:id="@+id/ChangingAccountCredentials"
+        android:layout_width="264dp"
+        android:layout_height="48dp"
+        android:text="Change Credentials"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.596" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
