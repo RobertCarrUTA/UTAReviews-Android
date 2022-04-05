@@ -7,8 +7,11 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
 
 
@@ -53,16 +56,31 @@ public class ForgotPasswordPage extends AppCompatActivity
                 Email.setError("Must be UTA email");
                 return;
             }
-
+/*
             auth.sendPasswordResetEmail(email).addOnSuccessListener(unused ->
             {
                 Toast.makeText(ForgotPasswordPage.this, "Password Reset sent to Email", Toast.LENGTH_SHORT).show();
-                startActivity(new Intent(getApplicationContext(), LoginPage.class));
+                //startActivity(new Intent(getApplicationContext(), LoginPage.class));
             }).addOnFailureListener(e ->
             {
                 Toast.makeText(ForgotPasswordPage.this, "This email has not been registered", Toast.LENGTH_SHORT).show();
                 startActivity(new Intent(getApplicationContext(), LoginPage.class));
+            });*/
+
+            auth.sendPasswordResetEmail(email).addOnCompleteListener(new OnCompleteListener<Void>() {
+                @Override
+                public void onComplete(@NonNull Task<Void> task) {
+                    if(task.isSuccessful())
+                    {
+                        Toast.makeText(ForgotPasswordPage.this, "Password Reset sent to Email", Toast.LENGTH_SHORT).show();
+                    }else{
+                        Toast.makeText(ForgotPasswordPage.this, "This email has not been registered", Toast.LENGTH_SHORT).show();
+                    }
+                }
             });
+            {
+
+            }
         });
     }
 }

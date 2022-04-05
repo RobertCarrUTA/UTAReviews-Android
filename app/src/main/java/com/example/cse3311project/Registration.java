@@ -111,7 +111,7 @@ public class Registration extends AppCompatActivity implements AdapterView.OnIte
                     {
                         FirebaseUser currentFirebaseUser = FirebaseAuth.getInstance().getCurrentUser() ;
                         assert currentFirebaseUser != null;
-                        currentFirebaseUser.sendEmailVerification();
+                        currentFirebaseUser.sendEmailVerification();// once a user submits registration, send an email to verify the entered email.
                         database.child(accountType).push().setValue(currentFirebaseUser.getUid());
                         Toast.makeText(Registration.this, "Account Created! Check your email to verify.", Toast.LENGTH_LONG).show();
                         startActivity(new Intent(getApplicationContext(), LoginPage.class));
