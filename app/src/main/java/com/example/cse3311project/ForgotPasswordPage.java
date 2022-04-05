@@ -35,17 +35,17 @@ public class ForgotPasswordPage extends AppCompatActivity
             if (TextUtils.isEmpty(email))
             {
                 Email.setError("Email is Required.");
-                return;
             }
 
             if (!email.contains("@"))
             {
                 Email.setError("Please enter a valid email");
-                return;
             }
 
             if (emailSplit[1].equals("mavs.uta.edu") || emailSplit[1].equals("uta.edu"))
             {
+                // If the email entered is a UTA email address, attempt to send the
+                // user an email that lets them reset their password
                 auth.sendPasswordResetEmail(email).addOnSuccessListener(unused ->
                 {
                     Toast.makeText(ForgotPasswordPage.this, "Password Reset sent to Email", Toast.LENGTH_SHORT).show();
@@ -59,7 +59,6 @@ public class ForgotPasswordPage extends AppCompatActivity
             else
             {
                 Email.setError("Must be UTA email");
-                return;
             }
         });
     }
