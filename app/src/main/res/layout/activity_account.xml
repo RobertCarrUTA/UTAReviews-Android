@@ -14,7 +14,7 @@
         android:background="#E4855E"
         android:backgroundTint="#F8885B"
         android:foregroundTint="#FFFFFF"
-        android:text="@string/return_home"
+        android:text="Return Home"
         android:textColor="#FDFDFD"
         android:textColorHighlight="#FDFDFD"
         android:textColorHint="#D3D3D3"
@@ -34,11 +34,12 @@
         android:background="#E4855E"
         android:backgroundTint="#F8885B"
         android:foregroundTint="#FFFFFF"
-        android:text="@string/change_user_avatar"
+        android:text="Change User Avatar"
         android:textColor="#FDFDFD"
         android:textColorHighlight="#FDFDFD"
         android:textColorHint="#D3D3D3"
         android:textColorLink="#FFFFFF"
+        android:textSize="14sp"
         app:iconTint="#FA8888"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -47,31 +48,11 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.692" />
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/accountCredentialsButton_AccountPage"
-        android:layout_width="264dp"
-        android:layout_height="47dp"
-        android:background="#E4855E"
-        android:backgroundTint="#F8885B"
-        android:foregroundTint="#FFFFFF"
-        android:text="@string/change_account_credentials"
-        android:textColor="#FDFDFD"
-        android:textColorHighlight="#FDFDFD"
-        android:textColorHint="#D3D3D3"
-        android:textColorLink="#FFFFFF"
-        app:iconTint="#FA8888"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.567" />
-
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/currently_viewing_account_page"
+        android:text="Currently Viewing Account Page"
         android:textColor="#FBFAFA"
         android:textSize="24sp"
         android:textStyle="bold"
@@ -85,7 +66,7 @@
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/current_user_email"
+        android:text="Current User Email:"
         android:textColor="#FBFAFA"
         android:textSize="24sp"
         android:textStyle="bold"
@@ -100,7 +81,7 @@
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/current_username"
+        android:text="Current Username:"
         android:textColor="#FBFAFA"
         android:textSize="24sp"
         android:textStyle="bold"
@@ -116,8 +97,9 @@
         android:layout_width="327dp"
         android:layout_height="51dp"
         android:backgroundTint="#FAF8F8"
+        android:editable="false"
         android:ems="10"
-        android:hint="@string/current_email"
+        android:hint="Current Email"
         android:inputType="textEmailAddress"
         android:textColor="#FFFEFE"
         android:textColorHint="#ECECEC"
@@ -126,16 +108,16 @@
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.249"
-        android:autofillHints="" />
+        app:layout_constraintVertical_bias="0.249" />
 
     <EditText
         android:id="@+id/editTextTextUsername"
         android:layout_width="325dp"
         android:layout_height="54dp"
         android:backgroundTint="#FAF8F8"
+        android:editable="false"
         android:ems="10"
-        android:hint="@string/current_username"
+        android:hint="Current Username"
         android:inputType="textEmailAddress"
         android:textColor="#FFFFFF"
         android:textColorHint="#ECECEC"
@@ -144,6 +126,31 @@
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.396"
-        android:autofillHints="" />
+        app:layout_constraintVertical_bias="0.396" />
+
+    <Button
+        android:id="@+id/resendCode"
+        android:layout_width="258dp"
+        android:layout_height="45dp"
+        android:text="Verify Now"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.485"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.793" />
+
+    <Button
+        android:id="@+id/ChangingAccountCredentials"
+        android:layout_width="264dp"
+        android:layout_height="48dp"
+        android:text="Change Credentials"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.596" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

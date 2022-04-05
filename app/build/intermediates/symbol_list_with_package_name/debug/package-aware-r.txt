@@ -2592,6 +2592,7 @@ id ALT
 id BOTTOM_END
 id BOTTOM_START
 id CTRL
+id ChangingAccountCredentials
 id EmailAddress
 id FUNCTION
 id META
@@ -2644,7 +2645,6 @@ id accessibility_custom_action_7
 id accessibility_custom_action_8
 id accessibility_custom_action_9
 id accountButton_Homepage
-id accountCredentialsButton_AccountPage
 id accountType
 id action0
 id actionDown
@@ -2940,6 +2940,7 @@ id navigation_header_container
 id never
 id neverCompleteToEnd
 id neverCompleteToStart
+id new_username
 id noScroll
 id noState
 id none
@@ -2987,6 +2988,7 @@ id rating_from_database
 id ratio
 id rectangles
 id registrationTypeInput
+id resendCode
 id restart
 id returnHomeButton_AccountPage
 id returnHomeButton_ReviewPage
@@ -3246,6 +3248,7 @@ layout activity_registration
 layout activity_registration_professor
 layout activity_registration_type
 layout activity_review
+layout activity_username_dialog
 layout browser_actions_context_menu_page
 layout browser_actions_context_menu_row
 layout color_spinner

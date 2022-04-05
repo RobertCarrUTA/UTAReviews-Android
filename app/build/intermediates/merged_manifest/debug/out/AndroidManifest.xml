@@ -21,6 +21,7 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/Theme.CSE3311Project" >
+        <activity android:name="com.example.cse3311project.UsernameDialog" />
         <activity android:name="com.example.cse3311project.PostReviewActivity" />
         <activity android:name="com.example.cse3311project.Registration" />
         <activity android:name="com.example.cse3311project.LoginPage" >
@@ -101,6 +102,9 @@
                 android:value="com.google.firebase.components.ComponentRegistrar" />
             <meta-data
                 android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
                 android:value="com.google.firebase.components.ComponentRegistrar" />
         </service>
 
