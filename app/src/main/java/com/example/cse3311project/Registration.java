@@ -90,12 +90,10 @@ public class Registration extends AppCompatActivity implements AdapterView.OnIte
             if (TextUtils.isEmpty(email))
             {
                 emailInput.setError("Email is Required.");
-                //return;
             }
             else if (!email.contains("@"))
             {
                 emailInput.setError("Please enter a valid email address");
-                //return;
             }
             else if (!(emailSplit[1].equals("mavs.uta.edu") || emailSplit[1].equals("uta.edu")))
             {
@@ -111,7 +109,7 @@ public class Registration extends AppCompatActivity implements AdapterView.OnIte
                     {
                         FirebaseUser currentFirebaseUser = FirebaseAuth.getInstance().getCurrentUser() ;
                         assert currentFirebaseUser != null;
-                        currentFirebaseUser.sendEmailVerification();
+                        currentFirebaseUser.sendEmailVerification();// once a user submits registration, send an email to verify the entered email.
                         database.child(accountType).push().setValue(currentFirebaseUser.getUid());
                         Toast.makeText(Registration.this, "Account Created! Check your email to verify.", Toast.LENGTH_LONG).show();
                         startActivity(new Intent(getApplicationContext(), LoginPage.class));
@@ -127,11 +125,10 @@ public class Registration extends AppCompatActivity implements AdapterView.OnIte
 
         cancelButton.setOnClickListener(v -> startActivity(new Intent(getApplicationContext(), LoginPage.class)));
     }
-
     @Override
     public void onItemSelected(AdapterView<?> parent, View view, int i, long l)
     {
-
+        //Toast.makeText(parent.getContext(),"Selection was made",Toast.LENGTH_SHORT).show();
     }
 
     @Override

@@ -36,18 +36,19 @@ public class LoginPage extends AppCompatActivity
 
         Login.setOnClickListener(v ->
         {
+            // This is what happens when the user selects the login button.
             String email = Email.getText().toString().trim();
             String password = Password.getText().toString().trim();
             String[] emailSplit = email.split("@");
             if(TextUtils.isEmpty(email))
             {
-                Email.setError("Email is Required.");
+                Email.setError("Email is Required.");//No email entered
                 return;
             }
 
             if(!email.contains("@"))
             {
-                Email.setError("Please enter a UTA email");
+                Email.setError("Please enter a UTA email");//Email is not the correct format
                 return;
             }
 
@@ -70,20 +71,23 @@ public class LoginPage extends AppCompatActivity
 
             auth.signInWithEmailAndPassword(email, password).addOnCompleteListener(task ->
             {
+                //Sign the user in using the given email and password combo
                 if(task.isSuccessful())
                 {
+                    //If you can successfully login using the entered details, set the current user.
                     FirebaseUser currentUser = FirebaseAuth.getInstance().getCurrentUser();
                     if(currentUser.isEmailVerified())
                     {
+                        //If the user has verified their email, redirect to the home page,otherwise send a verification email and wait.
                         Toast.makeText(LoginPage.this, "Login Successful!", Toast.LENGTH_SHORT).show();
                         startActivity(new Intent(getApplicationContext(), MainActivity.class));
-                    }else
+                    }
+                    else
                     {
                         currentUser.sendEmailVerification();
                         Toast.makeText(LoginPage.this, "Please verify your email first!", Toast.LENGTH_LONG).show();
 
                     }
-
                 }
                 else
                 {
@@ -92,10 +96,8 @@ public class LoginPage extends AppCompatActivity
                 }
             });
         });
-
         forgotPasswordButton.setOnClickListener(v -> startActivity(new Intent(getApplicationContext(), ForgotPasswordPage.class)));
 
         signupButton.setOnClickListener(v -> startActivity(new Intent(getApplicationContext(), Registration.class)));
-
     }
 }
