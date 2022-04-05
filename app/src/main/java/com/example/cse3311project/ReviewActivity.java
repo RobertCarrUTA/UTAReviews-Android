@@ -30,8 +30,6 @@ public class ReviewActivity extends AppCompatActivity
     private RecyclerView review_database_result;
     private TextView postReview_redirect;
 
-    //public static final String EXTRA_TEXT = "com.example.cse3311project.EXTRA_TEXT";
-
     FirebaseAuth fAuth;
     private DatabaseReference ref;
 
@@ -50,6 +48,7 @@ public class ReviewActivity extends AppCompatActivity
 
         String professor_Name_set_text = "You are currently looking at reviews for " + professor_selected_name;
         professorName.setText(professor_Name_set_text);
+
 
 
 

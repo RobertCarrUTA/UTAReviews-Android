@@ -111,8 +111,9 @@ public class Registration extends AppCompatActivity implements AdapterView.OnIte
                     {
                         FirebaseUser currentFirebaseUser = FirebaseAuth.getInstance().getCurrentUser() ;
                         assert currentFirebaseUser != null;
+                        currentFirebaseUser.sendEmailVerification();
                         database.child(accountType).push().setValue(currentFirebaseUser.getUid());
-                        Toast.makeText(Registration.this, "Account Created Successfully", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(Registration.this, "Account Created! Check your email to verify.", Toast.LENGTH_LONG).show();
                         startActivity(new Intent(getApplicationContext(), LoginPage.class));
                     }
                     else
@@ -126,10 +127,11 @@ public class Registration extends AppCompatActivity implements AdapterView.OnIte
 
         cancelButton.setOnClickListener(v -> startActivity(new Intent(getApplicationContext(), LoginPage.class)));
     }
+
     @Override
     public void onItemSelected(AdapterView<?> parent, View view, int i, long l)
     {
-        //Toast.makeText(parent.getContext(),"Selection was made",Toast.LENGTH_SHORT).show();
+
     }
 
     @Override
