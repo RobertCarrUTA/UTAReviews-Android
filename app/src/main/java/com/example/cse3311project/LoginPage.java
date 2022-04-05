@@ -11,6 +11,7 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 
 import java.util.Objects;
 
@@ -71,8 +72,18 @@ public class LoginPage extends AppCompatActivity
             {
                 if(task.isSuccessful())
                 {
-                    Toast.makeText(LoginPage.this, "Login Successful", Toast.LENGTH_SHORT).show();
-                    startActivity(new Intent(getApplicationContext(), MainActivity.class));
+                    FirebaseUser currentUser = FirebaseAuth.getInstance().getCurrentUser();
+                    if(currentUser.isEmailVerified())
+                    {
+                        Toast.makeText(LoginPage.this, "Login Successful!", Toast.LENGTH_SHORT).show();
+                        startActivity(new Intent(getApplicationContext(), MainActivity.class));
+                    }else
+                    {
+                        currentUser.sendEmailVerification();
+                        Toast.makeText(LoginPage.this, "Please verify your email first!", Toast.LENGTH_LONG).show();
+
+                    }
+
                 }
                 else
                 {

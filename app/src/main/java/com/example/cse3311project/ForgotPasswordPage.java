@@ -46,23 +46,21 @@ public class ForgotPasswordPage extends AppCompatActivity
 
             if (emailSplit[1].equals("mavs.uta.edu") || emailSplit[1].equals("uta.edu"))
             {
-                Email.setError("Must be a UTA email");
+                auth.sendPasswordResetEmail(email).addOnSuccessListener(unused ->
+                {
+                    Toast.makeText(ForgotPasswordPage.this, "Password Reset sent to Email", Toast.LENGTH_SHORT).show();
+                    startActivity(new Intent(getApplicationContext(), LoginPage.class));
+                }).addOnFailureListener(e ->
+                {
+                    Toast.makeText(ForgotPasswordPage.this, "This email has not been registered", Toast.LENGTH_SHORT).show();
+                    startActivity(new Intent(getApplicationContext(), LoginPage.class));
+                });
             }
             else
             {
                 Email.setError("Must be UTA email");
                 return;
             }
-
-            auth.sendPasswordResetEmail(email).addOnSuccessListener(unused ->
-            {
-                Toast.makeText(ForgotPasswordPage.this, "Password Reset sent to Email", Toast.LENGTH_SHORT).show();
-                startActivity(new Intent(getApplicationContext(), LoginPage.class));
-            }).addOnFailureListener(e ->
-            {
-                Toast.makeText(ForgotPasswordPage.this, "This email has not been registered", Toast.LENGTH_SHORT).show();
-                startActivity(new Intent(getApplicationContext(), LoginPage.class));
-            });
         });
     }
 }
