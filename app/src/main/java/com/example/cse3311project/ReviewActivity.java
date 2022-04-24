@@ -19,16 +19,24 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
 import com.firebase.ui.database.FirebaseRecyclerOptions;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.Query;
+import com.google.firebase.database.ValueEventListener;
 
 import org.w3c.dom.Text;
+
+import java.text.DecimalFormat;
 
 public class ReviewActivity extends AppCompatActivity
 {
     private RecyclerView review_database_result;
-    private TextView postReview_redirect;
+    private TextView postReview_redirect, ratingSumText;
+
+    // This allows us to round all numbers to a #.## format
+    private static final DecimalFormat df = new DecimalFormat("0.00");
 
     FirebaseAuth fAuth;
     private DatabaseReference ref;
@@ -45,19 +53,49 @@ public class ReviewActivity extends AppCompatActivity
         Button returnHomeButton_ReviewPage = findViewById(R.id.returnHomeButton_ReviewPage);
         TextView professorName = findViewById(R.id.professorName_Review);
         postReview_redirect = findViewById(R.id.postReview_redirect);
+        ratingSumText = findViewById(R.id.rating);
 
         String professor_Name_set_text = "You are currently looking at reviews for " + professor_selected_name;
         professorName.setText(professor_Name_set_text);
 
+        fAuth = FirebaseAuth.getInstance();
+        ref = FirebaseDatabase.getInstance().getReference("Reviews");
 
+        // Documentation for retrieving data can be found here:
+        // https://firebase.google.com/docs/database/admin/retrieve-data
+        ref.child(professor_selected_name).addValueEventListener(new ValueEventListener()
+        {
+            float ratingSum = 0;
+            String ratingSumString;
+            float count;
+            @Override
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot)
+            {
+                for(DataSnapshot snapshot : dataSnapshot.getChildren())
+                {
+                    ratingSumString = snapshot.child("rating").getValue().toString();
+                    ratingSum += Float.valueOf(ratingSumString);
+                    count++;
+                }
 
+                float ratingSumAverageFloat = ratingSum/count;
+                String ratingSumAverage = String.format("%.2f", ratingSumAverageFloat);
+                ratingSumText.setText("Rating: " + ratingSumAverage);
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError error)
+            {
+
+            }
+
+            //String ratingSumAverage = Float.toString(ratingSum);
+            //ratingSumText.setText(ratingSumAverage);
+        });
 
         // This needs to be here to keep all of our layout in place, without the line of code
         // below, everything will be moved up once the keyboard is opened
         getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_ADJUST_PAN);
-
-        fAuth = FirebaseAuth.getInstance();
-        ref = FirebaseDatabase.getInstance().getReference("Reviews");
 
         // This is are our RecyclerView
         review_database_result = findViewById(R.id.review_database_result);
@@ -77,20 +115,19 @@ public class ReviewActivity extends AppCompatActivity
 
         postReview_redirect.setOnClickListener(v ->
         {
+            // This will allow us to take the teachers name and pass it to the post review page
             Intent i = new Intent (this, PostReviewActivity.class);
             i.putExtra("teacher_name", professor_selected_name);
             startActivity(i);
         });
 
         returnHomeButton_ReviewPage.setOnClickListener(v -> startActivity(new Intent(getApplicationContext(), MainActivity.class)));
-
     }
 
     // This is our firebase function to view the reviews for the selected teacher
     // Any documentation about Firebase UI can be found here: https://github.com/firebase/FirebaseUI-Android
     private void firebaseReviewResults(String professor_selected_name)
     {
-
         // This is a search query that allows for the user to see reviews for the selected professor
         // and orders them by the date they were posted
         Query firebaseQuery = ref.child(professor_selected_name).orderByChild("date");
