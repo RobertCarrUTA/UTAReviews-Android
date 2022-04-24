@@ -8,7 +8,6 @@ import android.view.ViewGroup;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -26,17 +25,14 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.Query;
 import com.google.firebase.database.ValueEventListener;
 
-import org.w3c.dom.Text;
-
-import java.text.DecimalFormat;
+import java.util.Objects;
 
 public class ReviewActivity extends AppCompatActivity
 {
     private RecyclerView review_database_result;
-    private TextView postReview_redirect, ratingSumText;
+    private TextView ratingSumText;
 
-    // This allows us to round all numbers to a #.## format
-    private static final DecimalFormat df = new DecimalFormat("0.00");
+    String ratingSumAverage;
 
     FirebaseAuth fAuth;
     private DatabaseReference ref;
@@ -52,7 +48,7 @@ public class ReviewActivity extends AppCompatActivity
 
         Button returnHomeButton_ReviewPage = findViewById(R.id.returnHomeButton_ReviewPage);
         TextView professorName = findViewById(R.id.professorName_Review);
-        postReview_redirect = findViewById(R.id.postReview_redirect);
+        TextView postReview_redirect = findViewById(R.id.postReview_redirect);
         ratingSumText = findViewById(R.id.rating);
 
         String professor_Name_set_text = "You are currently looking at reviews for " + professor_selected_name;
@@ -60,6 +56,7 @@ public class ReviewActivity extends AppCompatActivity
 
         fAuth = FirebaseAuth.getInstance();
         ref = FirebaseDatabase.getInstance().getReference("Reviews");
+        DatabaseReference profRef = FirebaseDatabase.getInstance().getReference("Professors");
 
         // Documentation for retrieving data can be found here:
         // https://firebase.google.com/docs/database/admin/retrieve-data
@@ -73,13 +70,13 @@ public class ReviewActivity extends AppCompatActivity
             {
                 for(DataSnapshot snapshot : dataSnapshot.getChildren())
                 {
-                    ratingSumString = snapshot.child("rating").getValue().toString();
-                    ratingSum += Float.valueOf(ratingSumString);
+                    ratingSumString = Objects.requireNonNull(snapshot.child("rating").getValue()).toString();
+                    ratingSum += Float.parseFloat(ratingSumString);
                     count++;
                 }
 
                 float ratingSumAverageFloat = ratingSum/count;
-                String ratingSumAverage = String.format("%.2f", ratingSumAverageFloat);
+                ratingSumAverage = String.format("%.2f", ratingSumAverageFloat);
                 ratingSumText.setText("Rating: " + ratingSumAverage);
             }
 
@@ -88,9 +85,42 @@ public class ReviewActivity extends AppCompatActivity
             {
 
             }
+        });
 
-            //String ratingSumAverage = Float.toString(ratingSum);
-            //ratingSumText.setText(ratingSumAverage);
+
+        // TODO: There may need to be some improvements and stability issues with the two
+        // below addValueEventListeners. I, Robert, have added some already, I do not get the issues
+        // any longer but we need to keep this in mind
+        final boolean[] matchFound = {false};
+        // Push the new average to the professors rating on the database
+        profRef.addValueEventListener(new ValueEventListener()
+        {
+            //boolean matchFound = false;
+            @Override
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot)
+            {
+                System.out.println("HERE");
+                if(matchFound[0] == false)
+                {
+                    for (DataSnapshot snapshot : dataSnapshot.getChildren()) {
+                        String professorName = Objects.requireNonNull(snapshot.child("name").getValue()).toString();
+                        if (professorName.equals(professor_selected_name)) {
+                            matchFound[0] = true;
+                            System.out.println("Prof " + professorName);
+
+                            // Push the new average to the professors rating on the database
+                            System.out.println("Rating: " + ratingSumAverage);
+                            snapshot.getRef().child("rating").setValue(ratingSumAverage);
+                            break;
+                        }
+                    }
+                }
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+
+            }
         });
 
         // This needs to be here to keep all of our layout in place, without the line of code
