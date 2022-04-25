@@ -3,13 +3,10 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:padding="10dp"
+    android:shadowColor="#FFFFFF"
     android:text="@string/make_a_selection"
     android:textAlignment="center"
     android:textColor="@color/white"
+    android:textColorHighlight="#FFFFFF"
     android:textColorHint="#FFFFFF"
-    android:textStyle="bold"
-
-
-    >
-
-</TextView>
+    android:textStyle="bold"></TextView>

@@ -17,9 +17,9 @@ public class RegistrationType extends AppCompatActivity implements AdapterView.O
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_registration_type);
 
-/* this is for testing purposes, make sure to only have this code in mainActivity for final */
+        /* this is for testing purposes, make sure to only have this code in mainActivity for final */
         Spinner spinner = findViewById(R.id.registrationTypeInput);
-        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,R.array.registrationTypeArray, android.R.layout.simple_spinner_item);
+        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this, R.array.registrationTypeArray, android.R.layout.simple_spinner_item);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinner.setAdapter(adapter);
         spinner.setOnItemSelectedListener(this);

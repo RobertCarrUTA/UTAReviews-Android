@@ -21,18 +21,11 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/Theme.CSE3311Project" >
-        <activity
-            android:name="com.example.cse3311project.RegistrationProfessor"
-            android:exported="false" />
-        <activity
-            android:name="com.example.cse3311project.RegistrationType"
-            android:exported="true" />
-        <activity
-            android:name="com.example.cse3311project.Registration"
-            android:exported="true" />
-        <activity
-            android:name="com.example.cse3311project.LoginPage"
-            android:exported="true" >
+        <activity android:name="com.example.cse3311project.ReplyActivity" />
+        <activity android:name="com.example.cse3311project.UsernameDialog" />
+        <activity android:name="com.example.cse3311project.PostReviewActivity" />
+        <activity android:name="com.example.cse3311project.Registration" />
+        <activity android:name="com.example.cse3311project.LoginPage" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -42,9 +35,7 @@
         <activity android:name="com.example.cse3311project.ForgotPasswordPage" />
         <activity android:name="com.example.cse3311project.AccountActivity" />
         <activity android:name="com.example.cse3311project.ReviewActivity" />
-        <activity
-            android:name="com.example.cse3311project.MainActivity"
-            android:exported="true" >
+        <activity android:name="com.example.cse3311project.MainActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -112,6 +103,9 @@
                 android:value="com.google.firebase.components.ComponentRegistrar" />
             <meta-data
                 android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
                 android:value="com.google.firebase.components.ComponentRegistrar" />
         </service>
 
