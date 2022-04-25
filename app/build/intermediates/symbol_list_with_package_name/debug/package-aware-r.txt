@@ -2628,6 +2628,7 @@ id META
 id NO_DEBUG
 id Password
 id RecoveringEmail
+id Reply
 id SHIFT
 id SHOW_ALL
 id SHOW_PATH
@@ -2639,6 +2640,7 @@ id TOP_START
 id TitleBackground
 id TitleFP
 id Username
+id Username_Comment
 id accelerate
 id accessibility_action_clickable_span
 id accessibility_custom_action_0
@@ -3166,6 +3168,7 @@ id useLogo
 id userRegistration
 id username_from_database_reviews
 id vertical_only
+id viewCommentsBtn
 id view_offset_helper
 id view_transition
 id view_tree_lifecycle_owner
@@ -3278,6 +3281,7 @@ layout activity_post_review
 layout activity_registration
 layout activity_registration_professor
 layout activity_registration_type
+layout activity_reply
 layout activity_review
 layout activity_username_dialog
 layout browser_actions_context_menu_page
