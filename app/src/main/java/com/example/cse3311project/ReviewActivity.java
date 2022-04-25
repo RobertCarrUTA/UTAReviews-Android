@@ -210,6 +210,7 @@ public class ReviewActivity extends AppCompatActivity
                     // This is how we would get the selected reviews information for the comment page
                     //String professorNameIntent = professor_selected_name;
                     String usernameCommentSection = model.getUsername();
+                    //usernameCommentSection = usernameCommentSection.replace(".", "");
                     String review_text_from_review = model.getReview();
                     String rating_text_from_review = "Rating: " + model.getRating();
                     String class_taken_from_review = model.getClassTaken();
@@ -222,6 +223,7 @@ public class ReviewActivity extends AppCompatActivity
                     comment_selection_intent.putExtra("review_text_from_review", review_text_from_review);
                     comment_selection_intent.putExtra("rating_text_from_review", rating_text_from_review);
                     comment_selection_intent.putExtra("class_taken_from_review", class_taken_from_review);
+                    System.out.println("I am here on one review!!!");
 
                     startActivity(comment_selection_intent);
                     Toast.makeText(ReviewActivity.this, "Now viewing reviews for " + usernameCommentSection + "'s review of " + professor_selected_name, Toast.LENGTH_SHORT).show();

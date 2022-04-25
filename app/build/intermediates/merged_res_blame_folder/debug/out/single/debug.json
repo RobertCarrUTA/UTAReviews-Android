@@ -288,6 +288,10 @@
         "source": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\src\\main\\res\\mipmap-hdpi\\ic_utareviews_applogo.png"
     },
     {
+        "merged": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\build\\intermediates\\res\\merged\\debug\\layout_comments_from_database_layout.xml.flat",
+        "source": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\src\\main\\res\\layout\\comments_from_database_layout.xml"
+    },
+    {
         "merged": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_utareviews_applogo_foreground.png.flat",
         "source": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_utareviews_applogo_foreground.png"
     },

@@ -2599,7 +2599,6 @@ id META
 id NO_DEBUG
 id Password
 id RecoveringEmail
-id Reply
 id SHIFT
 id SHOW_ALL
 id SHOW_PATH
@@ -2742,6 +2741,8 @@ id clockwise
 id closest
 id collapseActionView
 id comment_database_result
+id comment_text_from_database
+id comment_username
 id compress
 id confirm_button
 id constraint
@@ -2759,6 +2760,7 @@ id customPanel
 id cut
 id dark
 id date_picker_actions
+id date_the_comment_was_posted
 id date_the_review_was_posted
 id decelerate
 id decelerateAndComplete
@@ -2990,6 +2992,7 @@ id rating_from_database
 id ratio
 id rectangles
 id registrationTypeInput
+id replyButton
 id resendCode
 id restart
 id returnHomeButton_AccountPage
@@ -3261,6 +3264,7 @@ layout activity_username_dialog
 layout browser_actions_context_menu_page
 layout browser_actions_context_menu_row
 layout color_spinner
+layout comments_from_database_layout
 layout custom_dialog
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
