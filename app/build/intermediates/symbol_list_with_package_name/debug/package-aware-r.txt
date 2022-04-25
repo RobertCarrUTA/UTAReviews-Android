@@ -2640,7 +2640,6 @@ id TOP_START
 id TitleBackground
 id TitleFP
 id Username
-id Username_Comment
 id accelerate
 id accessibility_action_clickable_span
 id accessibility_custom_action_0
@@ -2771,6 +2770,7 @@ id clip_vertical
 id clockwise
 id closest
 id collapseActionView
+id comment_database_result
 id compress
 id confirm_button
 id constraint
@@ -3025,8 +3025,13 @@ id resendCode
 id restart
 id returnHomeButton_AccountPage
 id returnHomeButton_ReviewPage
+id returnToReviewButton
 id reverse
 id reverseSawtooth
+id reviewClass
+id reviewRating
+id reviewText
+id reviewUserName
 id review_database_result
 id review_text
 id review_text_from_database

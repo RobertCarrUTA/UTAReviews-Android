@@ -7,38 +7,93 @@
     android:background="#3F7CE4"
     tools:context=".ReplyActivity">
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/review_database_result"
-        android:layout_width="403dp"
-        android:layout_height="405dp"
-        android:background="#3F7CE4"
-        app:layout_constraintBottom_toTopOf="@+id/Reply"
+    <TextView
+        android:id="@+id/reviewUserName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Username"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/reviewText"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.084"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.878" />
+        app:layout_constraintVertical_bias="0.493" />
 
     <Button
-        android:id="@+id/Reply"
-        android:layout_width="191dp"
-        android:layout_height="62dp"
+        android:id="@+id/replyButton"
+        android:layout_width="153dp"
+        android:layout_height="53dp"
         android:text="Post Reply"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.944"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.937" />
+        app:layout_constraintVertical_bias="0.952" />
+
+    <Button
+        android:id="@+id/returnToReviewButton"
+        android:layout_width="182dp"
+        android:layout_height="54dp"
+        android:text="Return to Reviews"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.126"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.955" />
+
+    <EditText
+        android:id="@+id/reviewText"
+        android:layout_width="353dp"
+        android:layout_height="81dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/comment_database_result"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.676" />
+
+    <TextView
+        android:id="@+id/reviewRating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="38dp"
+        android:text="Rating"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/reviewText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.89"
+        app:layout_constraintStart_toEndOf="@+id/reviewUserName"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/reviewClass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Class Taken"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/reviewText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.917"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/reviewRating"
+        app:layout_constraintVertical_bias="0.578" />
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/Username_Comment"
-        android:layout_width="388dp"
-        android:layout_height="153dp"
-        android:layout_marginBottom="8dp"
-        app:layout_constraintBottom_toTopOf="@+id/review_database_result"
+        android:id="@+id/comment_database_result"
+        android:layout_width="381dp"
+        android:layout_height="373dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.695"
+        app:layout_constraintHorizontal_bias="0.523"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.612" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
