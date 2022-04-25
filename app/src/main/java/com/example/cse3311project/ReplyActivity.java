@@ -101,7 +101,7 @@ public class ReplyActivity extends AppCompatActivity
             // This is a search query that allows for the user to see comments for a review under a professor
             // and orders them by the date the comments were posted
             Query firebaseQuery = ref.child(professor_selected_name).child(usernameCommentSection).orderByChild("date");
-            System.out.println("I am here on one reply!!! One more to go bruh!");
+            System.out.println("I am here on one reply!!! One more to go 1!!");
 
             // This must be included for our FirebaseRecyclerAdapter options
             FirebaseRecyclerOptions<Replies> options =
@@ -146,6 +146,7 @@ public class ReplyActivity extends AppCompatActivity
                 View1 = itemView;
 
                 // Leaving this to see if my code comes back after fixing Git
+                // Another to see
 
                 // This is where we get the information for onBindViewHolder(@NonNull ReviewViewHolder holder, ...)
                 comment_username = View1.findViewById(R.id.username_from_database_reviews);
