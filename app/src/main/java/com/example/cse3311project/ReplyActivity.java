@@ -87,7 +87,14 @@ public class ReplyActivity extends AppCompatActivity
             startActivity(i);
         });
 
-        replyButton.setOnClickListener(v -> startActivity(new Intent(getApplicationContext(), PostReplyActivity.class)));
+        replyButton.setOnClickListener(v ->
+        {
+            Intent comment_selection_intent = new Intent(getApplicationContext(), PostReplyActivity.class);
+            comment_selection_intent.putExtra("professor_name_from_list", professor_selected_name);
+            comment_selection_intent.putExtra("usernameCommentSection", usernameCommentSection);
+
+            startActivity(comment_selection_intent);
+        });
     }
 
         // This is our firebase function to view the reviews for the selected teacher
