@@ -31,10 +31,6 @@ anim fragment_fast_out_extra_slow_in
 anim mtrl_bottom_sheet_slide_in
 anim mtrl_bottom_sheet_slide_out
 anim mtrl_card_lowers_interpolator
-anim nav_default_enter_anim
-anim nav_default_exit_anim
-anim nav_default_pop_enter_anim
-anim nav_default_pop_exit_anim
 animator design_appbar_state_list_animator
 animator design_fab_hide_motion_spec
 animator design_fab_show_motion_spec
@@ -67,10 +63,6 @@ animator mtrl_fab_hide_motion_spec
 animator mtrl_fab_show_motion_spec
 animator mtrl_fab_transformation_sheet_collapse_spec
 animator mtrl_fab_transformation_sheet_expand_spec
-animator nav_default_enter_anim
-animator nav_default_exit_anim
-animator nav_default_pop_enter_anim
-animator nav_default_pop_exit_anim
 array com_google_android_gms_fonts_certs
 array com_google_android_gms_fonts_certs_dev
 array com_google_android_gms_fonts_certs_prod
@@ -79,7 +71,6 @@ array professor_names_array
 array registrationTypeArray
 attr SharedValue
 attr SharedValueId
-attr action
 attr actionBarDivider
 attr actionBarItemBackground
 attr actionBarPopupTheme
@@ -131,7 +122,6 @@ attr animationMode
 attr appBarLayoutStyle
 attr applyMotionScene
 attr arcMode
-attr argType
 attr arrowHeadLength
 attr arrowShaftLength
 attr attributeName
@@ -394,20 +384,16 @@ attr customNavigationLayout
 attr customPixelDimension
 attr customReference
 attr customStringValue
-attr data
-attr dataPattern
 attr dayInvalidStyle
 attr daySelectedStyle
 attr dayStyle
 attr dayTodayStyle
 attr defaultDuration
-attr defaultNavHost
 attr defaultQueryHint
 attr defaultState
 attr deltaPolarAngle
 attr deltaPolarRadius
 attr deriveConstraintsFrom
-attr destination
 attr dialogCornerRadius
 attr dialogPreferredPadding
 attr dialogTheme
@@ -458,7 +444,6 @@ attr endIconTintMode
 attr enforceMaterialTheme
 attr enforceTextAppearance
 attr ensureMinTouchTargetSize
-attr enterAnim
 attr errorContentDescription
 attr errorEnabled
 attr errorIconDrawable
@@ -466,7 +451,6 @@ attr errorIconTint
 attr errorIconTintMode
 attr errorTextAppearance
 attr errorTextColor
-attr exitAnim
 attr expandActivityOverflowButtonDrawable
 attr expanded
 attr expandedHintEnabled
@@ -545,7 +529,6 @@ attr framePosition
 attr gapBetweenBars
 attr gestureInsetBottomIgnored
 attr goIcon
-attr graph
 attr guidelineUseRtl
 attr haloColor
 attr haloRadius
@@ -635,7 +618,6 @@ attr labelBehavior
 attr labelStyle
 attr labelVisibilityMode
 attr lastBaselineToBottomHeight
-attr launchSingleTop
 attr layout
 attr layoutDescription
 attr layoutDuringTransition
@@ -732,6 +714,22 @@ attr listPreferredItemPaddingRight
 attr listPreferredItemPaddingStart
 attr logo
 attr logoDescription
+attr lottie_autoPlay
+attr lottie_cacheComposition
+attr lottie_colorFilter
+attr lottie_enableMergePathsForKitKatAndAbove
+attr lottie_fallbackRes
+attr lottie_fileName
+attr lottie_imageAssetsFolder
+attr lottie_loop
+attr lottie_progress
+attr lottie_rawRes
+attr lottie_renderMode
+attr lottie_repeatCount
+attr lottie_repeatMode
+attr lottie_scale
+attr lottie_speed
+attr lottie_url
 attr marginHorizontal
 attr materialAlertDialogBodyTextStyle
 attr materialAlertDialogButtonSpacerVisibility
@@ -783,7 +781,6 @@ attr measureWithLargestChild
 attr menu
 attr menuGravity
 attr methodName
-attr mimeType
 attr minHeight
 attr minHideDelay
 attr minSeparation
@@ -825,7 +822,6 @@ attr motion_postLayoutCollision
 attr motion_triggerOnCollision
 attr moveWhenScrollAtTop
 attr multiChoiceItemLayout
-attr navGraph
 attr navigationContentDescription
 attr navigationIcon
 attr navigationIconTint
@@ -835,7 +831,6 @@ attr navigationViewStyle
 attr nestedScrollFlags
 attr nestedScrollViewStyle
 attr nestedScrollable
-attr nullable
 attr number
 attr numericModifiers
 attr onCross
@@ -876,10 +871,6 @@ attr placeholderTextAppearance
 attr placeholderTextColor
 attr placeholder_emptyVisibility
 attr polarRelativeTo
-attr popEnterAnim
-attr popExitAnim
-attr popUpTo
-attr popUpToInclusive
 attr popupMenuBackground
 attr popupMenuStyle
 attr popupTheme
@@ -967,7 +958,6 @@ attr springStopThreshold
 attr srcCompat
 attr stackFromEnd
 attr staggered
-attr startDestination
 attr startIconCheckable
 attr startIconContentDescription
 attr startIconDrawable
@@ -1032,7 +1022,6 @@ attr tabTextAppearance
 attr tabTextColor
 attr tabUnboundedRipple
 attr targetId
-attr targetPackage
 attr telltales_tailColor
 attr telltales_tailScale
 attr telltales_velocityMode
@@ -1167,7 +1156,6 @@ attr triggerReceiver
 attr triggerSlack
 attr ttcIndex
 attr upDuration
-attr uri
 attr useCompatPadding
 attr useMaterialThemeColors
 attr values
@@ -1977,7 +1965,6 @@ dimen design_tab_text_size_2line
 dimen design_textinput_caption_translate_y
 dimen disabled_alpha_material_dark
 dimen disabled_alpha_material_light
-dimen fab_margin
 dimen fastscroll_default_thickness
 dimen fastscroll_margin
 dimen fastscroll_minimum_range
@@ -2529,7 +2516,6 @@ drawable common_google_signin_btn_text_light_focused
 drawable common_google_signin_btn_text_light_normal
 drawable common_google_signin_btn_text_light_normal_background
 drawable custom_edit_texts
-drawable default_user_avatar
 drawable design_fab_background
 drawable design_ic_visibility
 drawable design_ic_visibility_off
@@ -2553,6 +2539,7 @@ drawable ic_mtrl_checked_circle
 drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
+drawable ic_uta_reviews_logo_login_background
 drawable ic_utareviews_applogo_background
 drawable m3_appbar_background
 drawable m3_popupmenu_background_overlay
@@ -2599,17 +2586,20 @@ drawable test_custom_background
 drawable test_level_drawable
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
+drawable uta_reviews_logo
 font brawler
 id ALT
 id BOTTOM_END
 id BOTTOM_START
 id CTRL
+id ChangingAccountCredentials
 id EmailAddress
 id FUNCTION
 id META
 id NO_DEBUG
 id Password
 id RecoveringEmail
+id Reply
 id SHIFT
 id SHOW_ALL
 id SHOW_PATH
@@ -2618,11 +2608,10 @@ id SYM
 id SignOutButton
 id TOP_END
 id TOP_START
-id Title
-id TitleBackGround
 id TitleBackground
 id TitleFP
 id Username
+id Username_Comment
 id accelerate
 id accessibility_action_clickable_span
 id accessibility_custom_action_0
@@ -2658,7 +2647,6 @@ id accessibility_custom_action_7
 id accessibility_custom_action_8
 id accessibility_custom_action_9
 id accountButton_Homepage
-id accountCredentialsButton_AccountPage
 id accountType
 id action0
 id actionDown
@@ -2693,6 +2681,7 @@ id allStates
 id always
 id animateToEnd
 id animateToStart
+id animation_view
 id antiClockwise
 id anticipate
 id arc
@@ -2702,6 +2691,7 @@ id auto
 id autoComplete
 id autoCompleteToEnd
 id autoCompleteToStart
+id automatic
 id barrier
 id baseline
 id beginOnFirstDraw
@@ -2724,6 +2714,7 @@ id buttonSendingCode
 id cache_measures
 id callMeasure
 id cancelButton
+id cancelReviewButton
 id cancel_action
 id cancel_button
 id carryVelocity
@@ -2743,6 +2734,8 @@ id chip3
 id chip_group
 id chronometer
 id circle_center
+id classTakenTextEntryBox
+id class_from_database
 id clear_text
 id clip_horizontal
 id clip_vertical
@@ -2766,6 +2759,7 @@ id customPanel
 id cut
 id dark
 id date_picker_actions
+id date_the_review_was_posted
 id decelerate
 id decelerateAndComplete
 id decor_content_parent
@@ -2834,6 +2828,7 @@ id group_divider
 id grouping
 id groups
 id guideline
+id hardware
 id header_title
 id hideable
 id home
@@ -2850,6 +2845,10 @@ id ignore
 id ignoreRequest
 id image
 id imageView
+id imageView2
+id imageView3
+id imageView4
+id imageView6
 id immediateStop
 id included
 id info
@@ -2875,6 +2874,7 @@ id line3
 id linear
 id listMode
 id list_item
+id lottie_layer_name
 id masked
 id match_constraint
 id match_parent
@@ -2932,8 +2932,6 @@ id mtrl_picker_text_input_range_start
 id mtrl_picker_title_text
 id mtrl_view_tag_bottom_padding
 id multiply
-id nav_controller_view_tag
-id nav_host_fragment_container
 id navigation_bar_item_active_indicator_view
 id navigation_bar_item_icon_container
 id navigation_bar_item_icon_view
@@ -2944,6 +2942,7 @@ id navigation_header_container
 id never
 id neverCompleteToEnd
 id neverCompleteToStart
+id new_username
 id noScroll
 id noState
 id none
@@ -2974,7 +2973,8 @@ id pin
 id position
 id postLayout
 id postReview_Button
-id posted_review_text
+id postReview_redirect
+id professorName_PostReview
 id professorName_Review
 id professorSearchBar
 id professor_department
@@ -2984,15 +2984,21 @@ id professor_search_result
 id progress_circular
 id progress_horizontal
 id radio
-id ratingBar
+id rating
+id ratingBar_review
+id rating_from_database
 id ratio
 id rectangles
 id registrationTypeInput
+id resendCode
+id restart
 id returnHomeButton_AccountPage
 id returnHomeButton_ReviewPage
+id reverse
 id reverseSawtooth
-id review_scroller
+id review_database_result
 id review_text
+id review_text_from_database
 id review_text_reviewLayout
 id right
 id rightToLeft
@@ -3038,6 +3044,7 @@ id snackbar_action
 id snackbar_text
 id snap
 id snapMargins
+id software
 id south
 id spacer
 id special_effects_controller_view_tag
@@ -3093,6 +3100,9 @@ id textView
 id textView2
 id textView3
 id textView4
+id textView5
+id textView6
+id textView7
 id text_input_end_icon
 id text_input_error_icon
 id text_input_start_icon
@@ -3108,6 +3118,7 @@ id titleBackGround
 id titleDividerNoCustom
 id title_template
 id toggle
+id togglebutton
 id top
 id topPanel
 id touch_outside
@@ -3125,7 +3136,9 @@ id unlabeled
 id up
 id useLogo
 id userRegistration
+id username_from_database_reviews
 id vertical_only
+id viewCommentsBtn
 id view_offset_helper
 id view_transition
 id view_tree_lifecycle_owner
@@ -3148,7 +3161,6 @@ integer abc_config_activityShortDur
 integer app_bar_elevation_anim_duration
 integer bottom_sheet_slide_duration
 integer cancel_button_image_alpha
-integer config_navAnimTime
 integer config_tooltipAnimTime
 integer design_snackbar_text_max_lines
 integer design_tab_indicator_anim_duration_ms
@@ -3234,10 +3246,13 @@ layout activity_account
 layout activity_forgot_password_page
 layout activity_login_page
 layout activity_main
+layout activity_post_review
 layout activity_registration
 layout activity_registration_professor
 layout activity_registration_type
+layout activity_reply
 layout activity_review
+layout activity_username_dialog
 layout browser_actions_context_menu_page
 layout browser_actions_context_menu_row
 layout color_spinner
@@ -3320,6 +3335,7 @@ layout notification_template_part_chronometer
 layout notification_template_part_time
 layout professor_search_layout
 layout review_layout
+layout reviews_from_database_layout
 layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
@@ -3353,6 +3369,11 @@ mipmap ic_utareviews_applogo
 mipmap ic_utareviews_applogo_foreground
 mipmap ic_utareviews_applogo_round
 plurals mtrl_badge_content_description
+raw female_student_with_books
+raw loading_light_colors
+raw login_monster
+raw search_icon_floating
+string a_small_white_image_showing_an_email
 string abc_action_bar_home_description
 string abc_action_bar_up_description
 string abc_action_menu_overflow_description
@@ -3380,15 +3401,22 @@ string abc_searchview_description_voice
 string abc_shareactionprovider_share_with
 string abc_shareactionprovider_share_with_application
 string abc_toolbar_collapse_description
+string account_password_more_than_8_characters
+string account_type
 string androidx_startup
 string app_name
 string appbar_scrolling_view_behavior
 string bottom_sheet_behavior
 string bottomsheet_action_expand_halfway
+string cancel
+string change_account_credentials
+string change_account_settings
+string change_user_avatar
 string character_counter_content_description
 string character_counter_overflowed_content_description
 string character_counter_pattern
 string chip_text
+string class_from_database_text
 string clear_text_end_icon_content_description
 string common_google_play_services_enable_button
 string common_google_play_services_enable_text
@@ -3408,7 +3436,15 @@ string common_google_play_services_wear_update_text
 string common_open_on_phone
 string common_signin_button_text
 string common_signin_button_text_long
+string current_email
+string current_user_email
+string current_username
+string currently_viewing_account_page
+string date
 string default_web_client_id
+string email
+string email_address
+string enter_your_email_address
 string error_icon_content_description
 string exposed_dropdown_menu_content_description
 string fab_transformation_scrim_behavior
@@ -3420,8 +3456,10 @@ string google_app_id
 string google_crash_reporting_api_key
 string google_storage_bucket
 string hide_bottom_view_on_scroll_behavior
+string i_forgot_my_password
 string icon_content_description
 string item_view_role_description
+string login
 string m3_ref_typeface_brand_display_regular
 string m3_ref_typeface_brand_medium
 string m3_ref_typeface_brand_regular
@@ -3447,6 +3485,7 @@ string m3_sys_typescale_label_small_font
 string m3_sys_typescale_title_large_font
 string m3_sys_typescale_title_medium_font
 string m3_sys_typescale_title_small_font
+string make_a_selection
 string material_clock_display_divider
 string material_clock_toggle_content_description
 string material_hour_selection
@@ -3503,16 +3542,33 @@ string mtrl_picker_toggle_to_day_selection
 string mtrl_picker_toggle_to_text_input_mode
 string mtrl_picker_toggle_to_year_selection
 string mtrl_timepicker_confirm
-string nav_app_bar_navigate_up_description
-string nav_app_bar_open_drawer_description
+string new_account_registration
+string new_professor_registration
+string no_account_sign_up
+string no_description_image_is_invisible
+string password
 string password_toggle_content_description
 string path_password_eye
 string path_password_eye_mask_strike_through
 string path_password_eye_mask_visible
 string path_password_strike_through
+string post_review
+string professor_profile_photo
+string professor_search
 string project_id
+string rating
+string register
+string reset_password
+string return_home
+string review
+string search_here
 string search_menu_title
+string sign_out
 string status_bar_notification_info_overflow
+string togglebutton
+string user_registration
+string username
+string uta_reviews
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light
 style AndroidThemeColorAccentYellow
@@ -4013,9 +4069,6 @@ style Theme_AppCompat_Light_DialogWhenLarge
 style Theme_AppCompat_Light_NoActionBar
 style Theme_AppCompat_NoActionBar
 style Theme_CSE3311Project
-style Theme_CSE3311Project_AppBarOverlay
-style Theme_CSE3311Project_NoActionBar
-style Theme_CSE3311Project_PopupOverlay
 style Theme_Design
 style Theme_Design_BottomSheetDialog
 style Theme_Design_Light
@@ -4546,7 +4599,6 @@ styleable ActionMenuItemView android_minWidth
 styleable ActionMenuView
 styleable ActionMode background backgroundSplit closeItemLayout height subtitleTextStyle titleTextStyle
 styleable ActivityChooserView expandActivityOverflowButtonDrawable initialActivityCount
-styleable ActivityNavigator android_name action data dataPattern targetPackage
 styleable AlertDialog android_layout buttonIconDimen buttonPanelSideLayout listItemLayout listLayout multiChoiceItemLayout showTitle singleChoiceItemLayout
 styleable AnimatedStateListDrawableCompat android_dither android_visible android_variablePadding android_constantSize android_enterFadeDuration android_exitFadeDuration
 styleable AnimatedStateListDrawableItem android_id android_drawable
@@ -4588,7 +4640,6 @@ styleable ConstraintSet android_orientation android_id android_visibility androi
 styleable CoordinatorLayout keylines statusBarBackground
 styleable CoordinatorLayout_Layout android_layout_gravity layout_anchor layout_anchorGravity layout_behavior layout_dodgeInsetEdges layout_insetEdge layout_keyline
 styleable CustomAttribute attributeName customBoolean customColorDrawableValue customColorValue customDimension customFloatValue customIntegerValue customPixelDimension customReference customStringValue methodName
-styleable DialogFragmentNavigator android_name
 styleable DrawerArrowToggle arrowHeadLength arrowShaftLength barLength color drawableSize gapBetweenBars spinBars thickness
 styleable DrawerLayout elevation
 styleable ExtendedFloatingActionButton collapsedSize elevation extendMotionSpec hideMotionSpec showMotionSpec shrinkMotionSpec
@@ -4601,7 +4652,6 @@ styleable FontFamilyFont android_font android_fontWeight android_fontStyle andro
 styleable ForegroundLinearLayout android_foreground android_foregroundGravity foregroundInsidePadding
 styleable Fragment android_name android_id android_tag
 styleable FragmentContainerView android_name android_tag
-styleable FragmentNavigator android_name
 styleable GradientColor android_startColor android_endColor android_type android_centerX android_centerY android_gradientRadius android_tileMode android_centerColor android_startX android_startY android_endX android_endY
 styleable GradientColorItem android_color android_offset
 styleable ImageFilterView altSrc blendSrc brightness contrast crossfade imagePanX imagePanY imageRotate imageZoom overlay round roundPercent saturation warmth
@@ -4620,6 +4670,7 @@ styleable LinearLayoutCompat_Layout android_layout_gravity android_layout_width 
 styleable LinearProgressIndicator indeterminateAnimationType indicatorDirectionLinear
 styleable ListPopupWindow android_dropDownHorizontalOffset android_dropDownVerticalOffset
 styleable LoadingImageView circleCrop imageAspectRatio imageAspectRatioAdjust
+styleable LottieAnimationView lottie_autoPlay lottie_cacheComposition lottie_colorFilter lottie_enableMergePathsForKitKatAndAbove lottie_fallbackRes lottie_fileName lottie_imageAssetsFolder lottie_loop lottie_progress lottie_rawRes lottie_renderMode lottie_repeatCount lottie_repeatMode lottie_scale lottie_speed lottie_url
 styleable MaterialAlertDialog backgroundInsetBottom backgroundInsetEnd backgroundInsetStart backgroundInsetTop
 styleable MaterialAlertDialogTheme materialAlertDialogBodyTextStyle materialAlertDialogButtonSpacerVisibility materialAlertDialogTheme materialAlertDialogTitleIconStyle materialAlertDialogTitlePanelStyle materialAlertDialogTitleTextStyle
 styleable MaterialAutoCompleteTextView android_inputType
@@ -4647,18 +4698,10 @@ styleable MotionLabel android_textSize android_typeface android_textStyle androi
 styleable MotionLayout applyMotionScene currentState layoutDescription motionDebug motionProgress showPaths
 styleable MotionScene defaultDuration layoutDuringTransition
 styleable MotionTelltales telltales_tailColor telltales_tailScale telltales_velocityMode
-styleable NavAction android_id destination enterAnim exitAnim launchSingleTop popEnterAnim popExitAnim popUpTo popUpToInclusive
-styleable NavArgument android_name android_defaultValue argType nullable
-styleable NavDeepLink android_autoVerify action mimeType uri
-styleable NavGraphNavigator startDestination
-styleable NavHost navGraph
-styleable NavHostFragment defaultNavHost
-styleable NavInclude graph
 styleable NavigationBarActiveIndicator android_height android_width android_color marginHorizontal shapeAppearance
 styleable NavigationBarView backgroundTint elevation itemActiveIndicatorStyle itemBackground itemIconSize itemIconTint itemPaddingBottom itemPaddingTop itemRippleColor itemTextAppearanceActive itemTextAppearanceInactive itemTextColor labelVisibilityMode menu
 styleable NavigationRailView headerLayout itemMinHeight menuGravity
 styleable NavigationView android_layout_gravity android_background android_fitsSystemWindows android_maxWidth bottomInsetScrimEnabled dividerInsetEnd dividerInsetStart drawerLayoutCornerSize elevation headerLayout itemBackground itemHorizontalPadding itemIconPadding itemIconSize itemIconTint itemMaxLines itemShapeAppearance itemShapeAppearanceOverlay itemShapeFillColor itemShapeInsetBottom itemShapeInsetEnd itemShapeInsetStart itemShapeInsetTop itemTextAppearance itemTextColor itemVerticalPadding menu shapeAppearance shapeAppearanceOverlay subheaderColor subheaderInsetEnd subheaderInsetStart subheaderTextAppearance topInsetScrimEnabled
-styleable Navigator android_label android_id
 styleable OnClick clickAction targetId
 styleable OnSwipe autoCompleteMode dragDirection dragScale dragThreshold limitBoundsTo maxAcceleration maxVelocity moveWhenScrollAtTop nestedScrollFlags onTouchUp rotationCenterId springBoundary springDamping springMass springStiffness springStopThreshold touchAnchorId touchAnchorSide touchRegionId
 styleable PopupWindow android_popupBackground android_popupAnimationStyle overlapAnchor

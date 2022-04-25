@@ -1,5 +1,43 @@
 <resources>
     <string name="app_name">UTA Reviews</string>
+    <string name="professor_profile_photo">Professor Profile Photo</string>
+    <string name="return_home">Return Home</string>
+    <string name="change_user_avatar">Change User Avatar</string>
+    <string name="change_account_credentials">Change Account Credentials</string>
+    <string name="currently_viewing_account_page">Currently Viewing Account Page</string>
+    <string name="current_user_email">Current User Email:</string>
+    <string name="current_username">Current Username:</string>
+    <string name="current_email">Current Email</string>
+    <string name="email_address">Email Address</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="a_small_white_image_showing_an_email">A small white image showing an email</string>
+    <string name="no_account_sign_up">No Account? Sign-Up</string>
+    <string name="i_forgot_my_password">I Forgot My Password</string>
+    <string name="change_account_settings">Change Account Settings</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="professor_search">Professor Search</string>
+    <string name="search_here">Search Here…</string>
+    <string name="new_account_registration">New Account Registration</string>
+    <string name="email">Email</string>
+    <string name="uta_reviews">UTA Reviews</string>
+    <string name="enter_your_email_address">Enter your email address</string>
+    <string name="reset_password">Reset Password</string>
+    <string name="new_professor_registration">New Professor Registration</string>
+    <string name="username">Username</string>
+    <string name="register">Register</string>
+    <string name="cancel">Cancel</string>
+    <string name="account_password_more_than_8_characters">Account Password (more than 8 characters)</string>
+    <string name="post_review">Post Review</string>
+    <string name="make_a_selection">Make a selection</string>
+    <string name="no_description_image_is_invisible">No description, image is invisible</string>
+    <string name="review">Review</string>
+    <string name="date">Date</string>
+    <string name="rating">Rating</string>
+    <string name="class_from_database_text">Class</string>
+    <string name="account_type">Account Type</string>
+    <string name="user_registration">User Registration</string>
+    <string name="togglebutton">ToggleButton</string>
 
     <string-array name="professor_names_array">
         <item>Alexandra Stefan</item>
@@ -17,5 +55,4 @@
         <item>Student</item>
         <item>Professor</item>
     </string-array>
-
 </resources>

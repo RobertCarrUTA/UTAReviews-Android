@@ -9,16 +9,11 @@
         android:roundIcon="@mipmap/ic_utareviews_applogo"
         android:supportsRtl="true"
         android:theme="@style/Theme.CSE3311Project">
-        <activity
-            android:name=".RegistrationProfessor"
-            android:exported="false" />
-        <activity
-            android:name=".RegistrationType"
-            android:exported="true" />
-        <activity android:name=".Registration"
-            android:exported="true"/>
-        <activity android:name=".LoginPage"
-            android:exported="true">
+        <activity android:name=".ReplyActivity"></activity>
+        <activity android:name=".UsernameDialog" />
+        <activity android:name=".PostReviewActivity" />
+        <activity android:name=".Registration" />
+        <activity android:name=".LoginPage">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -28,8 +23,7 @@
         <activity android:name=".ForgotPasswordPage" />
         <activity android:name=".AccountActivity" />
         <activity android:name=".ReviewActivity" />
-        <activity android:name=".MainActivity"
-            android:exported="true">
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

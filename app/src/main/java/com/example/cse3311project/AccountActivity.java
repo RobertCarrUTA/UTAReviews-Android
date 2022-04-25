@@ -1,58 +1,89 @@
 package com.example.cse3311project;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
+import android.widget.TextView;
+import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
-import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.firestore.FirebaseFirestore;
 
-public class AccountActivity extends AppCompatActivity
+public class AccountActivity extends AppCompatActivity implements UsernameDialog.ExampleDialogListener
 {
-    private Button returnHomeButton_AccountPage;
-    private EditText editTextTextEmailAddress, editTextTextUsername;
-
+    Button resendCode;
     FirebaseAuth fAuth;
-
-    private DatabaseReference ProfessorDatabase;
-
+    FirebaseFirestore fStore;
+    String userID;
+    private TextView editTextTextUsername;
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
+        // Documentation for setting up a username?:
+        // https://firebase.google.com/docs/auth/android/manage-users#update_a_users_profile
+
+        //Declaration for variable
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_account);
 
-        returnHomeButton_AccountPage = (Button) findViewById(R.id.returnHomeButton_AccountPage);
-        editTextTextEmailAddress = (EditText)  findViewById(R.id.editTextTextEmailAddress);
-        editTextTextUsername = (EditText) findViewById(R.id.editTextTextUsername);
+        Button returnHomeButton_AccountPage = (Button) findViewById(R.id.returnHomeButton_AccountPage);
+        TextView editTextTextEmailAddress = (TextView) findViewById(R.id.editTextTextEmailAddress);
+        editTextTextUsername = (TextView) findViewById(R.id.editTextTextUsername);
+        Button Credentials = (Button) findViewById(R.id.ChangingAccountCredentials);
+        Button Avatar = (Button) findViewById(R.id.changeAvatarButton_AccountPage);
 
         editTextTextEmailAddress.setEnabled(false);
         editTextTextUsername.setEnabled(false);
 
-
+        // Import Database
         FirebaseUser currentUser = FirebaseAuth.getInstance().getCurrentUser();
+        fAuth = FirebaseAuth.getInstance();
+        fStore = FirebaseFirestore.getInstance();
+
+        //declare variables for resending verified Code for the email
+        resendCode = findViewById(R.id.resendCode);
+        userID = fAuth.getCurrentUser().getEmail();
+        FirebaseUser user = fAuth.getCurrentUser();
+
+        // this if statement is verified the email is not empty and it is an email address
         if(currentUser != null)
         {
             String userEmail = currentUser.getEmail();
             editTextTextEmailAddress.setText(userEmail);
 
             //String username = editTextTextEmailAddress.toString();
+            /*
+            assert userEmail != null;
             String[] splits = userEmail.split("@");
-            editTextTextUsername.setText("@" + splits[0]);
+            String usernameString = "@" + splits[0];
+            editTextTextUsername.setText(usernameString);
+             */
         }
 
-        returnHomeButton_AccountPage.setOnClickListener(new View.OnClickListener()
+        Credentials.setOnClickListener(view -> showDialog());
+
+        if(!user.isEmailVerified())
         {
-            @Override
-            public void onClick(View v) {
-                openHomeActivity();
-            }
-        });
+            //setting Verify Now invisible for email that is not verified
+            resendCode.setVisibility(View.VISIBLE);
+            resendCode.setOnClickListener(view -> user.sendEmailVerification().addOnSuccessListener(
+                    aVoid -> Toast.makeText(view.getContext(), "Verification Email has been sent.",
+                            Toast.LENGTH_SHORT).show()).addOnFailureListener(e ->
+                                Log.d("tag","onFailure: Email not sent "+e.getMessage())));
+        }
+        returnHomeButton_AccountPage.setOnClickListener(v -> openHomeActivity());
+    }
+
+    // this function calls the dialog and merge it into the accountactivity
+    public void showDialog()
+    {
+        UsernameDialog usernameDialog = new UsernameDialog();
+        usernameDialog.show(getSupportFragmentManager(),"Change Username");
     }
 
     // Use this function to open the home (Main) activity
@@ -60,5 +91,11 @@ public class AccountActivity extends AppCompatActivity
     {
         Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
+    }
+
+    @Override
+    public void applyTexts(String username)
+    {
+        editTextTextUsername.setText(username);
     }
 }

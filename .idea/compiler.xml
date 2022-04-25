@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="CompilerConfiguration">
+    <excludeFromCompile>
+      <file url="file://$PROJECT_DIR$/app/src/main/java/com/example/cse3311project/AccountActivity.java" />
+    </excludeFromCompile>
     <bytecodeTargetLevel target="1.8" />
   </component>
 </project>

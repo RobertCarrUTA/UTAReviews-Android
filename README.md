@@ -1,7 +1,7 @@
 # CSE-3311-Spring-2022
 This is our repository for Team 10 in CSE 3311-002 Spring 2022 for Christoph Csallner
 
-# Project Description - UTAReviews
+# Project Description - UTA Reviews
 Our app (UTAReviews) plans to provide current and future students (future students as in students who attend the university in the future but not currently) of the University of Texas at Arlington (UTA) a tool that allows detailed reviews and discussions of professors at UTA. An issue with other tools such as RateMyProfessor and Reddit is that RateMyProfessor does not allow for detailed reviews and discussions, the issue with Reddit is that it is not centralized. We hope to bring the ability for students to leave extensive reviews and allow them to discuss amongst each other, rate each other's reviews or comments, and review the professors being reviewed, and have it centralized to UTA specifically.
 
 There are currently only plans to make this application through Android development with Android Studio. We are looking at possibly making a website to allow more users the opportunity to use our application but for the time being, we only plan Android development.

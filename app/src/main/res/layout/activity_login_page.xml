@@ -7,59 +7,6 @@
     android:background="#3F7CE4"
     tools:context=".LoginPage">
 
-    <Button
-        android:id="@+id/signupButton"
-        android:layout_width="197dp"
-        android:layout_height="39dp"
-        android:text="Sign Up"
-        android:textColor="#FFFFFF"
-        android:textColorHint="#F8F1F1"
-        app:backgroundTint="#F8885B"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Password"
-        app:layout_constraintVertical_bias="0.455" />
-
-    <Button
-        android:id="@+id/forgotPasswordButton"
-        android:layout_width="197dp"
-        android:layout_height="39dp"
-        android:text="Forgot Password?"
-        android:textColor="#FFFFFF"
-        android:textColorHint="#F8F1F1"
-        app:backgroundTint="#F8885B"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Password"
-        app:layout_constraintVertical_bias="0.27" />
-
-    <View
-        android:id="@+id/TitleBackGround"
-        android:layout_width="411dp"
-        android:layout_height="156dp"
-        android:background="#F8885B"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <TextView
-        android:id="@+id/Title"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="UTA Reviews"
-        android:textColor="#FDFDFD"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/TitleBackGround"
-        app:layout_constraintEnd_toEndOf="@+id/TitleBackGround"
-        app:layout_constraintStart_toStartOf="@+id/TitleBackGround"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <EditText
         android:id="@+id/EmailAddress"
         android:layout_width="275dp"
@@ -67,8 +14,8 @@
         android:drawableStart="@drawable/ic_email"
         android:drawablePadding="12dp"
         android:ems="10"
-        android:hint="Email Address"
-        android:inputType="textPersonName"
+        android:hint="@string/email_address"
+        android:inputType="textEmailAddress"
         android:paddingStart="12dp"
         android:paddingEnd="12dp"
         android:textColor="#FFFFFF"
@@ -78,10 +25,10 @@
         android:textSize="19sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/TitleBackGround"
-        app:layout_constraintVertical_bias="0.094" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.559"
+        android:autofillHints="" />
 
     <EditText
         android:id="@+id/Password"
@@ -90,7 +37,7 @@
         android:drawableStart="@drawable/ic_lock"
         android:drawablePadding="12dp"
         android:ems="10"
-        android:hint="Password"
+        android:hint="@string/password"
         android:inputType="textPassword"
         android:paddingStart="12dp"
         android:paddingEnd="12dp"
@@ -101,16 +48,16 @@
         android:textSize="19sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/EmailAddress"
-        app:layout_constraintVertical_bias="0.078" />
+        app:layout_constraintVertical_bias="0.217"
+        android:autofillHints="" />
 
     <Button
         android:id="@+id/buttonLogin"
         android:layout_width="197dp"
         android:layout_height="39dp"
-        android:text="Login"
+        android:text="@string/login"
         android:textColor="#FFFFFF"
         android:textColorHint="#F8F1F1"
         app:backgroundTint="#F8885B"
@@ -118,6 +65,60 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Password"
-        app:layout_constraintVertical_bias="0.099" />
+        app:layout_constraintVertical_bias="0.338" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="216dp"
+        android:layout_height="151dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/EmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.943"
+        app:srcCompat="@drawable/uta_reviews_logo"
+        android:contentDescription="@string/a_small_white_image_showing_an_email" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animation_view"
+        android:layout_width="237dp"
+        android:layout_height="197dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="false"
+        app:lottie_rawRes="@raw/female_student_with_books" />
+
+    <TextView
+        android:id="@+id/signupButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/no_account_sign_up"
+        android:textColor="#FFFCFC"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.159"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonLogin"
+        app:layout_constraintVertical_bias="0.405" />
+
+    <TextView
+        android:id="@+id/forgotPasswordButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/i_forgot_my_password"
+        android:textColor="#FFFCFC"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.442"
+        app:layout_constraintStart_toEndOf="@+id/signupButton"
+        app:layout_constraintTop_toBottomOf="@+id/buttonLogin"
+        app:layout_constraintVertical_bias="0.405" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
