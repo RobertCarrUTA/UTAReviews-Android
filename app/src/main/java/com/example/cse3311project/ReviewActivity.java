@@ -8,6 +8,7 @@ import android.view.ViewGroup;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -75,6 +76,7 @@ public class ReviewActivity extends AppCompatActivity
                     count++;
                 }
 
+                // To get the average we need to divide the sum by the number of reviews
                 float ratingSumAverageFloat = ratingSum/count;
                 ratingSumAverage = String.format("%.2f", ratingSumAverageFloat);
                 String ratingSetText = "Rating: " + ratingSumAverage;
@@ -92,9 +94,10 @@ public class ReviewActivity extends AppCompatActivity
         // TODO: There may need to be some improvements and stability issues with the profRef.addValueEventListener(new ValueEventListener()
         // below. I, Robert, have added some already, I do not get the issues any longer but we need to keep this in mind
         // The issues can be repeating the loop forever, or putting a bunch of new ratings under the professors name
+        // POSSIBLE FIX (ROBERT): Changed the addValueEventListener to addListenerForSingleValueEvent, issues seem to be gone for now
         final boolean[] matchFound = {false};
         // Push the new average to the professors rating on the database
-        profRef.addValueEventListener(new ValueEventListener()
+        profRef.addListenerForSingleValueEvent(new ValueEventListener()
         {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot)
@@ -117,8 +120,8 @@ public class ReviewActivity extends AppCompatActivity
                         {
                             matchFound[0] = true;
                             // Keep the below commented line for quick debugging
-                            //System.out.println("Prof " + professorName);
-                            //System.out.println("Rating: " + ratingSumAverage);
+                            System.out.println("Prof " + professorName);
+                            System.out.println("Rating: " + ratingSumAverage);
 
                             // Push the new average to the professors rating on the database
                             snapshot.getRef().child("rating").setValue(ratingSumAverage);
@@ -198,6 +201,24 @@ public class ReviewActivity extends AppCompatActivity
                 holder.review_rating_from_database.setText(rating_text);
                 holder.date_the_review_was_posted.setText(model.getDate());
                 holder.classTaken_from_database.setText(model.getClassTaken());
+
+                // TODO: (Robert) Come back and make this better, this is not optimal but it works
+                // This allows us to click on the RecyclerView item and go to the right comment page
+                holder.itemView.setOnClickListener(view ->
+                {
+                    // This is how we would get the selected professor name
+                    //String professorNameIntent = professor_selected_name;
+                    String usernameCommentSection = model.getUsername();
+
+                    // To pass this name that the user has selected, This is the only way I could figure
+                    // out how to do it, we start the review activity with this intent or it cannot be passed
+                    Intent comment_selection_intent = new Intent(getApplicationContext(), ReplyActivity.class);
+                    comment_selection_intent.putExtra("professor_name_from_list", professor_selected_name);
+                    comment_selection_intent.putExtra("usernameCommentSection", usernameCommentSection);
+
+                    startActivity(comment_selection_intent);
+                    Toast.makeText(ReviewActivity.this, "Now viewing reviews for " + usernameCommentSection + "'s review of " + professor_selected_name, Toast.LENGTH_SHORT).show();
+                });
             }
         };
 

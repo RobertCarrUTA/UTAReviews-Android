@@ -36,6 +36,10 @@
         "source": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\src\\main\\res\\mipmap-xhdpi\\ic_default_avatar_foreground.png"
     },
     {
+        "merged": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_reply.xml.flat",
+        "source": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\src\\main\\res\\layout\\activity_reply.xml"
+    },
+    {
         "merged": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_default_avatar_round.png.flat",
         "source": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_default_avatar_round.png"
     },

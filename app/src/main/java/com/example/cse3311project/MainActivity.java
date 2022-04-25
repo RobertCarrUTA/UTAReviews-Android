@@ -120,6 +120,7 @@ public class MainActivity extends AppCompatActivity
                 holder.professor_rating.setText(professor_rating_setText);
 
                 // TODO: (Robert) Come back and make this better, this is not optimal but it works
+                // This allows us to click on the RecyclerView item and go to the right review page
                 holder.itemView.setOnClickListener(view ->
                 {
                     // This is how we would get the selected professor name

@@ -21,6 +21,7 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/Theme.CSE3311Project" >
+        <activity android:name="com.example.cse3311project.ReplyActivity" />
         <activity android:name="com.example.cse3311project.UsernameDialog" />
         <activity android:name="com.example.cse3311project.PostReviewActivity" />
         <activity android:name="com.example.cse3311project.Registration" />
