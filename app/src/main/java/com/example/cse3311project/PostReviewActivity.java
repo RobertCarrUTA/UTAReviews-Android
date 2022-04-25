@@ -36,6 +36,8 @@ public class PostReviewActivity extends AppCompatActivity
 
         Intent intent = getIntent();
 
+        // Here we get the passed information from the previous review page of the staff member
+        // who was being viewed
         String professor_selected_name = intent.getExtras().getString("teacher_name");
 
         Button cancelReviewButton = findViewById(R.id.cancelReviewButton);
@@ -70,6 +72,8 @@ public class PostReviewActivity extends AppCompatActivity
 
         postReview_Button.setOnClickListener(v ->
         {
+            // When the user clicks the post review button all the information that was entered is
+            // now pushed to the Review section of the database
             String review_text_submission = review_text.getText().toString().trim();
             float ratingFloat = ratingStar.getRating();
             String ratingString = String.valueOf(ratingFloat);

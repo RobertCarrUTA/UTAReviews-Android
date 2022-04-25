@@ -87,7 +87,6 @@ public class AccountActivity extends AppCompatActivity implements UsernameDialog
     }
 
     // Use this function to open the home (Main) activity
-
     public void openHomeActivity()
     {
         Intent intent = new Intent(this, MainActivity.class);

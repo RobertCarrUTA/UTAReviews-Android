@@ -64,7 +64,7 @@ public class ReviewActivity extends AppCompatActivity
         {
             float ratingSum = 0;
             String ratingSumString;
-            float count;
+            float count; // counter to keep track of the denominator for the average
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot)
             {
@@ -77,7 +77,8 @@ public class ReviewActivity extends AppCompatActivity
 
                 float ratingSumAverageFloat = ratingSum/count;
                 ratingSumAverage = String.format("%.2f", ratingSumAverageFloat);
-                ratingSumText.setText("Rating: " + ratingSumAverage);
+                String ratingSetText = "Rating: " + ratingSumAverage;
+                ratingSumText.setText(ratingSetText);
             }
 
             @Override
@@ -88,28 +89,38 @@ public class ReviewActivity extends AppCompatActivity
         });
 
 
-        // TODO: There may need to be some improvements and stability issues with the two
-        // below addValueEventListeners. I, Robert, have added some already, I do not get the issues
-        // any longer but we need to keep this in mind
+        // TODO: There may need to be some improvements and stability issues with the profRef.addValueEventListener(new ValueEventListener()
+        // below. I, Robert, have added some already, I do not get the issues any longer but we need to keep this in mind
+        // The issues can be repeating the loop forever, or putting a bunch of new ratings under the professors name
         final boolean[] matchFound = {false};
         // Push the new average to the professors rating on the database
         profRef.addValueEventListener(new ValueEventListener()
         {
-            //boolean matchFound = false;
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot)
             {
-                System.out.println("HERE");
+                // Keep the below commented line for quick debugging
+                //System.out.println("HERE");
                 if(matchFound[0] == false)
                 {
-                    for (DataSnapshot snapshot : dataSnapshot.getChildren()) {
+                    // This for loop will move through all of our professors looking for a match
+                    // of the Professor child named professor_selected_name
+                    for (DataSnapshot snapshot : dataSnapshot.getChildren())
+                    {
+                        // We get the name of the Professor object and store it into professorName
                         String professorName = Objects.requireNonNull(snapshot.child("name").getValue()).toString();
-                        if (professorName.equals(professor_selected_name)) {
+
+                        // If we find a match between the current professor and the Professor object name
+                        // we set match found to true, no need to keep searching, and we push the average
+                        // rating to the database for that Professor object rating value
+                        if (professorName.equals(professor_selected_name))
+                        {
                             matchFound[0] = true;
-                            System.out.println("Prof " + professorName);
+                            // Keep the below commented line for quick debugging
+                            //System.out.println("Prof " + professorName);
+                            //System.out.println("Rating: " + ratingSumAverage);
 
                             // Push the new average to the professors rating on the database
-                            System.out.println("Rating: " + ratingSumAverage);
                             snapshot.getRef().child("rating").setValue(ratingSumAverage);
                             break;
                         }
@@ -150,7 +161,6 @@ public class ReviewActivity extends AppCompatActivity
             i.putExtra("teacher_name", professor_selected_name);
             startActivity(i);
         });
-
         returnHomeButton_ReviewPage.setOnClickListener(v -> startActivity(new Intent(getApplicationContext(), MainActivity.class)));
     }
 
@@ -181,6 +191,7 @@ public class ReviewActivity extends AppCompatActivity
             @Override
             protected void onBindViewHolder(@NonNull ReviewActivity.ReviewViewHolder holder, int position, @NonNull Reviews model)
             {
+                // This will set the information for our RecyclerView from our Reviews model
                 holder.review_username.setText(model.getUsername());
                 holder.review_text_from_database.setText(model.getReview());
                 String rating_text = "Rating: " + model.getRating();
