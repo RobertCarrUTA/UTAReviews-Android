@@ -12,6 +12,12 @@ public class Replies
         this.username = username;
     }
 
+    // We must have an empty constructor
+    public Replies()
+    {
+
+    }
+
     public String getComment()
     {
         return comment;

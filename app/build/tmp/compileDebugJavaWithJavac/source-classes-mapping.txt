@@ -10,6 +10,8 @@ com/example/cse3311project/BuildConfig.java
  com.example.cse3311project.BuildConfig
 com/example/cse3311project/ForgotPasswordPage.java
  com.example.cse3311project.ForgotPasswordPage
+com/example/cse3311project/PostReplyActivity.java
+ com.example.cse3311project.PostReplyActivity
 com/example/cse3311project/Registration.java
  com.example.cse3311project.Registration
 com/example/cse3311project/MainActivity.java

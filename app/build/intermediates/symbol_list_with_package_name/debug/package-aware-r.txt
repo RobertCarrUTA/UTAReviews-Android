@@ -2712,6 +2712,7 @@ id buttonSendingCode
 id cache_measures
 id callMeasure
 id cancelButton
+id cancelButtonReply
 id cancelReviewButton
 id cancel_action
 id cancel_button
@@ -2974,6 +2975,7 @@ id percent
 id pin
 id position
 id postLayout
+id postReplyButton
 id postReview_Button
 id postReview_redirect
 id professorName_PostReview
@@ -2993,6 +2995,7 @@ id ratio
 id rectangles
 id registrationTypeInput
 id replyButton
+id replyEditText
 id resendCode
 id restart
 id returnHomeButton_AccountPage
@@ -3254,6 +3257,7 @@ layout activity_account
 layout activity_forgot_password_page
 layout activity_login_page
 layout activity_main
+layout activity_post_reply
 layout activity_post_review
 layout activity_registration
 layout activity_registration_professor

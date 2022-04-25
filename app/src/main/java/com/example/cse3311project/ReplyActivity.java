@@ -87,7 +87,7 @@ public class ReplyActivity extends AppCompatActivity
             startActivity(i);
         });
 
-        replyButton.setOnClickListener(v -> startActivity(new Intent(getApplicationContext(), MainActivity.class)));
+        replyButton.setOnClickListener(v -> startActivity(new Intent(getApplicationContext(), PostReplyActivity.class)));
     }
 
         // This is our firebase function to view the reviews for the selected teacher
@@ -115,6 +115,7 @@ public class ReplyActivity extends AppCompatActivity
                 @Override
                 public ReplyActivity.ReplyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType)
                 {
+                    System.out.println("I am here on one reply!!! One more to go again!2");
                     View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.comments_from_database_layout, parent, false);
                     return new ReplyActivity.ReplyViewHolder((view));
                 }
@@ -144,7 +145,7 @@ public class ReplyActivity extends AppCompatActivity
             {
                 super(itemView);
                 View1 = itemView;
-
+                System.out.println("I am here on one reply!!! One more to go again!32");
                 // Leaving this to see if my code comes back after fixing Git
                 // Another to see
 
@@ -152,6 +153,7 @@ public class ReplyActivity extends AppCompatActivity
                 comment_username = View1.findViewById(R.id.username_from_database_reviews);
                 comment_text_from_database = View1.findViewById(R.id.review_text_from_database);
                 date_the_comment_was_posted = View1.findViewById(R.id.rating_from_database);
+                System.out.println("I am here on one reply!!! One more to go again!33");
             }
         }
     }
