@@ -81,7 +81,7 @@ public class ReplyActivity extends AppCompatActivity
 
         returnToReviewButton.setOnClickListener(v ->
         {
-            // This will allow us to take the teachers name and pass it to the post review page
+            // This will allow us to take the teachers name and pass it to the review page
             Intent name_selection_intent = new Intent(getApplicationContext(), ReviewActivity.class);
             name_selection_intent.putExtra("professor_name_from_list", professor_selected_name);
 
