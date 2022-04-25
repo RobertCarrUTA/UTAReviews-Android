@@ -3,19 +3,12 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/zaky/AndroidStudioProjects/CSE-3311-Spring-2022/app/src/main/res/drawable/ic_launcher_background.xml" value="0.177" />
-        <entry key="..\:/Users/zaky/AndroidStudioProjects/CSE-3311-Spring-2022/app/src/main/res/layout/activity_account.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/zaky/AndroidStudioProjects/CSE-3311-Spring-2022/app/src/main/res/layout/activity_forgot_password_page.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/zaky/AndroidStudioProjects/CSE-3311-Spring-2022/app/src/main/res/layout/activity_login_page.xml" value="0.21510416666666668" />
-        <entry key="..\:/Users/zaky/AndroidStudioProjects/CSE-3311-Spring-2022/app/src/main/res/layout/activity_main.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/zaky/AndroidStudioProjects/CSE-3311-Spring-2022/app/src/main/res/layout/activity_registration.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/zaky/AndroidStudioProjects/CSE-3311-Spring-2022/app/src/main/res/layout/activity_registration_professor.xml" value="0.1953125" />
-        <entry key="..\:/Users/zaky/AndroidStudioProjects/CSE-3311-Spring-2022/app/src/main/res/layout/activity_registration_type.xml" value="0.2" />
-        <entry key="..\:/Users/zaky/AndroidStudioProjects/CSE-3311-Spring-2022/app/src/main/res/layout/activity_review.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/zaky/AndroidStudioProjects/CSE-3311-Spring-2022/app/src/main/res/layout/fragment_first.xml" value="0.21510416666666668" />
-        <entry key="..\:/Users/zaky/AndroidStudioProjects/CSE-3311-Spring-2022/app/src/main/res/layout/fragment_second.xml" value="0.21510416666666668" />
-        <entry key="..\:/Users/zaky/AndroidStudioProjects/CSE-3311-Spring-2022/app/src/main/res/layout/spinner_color_layout.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/zaky/AndroidStudioProjects/CSE-3311-Spring-2022/app/src/main/res/layout/spinner_drop_layout.xml" value="0.25416666666666665" />
+        <entry key="..\:/AndroidStudioProjects/CSE-3311-Spring-2022/app/src/main/res/layout/activity_reply.xml" value="0.23854166666666668" />
+        <entry key="..\:/AndroidStudioProjects/CSE-3311-Spring-2022/app/src/main/res/layout/activity_review.xml" value="0.23854166666666668" />
+        <entry key="..\:/AndroidStudioProjects/CSE-3311-Spring-2022/app/src/main/res/layout/professor_search_layout.xml" value="0.23854166666666668" />
+        <entry key="..\:/AndroidStudioProjects/CSE-3311-Spring-2022/app/src/main/res/layout/review_layout.xml" value="0.23854166666666668" />
+        <entry key="..\:/AndroidStudioProjects/CSE-3311-Spring-2022/app/src/main/res/layout/reviews_from_database_layout.xml" value="0.23854166666666668" />
+        <entry key="..\:/AndroidStudioProjects/CSE-3311-Spring-2022/app/src/main/res/layout/spinner_drop_layout.xml" value="0.23854166666666668" />
       </map>
     </option>
   </component>

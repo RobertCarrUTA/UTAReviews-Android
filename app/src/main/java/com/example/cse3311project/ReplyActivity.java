@@ -24,6 +24,7 @@ import com.google.firebase.database.Query;
 
 public class ReplyActivity extends AppCompatActivity
 {
+    /*
     RecyclerView comment_database_result;
     TextView reviewUserName, reviewRating, reviewClass;
     EditText reviewText;
@@ -112,6 +113,7 @@ public class ReplyActivity extends AppCompatActivity
                 @Override
                 protected void onBindViewHolder(@NonNull ReplyActivity.ReplyViewHolder holder, int position, @NonNull Replys model)
                 {
+                    /*
                     // This will set the information for our RecyclerView from our Reviews model
                     holder.comment_username.setText(model.getUsername());
                     holder.comment_text_from_database.setText(model.getReview());
@@ -119,6 +121,8 @@ public class ReplyActivity extends AppCompatActivity
                     //holder.review_rating_from_database.setText(rating_text);
                     holder.date_the_comment_was_posted.setText(model.getDate());
                     //holder.classTaken_from_database.setText(model.getClassTaken());
+
+
                 }
             };
 
@@ -145,5 +149,5 @@ public class ReplyActivity extends AppCompatActivity
                 classTaken_from_database = View1.findViewById(R.id.class_from_database);
             }
         }
+        */
     }
-}
