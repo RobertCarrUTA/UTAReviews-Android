@@ -1965,6 +1965,7 @@ dimen design_tab_text_size_2line
 dimen design_textinput_caption_translate_y
 dimen disabled_alpha_material_dark
 dimen disabled_alpha_material_light
+dimen fab_margin
 dimen fastscroll_default_thickness
 dimen fastscroll_margin
 dimen fastscroll_minimum_range
@@ -4083,6 +4084,9 @@ style Theme_AppCompat_Light_DialogWhenLarge
 style Theme_AppCompat_Light_NoActionBar
 style Theme_AppCompat_NoActionBar
 style Theme_CSE3311Project
+style Theme_CSE3311Project_AppBarOverlay
+style Theme_CSE3311Project_NoActionBar
+style Theme_CSE3311Project_PopupOverlay
 style Theme_Design
 style Theme_Design_BottomSheetDialog
 style Theme_Design_Light

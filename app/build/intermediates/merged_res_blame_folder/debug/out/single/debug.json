@@ -1,374 +1,374 @@
 [
     {
-        "merged": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher_round.png.flat",
-        "source": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.png"
+        "merged": "D:\\AndroidStudioProjects\\CSE-3311-Spring-2022\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_default_avatar.png.flat",
+        "source": "D:\\AndroidStudioProjects\\CSE-3311-Spring-2022\\app\\src\\main\\res\\mipmap-hdpi\\ic_default_avatar.png"
     },
     {
-        "merged": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_default_avatar_clipart_round.png.flat",
-        "source": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_default_avatar_clipart_round.png"
+        "merged": "D:\\AndroidStudioProjects\\CSE-3311-Spring-2022\\app\\build\\intermediates\\res\\merged\\debug\\raw_search_icon_floating.json.flat",
+        "source": "D:\\AndroidStudioProjects\\CSE-3311-Spring-2022\\app\\src\\main\\res\\raw\\search_icon_floating.json"
     },
     {
-        "merged": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_main.xml.flat",
-        "source": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\src\\main\\res\\layout\\activity_main.xml"
+        "merged": "D:\\AndroidStudioProjects\\CSE-3311-Spring-2022\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_lock.xml.flat",
+        "source": "D:\\AndroidStudioProjects\\CSE-3311-Spring-2022\\app\\src\\main\\res\\drawable\\ic_lock.xml"
     },
     {
-        "merged": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_utareviews_applogo_round.png.flat",
-        "source": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_utareviews_applogo_round.png"
+        "merged": "D:\\AndroidStudioProjects\\CSE-3311-Spring-2022\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_default_avatar_clipart_foreground.xml.flat",
+        "source": "D:\\AndroidStudioProjects\\CSE-3311-Spring-2022\\app\\src\\main\\res\\drawable\\ic_default_avatar_clipart_foreground.xml"
     },
     {
-        "merged": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_utareviews_applogo_foreground.png.flat",
-        "source": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\src\\main\\res\\mipmap-mdpi\\ic_utareviews_applogo_foreground.png"
+        "merged": "D:\\AndroidStudioProjects\\CSE-3311-Spring-2022\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_default_avatar_round.xml.flat",
+        "source": "D:\\AndroidStudioProjects\\CSE-3311-Spring-2022\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_default_avatar_round.xml"
     },
     {
-        "merged": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_utareviews_applogo_foreground.png.flat",
-        "source": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_utareviews_applogo_foreground.png"
+        "merged": "D:\\AndroidStudioProjects\\CSE-3311-Spring-2022\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher.png.flat",
+        "source": "D:\\AndroidStudioProjects\\CSE-3311-Spring-2022\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
     },
     {
-        "merged": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_default_avatar_clipart_background.xml.flat",
-        "source": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\src\\main\\res\\drawable\\ic_default_avatar_clipart_background.xml"
+        "merged": "D:\\AndroidStudioProjects\\CSE-3311-Spring-2022\\app\\build\\intermediates\\res\\merged\\debug\\layout_comments_from_database_layout.xml.flat",
+        "source": "D:\\AndroidStudioProjects\\CSE-3311-Spring-2022\\app\\src\\main\\res\\layout\\comments_from_database_layout.xml"
     },
     {
-        "merged": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_default_avatar.png.flat",
-        "source": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\src\\main\\res\\mipmap-hdpi\\ic_default_avatar.png"
+        "merged": "D:\\AndroidStudioProjects\\CSE-3311-Spring-2022\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_default_avatar_round.png.flat",
+        "source": "D:\\AndroidStudioProjects\\CSE-3311-Spring-2022\\app\\src\\main\\res\\mipmap-hdpi\\ic_default_avatar_round.png"
     },
     {
-        "merged": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_default_avatar_foreground.png.flat",
-        "source": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\src\\main\\res\\mipmap-xhdpi\\ic_default_avatar_foreground.png"
+        "merged": "D:\\AndroidStudioProjects\\CSE-3311-Spring-2022\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_default_avatar_background.xml.flat",
+        "source": "D:\\AndroidStudioProjects\\CSE-3311-Spring-2022\\app\\src\\main\\res\\drawable\\ic_default_avatar_background.xml"
     },
     {
-        "merged": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_reply.xml.flat",
-        "source": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\src\\main\\res\\layout\\activity_reply.xml"
+        "merged": "D:\\AndroidStudioProjects\\CSE-3311-Spring-2022\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "D:\\AndroidStudioProjects\\CSE-3311-Spring-2022\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
     },
     {
-        "merged": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_default_avatar_round.png.flat",
-        "source": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_default_avatar_round.png"
+        "merged": "D:\\AndroidStudioProjects\\CSE-3311-Spring-2022\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_utareviews_applogo_foreground.png.flat",
+        "source": "D:\\AndroidStudioProjects\\CSE-3311-Spring-2022\\app\\src\\main\\res\\mipmap-hdpi\\ic_utareviews_applogo_foreground.png"
     },
     {
-        "merged": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_default_avatar_foreground.png.flat",
-        "source": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\src\\main\\res\\mipmap-mdpi\\ic_default_avatar_foreground.png"
+        "merged": "D:\\AndroidStudioProjects\\CSE-3311-Spring-2022\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "D:\\AndroidStudioProjects\\CSE-3311-Spring-2022\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
+        "merged": "D:\\AndroidStudioProjects\\CSE-3311-Spring-2022\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "D:\\AndroidStudioProjects\\CSE-3311-Spring-2022\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
     },
     {
-        "merged": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_default_avatar.png.flat",
-        "source": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\src\\main\\res\\mipmap-xhdpi\\ic_default_avatar.png"
+        "merged": "D:\\AndroidStudioProjects\\CSE-3311-Spring-2022\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_post_reply.xml.flat",
+        "source": "D:\\AndroidStudioProjects\\CSE-3311-Spring-2022\\app\\src\\main\\res\\layout\\activity_post_reply.xml"
     },
     {
-        "merged": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\build\\intermediates\\res\\merged\\debug\\layout_color_spinner.xml.flat",
-        "source": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\src\\main\\res\\layout\\color_spinner.xml"
+        "merged": "D:\\AndroidStudioProjects\\CSE-3311-Spring-2022\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_default_avatar_clipart_round.png.flat",
+        "source": "D:\\AndroidStudioProjects\\CSE-3311-Spring-2022\\app\\src\\main\\res\\mipmap-xhdpi\\ic_default_avatar_clipart_round.png"
     },
     {
-        "merged": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
-        "source": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.png"
+        "merged": "D:\\AndroidStudioProjects\\CSE-3311-Spring-2022\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_utareviews_applogo_background.xml.flat",
+        "source": "D:\\AndroidStudioProjects\\CSE-3311-Spring-2022\\app\\src\\main\\res\\drawable\\ic_utareviews_applogo_background.xml"
     },
     {
-        "merged": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_default_avatar_round.png.flat",
-        "source": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\src\\main\\res\\mipmap-mdpi\\ic_default_avatar_round.png"
+        "merged": "D:\\AndroidStudioProjects\\CSE-3311-Spring-2022\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_default_avatar_clipart_background.xml.flat",
+        "source": "D:\\AndroidStudioProjects\\CSE-3311-Spring-2022\\app\\src\\main\\res\\drawable\\ic_default_avatar_clipart_background.xml"
     },
     {
-        "merged": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_default_avatar_clipart_round.png.flat",
-        "source": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\src\\main\\res\\mipmap-mdpi\\ic_default_avatar_clipart_round.png"
+        "merged": "D:\\AndroidStudioProjects\\CSE-3311-Spring-2022\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_login_page.xml.flat",
+        "source": "D:\\AndroidStudioProjects\\CSE-3311-Spring-2022\\app\\src\\main\\res\\layout\\activity_login_page.xml"
     },
     {
-        "merged": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_default_avatar.xml.flat",
-        "source": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_default_avatar.xml"
+        "merged": "D:\\AndroidStudioProjects\\CSE-3311-Spring-2022\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_utareviews_applogo.xml.flat",
+        "source": "D:\\AndroidStudioProjects\\CSE-3311-Spring-2022\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_utareviews_applogo.xml"
     },
     {
-        "merged": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
+        "merged": "D:\\AndroidStudioProjects\\CSE-3311-Spring-2022\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_registration_type.xml.flat",
+        "source": "D:\\AndroidStudioProjects\\CSE-3311-Spring-2022\\app\\src\\main\\res\\layout\\activity_registration_type.xml"
     },
     {
-        "merged": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_default_avatar_foreground.png.flat",
-        "source": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\src\\main\\res\\mipmap-hdpi\\ic_default_avatar_foreground.png"
+        "merged": "D:\\AndroidStudioProjects\\CSE-3311-Spring-2022\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_default_avatar_clipart_round.png.flat",
+        "source": "D:\\AndroidStudioProjects\\CSE-3311-Spring-2022\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_default_avatar_clipart_round.png"
     },
     {
-        "merged": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_post_review.xml.flat",
-        "source": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\src\\main\\res\\layout\\activity_post_review.xml"
+        "merged": "D:\\AndroidStudioProjects\\CSE-3311-Spring-2022\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_default_avatar.png.flat",
+        "source": "D:\\AndroidStudioProjects\\CSE-3311-Spring-2022\\app\\src\\main\\res\\mipmap-mdpi\\ic_default_avatar.png"
     },
     {
-        "merged": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_registration.xml.flat",
-        "source": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\src\\main\\res\\layout\\activity_registration.xml"
+        "merged": "D:\\AndroidStudioProjects\\CSE-3311-Spring-2022\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_post_review.xml.flat",
+        "source": "D:\\AndroidStudioProjects\\CSE-3311-Spring-2022\\app\\src\\main\\res\\layout\\activity_post_review.xml"
     },
     {
-        "merged": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_default_avatar.png.flat",
-        "source": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_default_avatar.png"
+        "merged": "D:\\AndroidStudioProjects\\CSE-3311-Spring-2022\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_default_avatar_round.png.flat",
+        "source": "D:\\AndroidStudioProjects\\CSE-3311-Spring-2022\\app\\src\\main\\res\\mipmap-mdpi\\ic_default_avatar_round.png"
     },
     {
-        "merged": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\build\\intermediates\\res\\merged\\debug\\raw_loading_light_colors.json.flat",
-        "source": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\src\\main\\res\\raw\\loading_light_colors.json"
+        "merged": "D:\\AndroidStudioProjects\\CSE-3311-Spring-2022\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_default_avatar.xml.flat",
+        "source": "D:\\AndroidStudioProjects\\CSE-3311-Spring-2022\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_default_avatar.xml"
     },
     {
-        "merged": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_default_avatar.png.flat",
-        "source": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\src\\main\\res\\mipmap-mdpi\\ic_default_avatar.png"
+        "merged": "D:\\AndroidStudioProjects\\CSE-3311-Spring-2022\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_default_avatar_clipart.png.flat",
+        "source": "D:\\AndroidStudioProjects\\CSE-3311-Spring-2022\\app\\src\\main\\res\\mipmap-xhdpi\\ic_default_avatar_clipart.png"
     },
     {
-        "merged": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_default_avatar_clipart.png.flat",
-        "source": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\src\\main\\res\\mipmap-xhdpi\\ic_default_avatar_clipart.png"
+        "merged": "D:\\AndroidStudioProjects\\CSE-3311-Spring-2022\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_email.xml.flat",
+        "source": "D:\\AndroidStudioProjects\\CSE-3311-Spring-2022\\app\\src\\main\\res\\drawable\\ic_email.xml"
     },
     {
-        "merged": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_default_avatar_foreground.png.flat",
-        "source": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_default_avatar_foreground.png"
+        "merged": "D:\\AndroidStudioProjects\\CSE-3311-Spring-2022\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_forgot_password_page.xml.flat",
+        "source": "D:\\AndroidStudioProjects\\CSE-3311-Spring-2022\\app\\src\\main\\res\\layout\\activity_forgot_password_page.xml"
     },
     {
-        "merged": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_utareviews_applogo_round.png.flat",
-        "source": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\src\\main\\res\\mipmap-mdpi\\ic_utareviews_applogo_round.png"
+        "merged": "D:\\AndroidStudioProjects\\CSE-3311-Spring-2022\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_registration_professor.xml.flat",
+        "source": "D:\\AndroidStudioProjects\\CSE-3311-Spring-2022\\app\\src\\main\\res\\layout\\activity_registration_professor.xml"
     },
     {
-        "merged": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
-        "source": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v24\\ic_launcher_foreground.xml"
+        "merged": "D:\\AndroidStudioProjects\\CSE-3311-Spring-2022\\app\\build\\intermediates\\res\\merged\\debug\\drawable_avatar_draft.png.flat",
+        "source": "D:\\AndroidStudioProjects\\CSE-3311-Spring-2022\\app\\src\\main\\res\\drawable\\avatar_draft.png"
     },
     {
-        "merged": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_utareviews_applogo_foreground.png.flat",
-        "source": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\src\\main\\res\\mipmap-hdpi\\ic_utareviews_applogo_foreground.png"
+        "merged": "D:\\AndroidStudioProjects\\CSE-3311-Spring-2022\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "D:\\AndroidStudioProjects\\CSE-3311-Spring-2022\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
+        "merged": "D:\\AndroidStudioProjects\\CSE-3311-Spring-2022\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_utareviews_applogo.png.flat",
+        "source": "D:\\AndroidStudioProjects\\CSE-3311-Spring-2022\\app\\src\\main\\res\\mipmap-xhdpi\\ic_utareviews_applogo.png"
     },
     {
-        "merged": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+        "merged": "D:\\AndroidStudioProjects\\CSE-3311-Spring-2022\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_default_avatar_clipart.png.flat",
+        "source": "D:\\AndroidStudioProjects\\CSE-3311-Spring-2022\\app\\src\\main\\res\\mipmap-hdpi\\ic_default_avatar_clipart.png"
     },
     {
-        "merged": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
+        "merged": "D:\\AndroidStudioProjects\\CSE-3311-Spring-2022\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_utareviews_applogo_foreground.png.flat",
+        "source": "D:\\AndroidStudioProjects\\CSE-3311-Spring-2022\\app\\src\\main\\res\\mipmap-mdpi\\ic_utareviews_applogo_foreground.png"
     },
     {
-        "merged": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_post_reply.xml.flat",
-        "source": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\src\\main\\res\\layout\\activity_post_reply.xml"
+        "merged": "D:\\AndroidStudioProjects\\CSE-3311-Spring-2022\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_utareviews_applogo_foreground.png.flat",
+        "source": "D:\\AndroidStudioProjects\\CSE-3311-Spring-2022\\app\\src\\main\\res\\mipmap-xhdpi\\ic_utareviews_applogo_foreground.png"
     },
     {
-        "merged": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_default_avatar_clipart_foreground.xml.flat",
-        "source": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\src\\main\\res\\drawable\\ic_default_avatar_clipart_foreground.xml"
+        "merged": "D:\\AndroidStudioProjects\\CSE-3311-Spring-2022\\app\\build\\intermediates\\res\\merged\\debug\\font_brawler.xml.flat",
+        "source": "D:\\AndroidStudioProjects\\CSE-3311-Spring-2022\\app\\src\\main\\res\\font\\brawler.xml"
     },
     {
-        "merged": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\build\\intermediates\\res\\merged\\debug\\drawable_uta_reviews_logo.png.flat",
-        "source": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\src\\main\\res\\drawable\\uta_reviews_logo.png"
+        "merged": "D:\\AndroidStudioProjects\\CSE-3311-Spring-2022\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_launcher_background.xml.flat",
+        "source": "D:\\AndroidStudioProjects\\CSE-3311-Spring-2022\\app\\src\\main\\res\\drawable\\ic_launcher_background.xml"
     },
     {
-        "merged": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\build\\intermediates\\res\\merged\\debug\\font_brawler.xml.flat",
-        "source": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\src\\main\\res\\font\\brawler.xml"
+        "merged": "D:\\AndroidStudioProjects\\CSE-3311-Spring-2022\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_default_avatar_clipart.png.flat",
+        "source": "D:\\AndroidStudioProjects\\CSE-3311-Spring-2022\\app\\src\\main\\res\\mipmap-mdpi\\ic_default_avatar_clipart.png"
     },
     {
-        "merged": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_default_avatar_clipart_round.png.flat",
-        "source": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_default_avatar_clipart_round.png"
+        "merged": "D:\\AndroidStudioProjects\\CSE-3311-Spring-2022\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_utareviews_applogo.png.flat",
+        "source": "D:\\AndroidStudioProjects\\CSE-3311-Spring-2022\\app\\src\\main\\res\\mipmap-hdpi\\ic_utareviews_applogo.png"
     },
     {
-        "merged": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_email.xml.flat",
-        "source": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\src\\main\\res\\drawable\\ic_email.xml"
+        "merged": "D:\\AndroidStudioProjects\\CSE-3311-Spring-2022\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_default_avatar_clipart.png.flat",
+        "source": "D:\\AndroidStudioProjects\\CSE-3311-Spring-2022\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_default_avatar_clipart.png"
     },
     {
-        "merged": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_default_avatar_foreground.png.flat",
-        "source": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_default_avatar_foreground.png"
+        "merged": "D:\\AndroidStudioProjects\\CSE-3311-Spring-2022\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_default_avatar_round.png.flat",
+        "source": "D:\\AndroidStudioProjects\\CSE-3311-Spring-2022\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_default_avatar_round.png"
     },
     {
-        "merged": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\build\\intermediates\\res\\merged\\debug\\raw_login_monster.json.flat",
-        "source": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\src\\main\\res\\raw\\login_monster.json"
+        "merged": "D:\\AndroidStudioProjects\\CSE-3311-Spring-2022\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_default_avatar_round.png.flat",
+        "source": "D:\\AndroidStudioProjects\\CSE-3311-Spring-2022\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_default_avatar_round.png"
     },
     {
-        "merged": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_registration_type.xml.flat",
-        "source": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\src\\main\\res\\layout\\activity_registration_type.xml"
+        "merged": "D:\\AndroidStudioProjects\\CSE-3311-Spring-2022\\app\\build\\intermediates\\res\\merged\\debug\\raw_female_student_with_books.json.flat",
+        "source": "D:\\AndroidStudioProjects\\CSE-3311-Spring-2022\\app\\src\\main\\res\\raw\\female_student_with_books.json"
     },
     {
-        "merged": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_utareviews_applogo.xml.flat",
-        "source": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_utareviews_applogo.xml"
+        "merged": "D:\\AndroidStudioProjects\\CSE-3311-Spring-2022\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_utareviews_applogo_round.png.flat",
+        "source": "D:\\AndroidStudioProjects\\CSE-3311-Spring-2022\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_utareviews_applogo_round.png"
     },
     {
-        "merged": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_default_avatar_clipart_round.png.flat",
-        "source": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\src\\main\\res\\mipmap-hdpi\\ic_default_avatar_clipart_round.png"
+        "merged": "D:\\AndroidStudioProjects\\CSE-3311-Spring-2022\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_main.xml.flat",
+        "source": "D:\\AndroidStudioProjects\\CSE-3311-Spring-2022\\app\\src\\main\\res\\layout\\activity_main.xml"
     },
     {
-        "merged": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_registration_professor.xml.flat",
-        "source": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\src\\main\\res\\layout\\activity_registration_professor.xml"
+        "merged": "D:\\AndroidStudioProjects\\CSE-3311-Spring-2022\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_utareviews_applogo_round.png.flat",
+        "source": "D:\\AndroidStudioProjects\\CSE-3311-Spring-2022\\app\\src\\main\\res\\mipmap-xhdpi\\ic_utareviews_applogo_round.png"
     },
     {
-        "merged": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\build\\intermediates\\res\\merged\\debug\\drawable_avatar_draft.png.flat",
-        "source": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\src\\main\\res\\drawable\\avatar_draft.png"
+        "merged": "D:\\AndroidStudioProjects\\CSE-3311-Spring-2022\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_account.xml.flat",
+        "source": "D:\\AndroidStudioProjects\\CSE-3311-Spring-2022\\app\\src\\main\\res\\layout\\activity_account.xml"
     },
     {
-        "merged": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_default_avatar_clipart_round.png.flat",
-        "source": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\src\\main\\res\\mipmap-xhdpi\\ic_default_avatar_clipart_round.png"
+        "merged": "D:\\AndroidStudioProjects\\CSE-3311-Spring-2022\\app\\build\\intermediates\\res\\merged\\debug\\drawable_custom_edit_texts.xml.flat",
+        "source": "D:\\AndroidStudioProjects\\CSE-3311-Spring-2022\\app\\src\\main\\res\\drawable\\custom_edit_texts.xml"
     },
     {
-        "merged": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_utareviews_applogo.png.flat",
-        "source": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\src\\main\\res\\mipmap-xhdpi\\ic_utareviews_applogo.png"
+        "merged": "D:\\AndroidStudioProjects\\CSE-3311-Spring-2022\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_default_avatar_foreground.png.flat",
+        "source": "D:\\AndroidStudioProjects\\CSE-3311-Spring-2022\\app\\src\\main\\res\\mipmap-xhdpi\\ic_default_avatar_foreground.png"
     },
     {
-        "merged": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_review.xml.flat",
-        "source": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\src\\main\\res\\layout\\activity_review.xml"
+        "merged": "D:\\AndroidStudioProjects\\CSE-3311-Spring-2022\\app\\build\\intermediates\\res\\merged\\debug\\drawable_uta_reviews_logo.png.flat",
+        "source": "D:\\AndroidStudioProjects\\CSE-3311-Spring-2022\\app\\src\\main\\res\\drawable\\uta_reviews_logo.png"
     },
     {
-        "merged": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\build\\intermediates\\res\\merged\\debug\\layout_review_layout.xml.flat",
-        "source": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\src\\main\\res\\layout\\review_layout.xml"
+        "merged": "D:\\AndroidStudioProjects\\CSE-3311-Spring-2022\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_utareviews_applogo_round.png.flat",
+        "source": "D:\\AndroidStudioProjects\\CSE-3311-Spring-2022\\app\\src\\main\\res\\mipmap-mdpi\\ic_utareviews_applogo_round.png"
     },
     {
-        "merged": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_uta_reviews_logo_login_background.xml.flat",
-        "source": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\src\\main\\res\\drawable\\ic_uta_reviews_logo_login_background.xml"
+        "merged": "D:\\AndroidStudioProjects\\CSE-3311-Spring-2022\\app\\build\\intermediates\\res\\merged\\debug\\layout_reviews_from_database_layout.xml.flat",
+        "source": "D:\\AndroidStudioProjects\\CSE-3311-Spring-2022\\app\\src\\main\\res\\layout\\reviews_from_database_layout.xml"
     },
     {
-        "merged": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\build\\intermediates\\res\\merged\\debug\\raw_search_icon_floating.json.flat",
-        "source": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\src\\main\\res\\raw\\search_icon_floating.json"
+        "merged": "D:\\AndroidStudioProjects\\CSE-3311-Spring-2022\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_utareviews_applogo_round.xml.flat",
+        "source": "D:\\AndroidStudioProjects\\CSE-3311-Spring-2022\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_utareviews_applogo_round.xml"
     },
     {
-        "merged": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_default_avatar_clipart_round.xml.flat",
-        "source": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_default_avatar_clipart_round.xml"
+        "merged": "D:\\AndroidStudioProjects\\CSE-3311-Spring-2022\\app\\build\\intermediates\\res\\merged\\debug\\layout_spinner_drop_layout.xml.flat",
+        "source": "D:\\AndroidStudioProjects\\CSE-3311-Spring-2022\\app\\src\\main\\res\\layout\\spinner_drop_layout.xml"
     },
     {
-        "merged": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_default_avatar.png.flat",
-        "source": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_default_avatar.png"
+        "merged": "D:\\AndroidStudioProjects\\CSE-3311-Spring-2022\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_default_avatar.png.flat",
+        "source": "D:\\AndroidStudioProjects\\CSE-3311-Spring-2022\\app\\src\\main\\res\\mipmap-xhdpi\\ic_default_avatar.png"
     },
     {
-        "merged": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\build\\intermediates\\res\\merged\\debug\\layout_professor_search_layout.xml.flat",
-        "source": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\src\\main\\res\\layout\\professor_search_layout.xml"
+        "merged": "D:\\AndroidStudioProjects\\CSE-3311-Spring-2022\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_default_avatar_foreground.png.flat",
+        "source": "D:\\AndroidStudioProjects\\CSE-3311-Spring-2022\\app\\src\\main\\res\\mipmap-hdpi\\ic_default_avatar_foreground.png"
     },
     {
-        "merged": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_login_page.xml.flat",
-        "source": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\src\\main\\res\\layout\\activity_login_page.xml"
+        "merged": "D:\\AndroidStudioProjects\\CSE-3311-Spring-2022\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_reply.xml.flat",
+        "source": "D:\\AndroidStudioProjects\\CSE-3311-Spring-2022\\app\\src\\main\\res\\layout\\activity_reply.xml"
     },
     {
-        "merged": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\build\\intermediates\\res\\merged\\debug\\raw_female_student_with_books.json.flat",
-        "source": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\src\\main\\res\\raw\\female_student_with_books.json"
+        "merged": "D:\\AndroidStudioProjects\\CSE-3311-Spring-2022\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "D:\\AndroidStudioProjects\\CSE-3311-Spring-2022\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
+        "merged": "D:\\AndroidStudioProjects\\CSE-3311-Spring-2022\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "D:\\AndroidStudioProjects\\CSE-3311-Spring-2022\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
     },
     {
-        "merged": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\build\\intermediates\\res\\merged\\debug\\layout_reviews_from_database_layout.xml.flat",
-        "source": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\src\\main\\res\\layout\\reviews_from_database_layout.xml"
+        "merged": "D:\\AndroidStudioProjects\\CSE-3311-Spring-2022\\app\\build\\intermediates\\res\\merged\\debug\\raw_login_monster.json.flat",
+        "source": "D:\\AndroidStudioProjects\\CSE-3311-Spring-2022\\app\\src\\main\\res\\raw\\login_monster.json"
     },
     {
-        "merged": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_account.xml.flat",
-        "source": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\src\\main\\res\\layout\\activity_account.xml"
+        "merged": "D:\\AndroidStudioProjects\\CSE-3311-Spring-2022\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_default_avatar_foreground.png.flat",
+        "source": "D:\\AndroidStudioProjects\\CSE-3311-Spring-2022\\app\\src\\main\\res\\mipmap-mdpi\\ic_default_avatar_foreground.png"
     },
     {
-        "merged": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_launcher_background.xml.flat",
-        "source": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\src\\main\\res\\drawable\\ic_launcher_background.xml"
+        "merged": "D:\\AndroidStudioProjects\\CSE-3311-Spring-2022\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_default_avatar.png.flat",
+        "source": "D:\\AndroidStudioProjects\\CSE-3311-Spring-2022\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_default_avatar.png"
     },
     {
-        "merged": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_default_avatar_clipart.xml.flat",
-        "source": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_default_avatar_clipart.xml"
+        "merged": "D:\\AndroidStudioProjects\\CSE-3311-Spring-2022\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_utareviews_applogo.png.flat",
+        "source": "D:\\AndroidStudioProjects\\CSE-3311-Spring-2022\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_utareviews_applogo.png"
     },
     {
-        "merged": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_utareviews_applogo_round.png.flat",
-        "source": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\src\\main\\res\\mipmap-hdpi\\ic_utareviews_applogo_round.png"
+        "merged": "D:\\AndroidStudioProjects\\CSE-3311-Spring-2022\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_utareviews_applogo.png.flat",
+        "source": "D:\\AndroidStudioProjects\\CSE-3311-Spring-2022\\app\\src\\main\\res\\mipmap-mdpi\\ic_utareviews_applogo.png"
     },
     {
-        "merged": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_utareviews_applogo_round.xml.flat",
-        "source": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_utareviews_applogo_round.xml"
+        "merged": "D:\\AndroidStudioProjects\\CSE-3311-Spring-2022\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_default_avatar_clipart.png.flat",
+        "source": "D:\\AndroidStudioProjects\\CSE-3311-Spring-2022\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_default_avatar_clipart.png"
     },
     {
-        "merged": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_forgot_password_page.xml.flat",
-        "source": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\src\\main\\res\\layout\\activity_forgot_password_page.xml"
+        "merged": "D:\\AndroidStudioProjects\\CSE-3311-Spring-2022\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_default_avatar_foreground.png.flat",
+        "source": "D:\\AndroidStudioProjects\\CSE-3311-Spring-2022\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_default_avatar_foreground.png"
     },
     {
-        "merged": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_default_avatar_clipart.png.flat",
-        "source": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_default_avatar_clipart.png"
+        "merged": "D:\\AndroidStudioProjects\\CSE-3311-Spring-2022\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_utareviews_applogo_foreground.png.flat",
+        "source": "D:\\AndroidStudioProjects\\CSE-3311-Spring-2022\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_utareviews_applogo_foreground.png"
     },
     {
-        "merged": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\build\\intermediates\\res\\merged\\debug\\layout_spinner_drop_layout.xml.flat",
-        "source": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\src\\main\\res\\layout\\spinner_drop_layout.xml"
+        "merged": "D:\\AndroidStudioProjects\\CSE-3311-Spring-2022\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_default_avatar_foreground.png.flat",
+        "source": "D:\\AndroidStudioProjects\\CSE-3311-Spring-2022\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_default_avatar_foreground.png"
     },
     {
-        "merged": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_utareviews_applogo.png.flat",
-        "source": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_utareviews_applogo.png"
+        "merged": "D:\\AndroidStudioProjects\\CSE-3311-Spring-2022\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_default_avatar_clipart_round.png.flat",
+        "source": "D:\\AndroidStudioProjects\\CSE-3311-Spring-2022\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_default_avatar_clipart_round.png"
     },
     {
-        "merged": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_default_avatar_background.xml.flat",
-        "source": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\src\\main\\res\\drawable\\ic_default_avatar_background.xml"
+        "merged": "D:\\AndroidStudioProjects\\CSE-3311-Spring-2022\\app\\build\\intermediates\\res\\merged\\debug\\raw_loading_light_colors.json.flat",
+        "source": "D:\\AndroidStudioProjects\\CSE-3311-Spring-2022\\app\\src\\main\\res\\raw\\loading_light_colors.json"
     },
     {
-        "merged": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_utareviews_applogo_round.png.flat",
-        "source": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\src\\main\\res\\mipmap-xhdpi\\ic_utareviews_applogo_round.png"
+        "merged": "D:\\AndroidStudioProjects\\CSE-3311-Spring-2022\\app\\build\\intermediates\\res\\merged\\debug\\layout_review_layout.xml.flat",
+        "source": "D:\\AndroidStudioProjects\\CSE-3311-Spring-2022\\app\\src\\main\\res\\layout\\review_layout.xml"
     },
     {
-        "merged": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_default_avatar_round.png.flat",
-        "source": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_default_avatar_round.png"
+        "merged": "D:\\AndroidStudioProjects\\CSE-3311-Spring-2022\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_utareviews_applogo_round.png.flat",
+        "source": "D:\\AndroidStudioProjects\\CSE-3311-Spring-2022\\app\\src\\main\\res\\mipmap-hdpi\\ic_utareviews_applogo_round.png"
     },
     {
-        "merged": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_utareviews_applogo.png.flat",
-        "source": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\src\\main\\res\\mipmap-hdpi\\ic_utareviews_applogo.png"
+        "merged": "D:\\AndroidStudioProjects\\CSE-3311-Spring-2022\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_utareviews_applogo.png.flat",
+        "source": "D:\\AndroidStudioProjects\\CSE-3311-Spring-2022\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_utareviews_applogo.png"
     },
     {
-        "merged": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\build\\intermediates\\res\\merged\\debug\\layout_comments_from_database_layout.xml.flat",
-        "source": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\src\\main\\res\\layout\\comments_from_database_layout.xml"
+        "merged": "D:\\AndroidStudioProjects\\CSE-3311-Spring-2022\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_default_avatar.png.flat",
+        "source": "D:\\AndroidStudioProjects\\CSE-3311-Spring-2022\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_default_avatar.png"
     },
     {
-        "merged": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_utareviews_applogo_foreground.png.flat",
-        "source": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_utareviews_applogo_foreground.png"
+        "merged": "D:\\AndroidStudioProjects\\CSE-3311-Spring-2022\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_default_avatar_round.png.flat",
+        "source": "D:\\AndroidStudioProjects\\CSE-3311-Spring-2022\\app\\src\\main\\res\\mipmap-xhdpi\\ic_default_avatar_round.png"
     },
     {
-        "merged": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_default_avatar_round.png.flat",
-        "source": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\src\\main\\res\\mipmap-hdpi\\ic_default_avatar_round.png"
+        "merged": "D:\\AndroidStudioProjects\\CSE-3311-Spring-2022\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "D:\\AndroidStudioProjects\\CSE-3311-Spring-2022\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher_round.png.flat",
-        "source": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.png"
+        "merged": "D:\\AndroidStudioProjects\\CSE-3311-Spring-2022\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_utareviews_applogo_round.png.flat",
+        "source": "D:\\AndroidStudioProjects\\CSE-3311-Spring-2022\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_utareviews_applogo_round.png"
     },
     {
-        "merged": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_default_avatar_round.xml.flat",
-        "source": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_default_avatar_round.xml"
+        "merged": "D:\\AndroidStudioProjects\\CSE-3311-Spring-2022\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_review.xml.flat",
+        "source": "D:\\AndroidStudioProjects\\CSE-3311-Spring-2022\\app\\src\\main\\res\\layout\\activity_review.xml"
     },
     {
-        "merged": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_utareviews_applogo_round.png.flat",
-        "source": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_utareviews_applogo_round.png"
+        "merged": "D:\\AndroidStudioProjects\\CSE-3311-Spring-2022\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_uta_reviews_logo_login_background.xml.flat",
+        "source": "D:\\AndroidStudioProjects\\CSE-3311-Spring-2022\\app\\src\\main\\res\\drawable\\ic_uta_reviews_logo_login_background.xml"
     },
     {
-        "merged": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_default_avatar_clipart.png.flat",
-        "source": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\src\\main\\res\\mipmap-mdpi\\ic_default_avatar_clipart.png"
+        "merged": "D:\\AndroidStudioProjects\\CSE-3311-Spring-2022\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
+        "source": "D:\\AndroidStudioProjects\\CSE-3311-Spring-2022\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v24\\ic_launcher_foreground.xml"
     },
     {
-        "merged": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\build\\intermediates\\res\\merged\\debug\\drawable_custom_edit_texts.xml.flat",
-        "source": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\src\\main\\res\\drawable\\custom_edit_texts.xml"
+        "merged": "D:\\AndroidStudioProjects\\CSE-3311-Spring-2022\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_default_avatar_clipart_round.png.flat",
+        "source": "D:\\AndroidStudioProjects\\CSE-3311-Spring-2022\\app\\src\\main\\res\\mipmap-mdpi\\ic_default_avatar_clipart_round.png"
     },
     {
-        "merged": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher_round.png.flat",
-        "source": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.png"
+        "merged": "D:\\AndroidStudioProjects\\CSE-3311-Spring-2022\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_registration.xml.flat",
+        "source": "D:\\AndroidStudioProjects\\CSE-3311-Spring-2022\\app\\src\\main\\res\\layout\\activity_registration.xml"
     },
     {
-        "merged": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_utareviews_applogo_foreground.png.flat",
-        "source": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\src\\main\\res\\mipmap-xhdpi\\ic_utareviews_applogo_foreground.png"
+        "merged": "D:\\AndroidStudioProjects\\CSE-3311-Spring-2022\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_default_avatar_clipart.xml.flat",
+        "source": "D:\\AndroidStudioProjects\\CSE-3311-Spring-2022\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_default_avatar_clipart.xml"
     },
     {
-        "merged": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_default_avatar_clipart.png.flat",
-        "source": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\src\\main\\res\\mipmap-hdpi\\ic_default_avatar_clipart.png"
+        "merged": "D:\\AndroidStudioProjects\\CSE-3311-Spring-2022\\app\\build\\intermediates\\res\\merged\\debug\\layout_color_spinner.xml.flat",
+        "source": "D:\\AndroidStudioProjects\\CSE-3311-Spring-2022\\app\\src\\main\\res\\layout\\color_spinner.xml"
     },
     {
-        "merged": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_username_dialog.xml.flat",
-        "source": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\src\\main\\res\\layout\\activity_username_dialog.xml"
+        "merged": "D:\\AndroidStudioProjects\\CSE-3311-Spring-2022\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "D:\\AndroidStudioProjects\\CSE-3311-Spring-2022\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_utareviews_applogo.png.flat",
-        "source": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\src\\main\\res\\mipmap-mdpi\\ic_utareviews_applogo.png"
+        "merged": "D:\\AndroidStudioProjects\\CSE-3311-Spring-2022\\app\\build\\intermediates\\res\\merged\\debug\\layout_professor_search_layout.xml.flat",
+        "source": "D:\\AndroidStudioProjects\\CSE-3311-Spring-2022\\app\\src\\main\\res\\layout\\professor_search_layout.xml"
     },
     {
-        "merged": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
+        "merged": "D:\\AndroidStudioProjects\\CSE-3311-Spring-2022\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "D:\\AndroidStudioProjects\\CSE-3311-Spring-2022\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
     },
     {
-        "merged": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_lock.xml.flat",
-        "source": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\src\\main\\res\\drawable\\ic_lock.xml"
+        "merged": "D:\\AndroidStudioProjects\\CSE-3311-Spring-2022\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "D:\\AndroidStudioProjects\\CSE-3311-Spring-2022\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
     },
     {
-        "merged": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_utareviews_applogo.png.flat",
-        "source": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_utareviews_applogo.png"
+        "merged": "D:\\AndroidStudioProjects\\CSE-3311-Spring-2022\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_default_avatar_clipart_round.xml.flat",
+        "source": "D:\\AndroidStudioProjects\\CSE-3311-Spring-2022\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_default_avatar_clipart_round.xml"
     },
     {
-        "merged": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_default_avatar_round.png.flat",
-        "source": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\src\\main\\res\\mipmap-xhdpi\\ic_default_avatar_round.png"
+        "merged": "D:\\AndroidStudioProjects\\CSE-3311-Spring-2022\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_utareviews_applogo_foreground.png.flat",
+        "source": "D:\\AndroidStudioProjects\\CSE-3311-Spring-2022\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_utareviews_applogo_foreground.png"
     },
     {
-        "merged": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_default_avatar_clipart.png.flat",
-        "source": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_default_avatar_clipart.png"
+        "merged": "D:\\AndroidStudioProjects\\CSE-3311-Spring-2022\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher.png.flat",
+        "source": "D:\\AndroidStudioProjects\\CSE-3311-Spring-2022\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
     },
     {
-        "merged": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher_round.png.flat",
-        "source": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.png"
+        "merged": "D:\\AndroidStudioProjects\\CSE-3311-Spring-2022\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_default_avatar_clipart_round.png.flat",
+        "source": "D:\\AndroidStudioProjects\\CSE-3311-Spring-2022\\app\\src\\main\\res\\mipmap-hdpi\\ic_default_avatar_clipart_round.png"
     },
     {
-        "merged": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_utareviews_applogo_background.xml.flat",
-        "source": "C:\\Users\\Robert\\AndroidStudioProjects\\CSE3311Project\\app\\src\\main\\res\\drawable\\ic_utareviews_applogo_background.xml"
+        "merged": "D:\\AndroidStudioProjects\\CSE-3311-Spring-2022\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_username_dialog.xml.flat",
+        "source": "D:\\AndroidStudioProjects\\CSE-3311-Spring-2022\\app\\src\\main\\res\\layout\\activity_username_dialog.xml"
     }
 ]
