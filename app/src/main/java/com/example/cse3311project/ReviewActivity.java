@@ -95,6 +95,7 @@ public class ReviewActivity extends AppCompatActivity
         // below. I, Robert, have added some already, I do not get the issues any longer but we need to keep this in mind
         // The issues can be repeating the loop forever, or putting a bunch of new ratings under the professors name
         // POSSIBLE FIX (ROBERT): Changed the addValueEventListener to addListenerForSingleValueEvent, issues seem to be gone for now
+        // https://stackoverflow.com/questions/62844510/changing-value-in-firebase-results-in-infinite-loop
         final boolean[] matchFound = {false};
         // Push the new average to the professors rating on the database
         profRef.addListenerForSingleValueEvent(new ValueEventListener()
@@ -206,15 +207,21 @@ public class ReviewActivity extends AppCompatActivity
                 // This allows us to click on the RecyclerView item and go to the right comment page
                 holder.itemView.setOnClickListener(view ->
                 {
-                    // This is how we would get the selected professor name
+                    // This is how we would get the selected reviews information for the comment page
                     //String professorNameIntent = professor_selected_name;
                     String usernameCommentSection = model.getUsername();
+                    String review_text_from_review = model.getReview();
+                    String rating_text_from_review = "Rating: " + model.getRating();
+                    String class_taken_from_review = model.getClassTaken();
 
                     // To pass this name that the user has selected, This is the only way I could figure
                     // out how to do it, we start the review activity with this intent or it cannot be passed
                     Intent comment_selection_intent = new Intent(getApplicationContext(), ReplyActivity.class);
                     comment_selection_intent.putExtra("professor_name_from_list", professor_selected_name);
                     comment_selection_intent.putExtra("usernameCommentSection", usernameCommentSection);
+                    comment_selection_intent.putExtra("review_text_from_review", review_text_from_review);
+                    comment_selection_intent.putExtra("rating_text_from_review", rating_text_from_review);
+                    comment_selection_intent.putExtra("class_taken_from_review", class_taken_from_review);
 
                     startActivity(comment_selection_intent);
                     Toast.makeText(ReviewActivity.this, "Now viewing reviews for " + usernameCommentSection + "'s review of " + professor_selected_name, Toast.LENGTH_SHORT).show();
