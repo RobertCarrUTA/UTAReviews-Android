@@ -145,6 +145,8 @@ public class ReplyActivity extends AppCompatActivity
                 super(itemView);
                 View1 = itemView;
 
+                // Leaving this to see if my code comes back after fixing Git
+
                 // This is where we get the information for onBindViewHolder(@NonNull ReviewViewHolder holder, ...)
                 comment_username = View1.findViewById(R.id.username_from_database_reviews);
                 comment_text_from_database = View1.findViewById(R.id.review_text_from_database);
