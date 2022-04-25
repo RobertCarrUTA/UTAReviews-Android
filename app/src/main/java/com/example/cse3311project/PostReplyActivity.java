@@ -37,6 +37,11 @@ public class PostReplyActivity extends AppCompatActivity
         fAuth = FirebaseAuth.getInstance();
         ref = FirebaseDatabase.getInstance().getReference("Replies");
 
+        cancelButtonReply.setOnClickListener(v ->
+        {
+
+        });
+
         postReply.setOnClickListener(v ->
         {
             String replyText = replyEditText.getText().toString().trim();
