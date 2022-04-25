@@ -37,6 +37,11 @@ public class PostReplyActivity extends AppCompatActivity
         fAuth = FirebaseAuth.getInstance();
         ref = FirebaseDatabase.getInstance().getReference("Replies");
 
+        cancelButtonReply.setOnClickListener(v ->
+        {
+
+        });
+
         postReply.setOnClickListener(v ->
         {
             String replyText = replyEditText.getText().toString().trim();
@@ -58,7 +63,12 @@ public class PostReplyActivity extends AppCompatActivity
             reply.setDate(currentDate);
             reply.setUsername(username);
 
-            DatabaseReference newRef = ref.child("A Elliott").child("robertcarr").push();
+            Intent intent = getIntent();
+            String professor_selected_name = intent.getStringExtra("professor_name_from_list");
+            String usernameCommentSection = intent.getStringExtra("usernameCommentSection");
+            usernameCommentSection = usernameCommentSection.replace(".", "");
+
+            DatabaseReference newRef = ref.child(professor_selected_name).child(usernameCommentSection).push();
             newRef.setValue(reply);
 
             //Intent name_selection_intent = new Intent(getApplicationContext(), ReviewActivity.class);

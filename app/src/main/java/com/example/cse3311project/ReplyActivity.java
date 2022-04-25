@@ -81,13 +81,21 @@ public class ReplyActivity extends AppCompatActivity
 
         returnToReviewButton.setOnClickListener(v ->
         {
-            // This will allow us to take the teachers name and pass it to the post review page
-            Intent i = new Intent (this, PostReviewActivity.class);
-            i.putExtra("teacher_name", professor_selected_name);
-            startActivity(i);
+            // This will allow us to take the teachers name and pass it to the review page
+            Intent name_selection_intent = new Intent(getApplicationContext(), ReviewActivity.class);
+            name_selection_intent.putExtra("professor_name_from_list", professor_selected_name);
+
+            startActivity(name_selection_intent);
         });
 
-        replyButton.setOnClickListener(v -> startActivity(new Intent(getApplicationContext(), PostReplyActivity.class)));
+        replyButton.setOnClickListener(v ->
+        {
+            Intent comment_selection_intent = new Intent(getApplicationContext(), PostReplyActivity.class);
+            comment_selection_intent.putExtra("professor_name_from_list", professor_selected_name);
+            comment_selection_intent.putExtra("usernameCommentSection", usernameCommentSection);
+
+            startActivity(comment_selection_intent);
+        });
     }
 
         // This is our firebase function to view the reviews for the selected teacher
