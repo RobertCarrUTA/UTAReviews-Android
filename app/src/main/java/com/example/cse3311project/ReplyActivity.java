@@ -125,6 +125,9 @@ public class ReplyActivity extends AppCompatActivity
                 {
                     // This will set the information for our RecyclerView from our Replies model
                     System.out.println("I am here on one reply!!!");
+                    System.out.println("model.getUsername(): " + model.getUsername());
+                    System.out.println("model.getComment(): " + model.getComment());
+                    System.out.println("model.getDate(): " + model.getDate());
                     holder.comment_username.setText(model.getUsername());
                     holder.comment_text_from_database.setText(model.getComment());
                     holder.date_the_comment_was_posted.setText(model.getDate());
@@ -150,9 +153,9 @@ public class ReplyActivity extends AppCompatActivity
                 // Another to see
 
                 // This is where we get the information for onBindViewHolder(@NonNull ReviewViewHolder holder, ...)
-                comment_username = View1.findViewById(R.id.username_from_database_reviews);
-                comment_text_from_database = View1.findViewById(R.id.review_text_from_database);
-                date_the_comment_was_posted = View1.findViewById(R.id.rating_from_database);
+                comment_username = View1.findViewById(R.id.comment_username);
+                comment_text_from_database = View1.findViewById(R.id.comment_text_from_database);
+                date_the_comment_was_posted = View1.findViewById(R.id.date_the_comment_was_posted);
                 System.out.println("I am here on one reply!!! One more to go again!33");
             }
         }
