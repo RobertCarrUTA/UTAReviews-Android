@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_utareviews_applogo"
         android:supportsRtl="true"
         android:theme="@style/Theme.CSE3311Project">
-        <activity android:name=".ReplyActivity"></activity>
+        <activity android:name=".PostReplyActivity"></activity>
+        <activity android:name=".ReplyActivity" />
         <activity android:name=".UsernameDialog" />
         <activity android:name=".PostReviewActivity" />
         <activity android:name=".Registration" />

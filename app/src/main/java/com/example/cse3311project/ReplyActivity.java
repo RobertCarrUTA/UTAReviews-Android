@@ -14,21 +14,21 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
 import com.firebase.ui.database.FirebaseRecyclerOptions;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.Query;
 
 public class ReplyActivity extends AppCompatActivity
 {
-    /*
     RecyclerView comment_database_result;
     TextView reviewUserName, reviewRating, reviewClass;
     EditText reviewText;
     Button returnToReviewButton, replyButton;
+    String professor_selected_name, usernameCommentSection, review_text_from_review, rating_text_from_review, class_taken_from_review;
 
     FirebaseAuth fAuth;
     DatabaseReference ref;
@@ -46,13 +46,17 @@ public class ReplyActivity extends AppCompatActivity
         returnToReviewButton = findViewById(R.id.returnToReviewButton);
         replyButton = findViewById(R.id.replyButton);
 
+        ref = FirebaseDatabase.getInstance().getReference("Replies");
 
         Intent intent = getIntent();
-        String professor_selected_name = intent.getStringExtra("professor_selected_name");
-        String usernameCommentSection = intent.getStringExtra("usernameCommentSection");
-        String review_text_from_review = intent.getStringExtra("review_text_from_review");
-        String rating_text_from_review = intent.getStringExtra("rating_text_from_review");
-        String class_taken_from_review = intent.getStringExtra("class_taken_from_review");
+        professor_selected_name = intent.getStringExtra("professor_name_from_list");
+        usernameCommentSection = intent.getStringExtra("usernameCommentSection");
+        usernameCommentSection = usernameCommentSection.replace(".", "");
+        review_text_from_review = intent.getStringExtra("review_text_from_review");
+        rating_text_from_review = intent.getStringExtra("rating_text_from_review");
+        class_taken_from_review = intent.getStringExtra("class_taken_from_review");
+        System.out.println("professor_selected_name: " + professor_selected_name);
+        System.out.println("usernameCommentSection: " + usernameCommentSection);
 
         reviewUserName.setText(usernameCommentSection);
         reviewText.setText(review_text_from_review);
@@ -83,46 +87,50 @@ public class ReplyActivity extends AppCompatActivity
             startActivity(i);
         });
 
-        replyButton.setOnClickListener(v -> startActivity(new Intent(getApplicationContext(), MainActivity.class)));
+        replyButton.setOnClickListener(v -> startActivity(new Intent(getApplicationContext(), PostReplyActivity.class)));
     }
 
         // This is our firebase function to view the reviews for the selected teacher
         // Any documentation about Firebase UI can be found here: https://github.com/firebase/FirebaseUI-Android
         private void firebaseReviewResults(String professor_selected_name, String usernameCommentSection)
         {
+            System.out.println("Results professor_selected_name: " + professor_selected_name);
+            System.out.println("Results usernameCommentSection: " + usernameCommentSection);
+            System.out.println("I am here on one reply!!! One more to go!");
+
             // This is a search query that allows for the user to see comments for a review under a professor
             // and orders them by the date the comments were posted
             Query firebaseQuery = ref.child(professor_selected_name).child(usernameCommentSection).orderByChild("date");
+            System.out.println("I am here on one reply!!! One more to go 1!!");
 
             // This must be included for our FirebaseRecyclerAdapter options
-            FirebaseRecyclerOptions<Reviews> options =
-                    new FirebaseRecyclerOptions.Builder<Reviews>()
-                            .setQuery(firebaseQuery, Reviews.class)
+            FirebaseRecyclerOptions<Replies> options =
+                    new FirebaseRecyclerOptions.Builder<Replies>()
+                            .setQuery(firebaseQuery, Replies.class)
                             .build();
-
-            FirebaseRecyclerAdapter<Reviews, ReviewActivity.ReviewViewHolder> firebaseRecyclerAdapter = new FirebaseRecyclerAdapter<Replys, ReplyActivity.ReplyViewHolder>(options)
+            System.out.println("I am here on one reply!!! One more to go again!");
+            FirebaseRecyclerAdapter<Replies, ReplyActivity.ReplyViewHolder> firebaseRecyclerAdapter = new FirebaseRecyclerAdapter<Replies, ReplyActivity.ReplyViewHolder>(options)
             {
                 @NonNull
                 @Override
                 public ReplyActivity.ReplyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType)
                 {
-                    View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.reviews_from_database_layout, parent, false);
+                    System.out.println("I am here on one reply!!! One more to go again!2");
+                    View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.comments_from_database_layout, parent, false);
                     return new ReplyActivity.ReplyViewHolder((view));
                 }
 
                 @Override
-                protected void onBindViewHolder(@NonNull ReplyActivity.ReplyViewHolder holder, int position, @NonNull Replys model)
+                protected void onBindViewHolder(@NonNull ReplyActivity.ReplyViewHolder holder, int position, @NonNull Replies model)
                 {
-                    /*
-                    // This will set the information for our RecyclerView from our Reviews model
+                    // This will set the information for our RecyclerView from our Replies model
+                    System.out.println("I am here on one reply!!!");
+                    System.out.println("model.getUsername(): " + model.getUsername());
+                    System.out.println("model.getComment(): " + model.getComment());
+                    System.out.println("model.getDate(): " + model.getDate());
                     holder.comment_username.setText(model.getUsername());
-                    holder.comment_text_from_database.setText(model.getReview());
-                    //String rating_text = "Rating: " + model.getRating();
-                    //holder.review_rating_from_database.setText(rating_text);
+                    holder.comment_text_from_database.setText(model.getComment());
                     holder.date_the_comment_was_posted.setText(model.getDate());
-                    //holder.classTaken_from_database.setText(model.getClassTaken());
-
-
                 }
             };
 
@@ -133,21 +141,22 @@ public class ReplyActivity extends AppCompatActivity
         // Making view holder class for our reviews in the database
         public static class ReplyViewHolder extends RecyclerView.ViewHolder
         {
-            TextView review_username, review_text_from_database, review_rating_from_database, date_the_review_was_posted, classTaken_from_database;
+            TextView comment_username, comment_text_from_database, date_the_comment_was_posted;
             View View1;
 
             public ReplyViewHolder(@NonNull View itemView)
             {
                 super(itemView);
                 View1 = itemView;
+                System.out.println("I am here on one reply!!! One more to go again!32");
+                // Leaving this to see if my code comes back after fixing Git
+                // Another to see
 
                 // This is where we get the information for onBindViewHolder(@NonNull ReviewViewHolder holder, ...)
-                review_username = View1.findViewById(R.id.username_from_database_reviews);
-                review_text_from_database = View1.findViewById(R.id.review_text_from_database);
-                review_rating_from_database = View1.findViewById(R.id.rating_from_database);
-                date_the_review_was_posted = View1.findViewById(R.id.date_the_review_was_posted);
-                classTaken_from_database = View1.findViewById(R.id.class_from_database);
+                comment_username = View1.findViewById(R.id.comment_username);
+                comment_text_from_database = View1.findViewById(R.id.comment_text_from_database);
+                date_the_comment_was_posted = View1.findViewById(R.id.date_the_comment_was_posted);
+                System.out.println("I am here on one reply!!! One more to go again!33");
             }
         }
-        */
     }

@@ -1965,7 +1965,6 @@ dimen design_tab_text_size_2line
 dimen design_textinput_caption_translate_y
 dimen disabled_alpha_material_dark
 dimen disabled_alpha_material_light
-dimen fab_margin
 dimen fastscroll_default_thickness
 dimen fastscroll_margin
 dimen fastscroll_minimum_range
@@ -2713,6 +2712,7 @@ id buttonSendingCode
 id cache_measures
 id callMeasure
 id cancelButton
+id cancelButtonReply
 id cancelReviewButton
 id cancel_action
 id cancel_button
@@ -2742,6 +2742,8 @@ id clockwise
 id closest
 id collapseActionView
 id comment_database_result
+id comment_text_from_database
+id comment_username
 id compress
 id confirm_button
 id constraint
@@ -2759,6 +2761,7 @@ id customPanel
 id cut
 id dark
 id date_picker_actions
+id date_the_comment_was_posted
 id date_the_review_was_posted
 id decelerate
 id decelerateAndComplete
@@ -2848,6 +2851,7 @@ id imageView
 id imageView2
 id imageView3
 id imageView4
+id imageView5
 id imageView6
 id immediateStop
 id included
@@ -2972,6 +2976,7 @@ id percent
 id pin
 id position
 id postLayout
+id postReplyButton
 id postReview_Button
 id postReview_redirect
 id professorName_PostReview
@@ -2991,6 +2996,7 @@ id ratio
 id rectangles
 id registrationTypeInput
 id replyButton
+id replyEditText
 id resendCode
 id restart
 id returnHomeButton_AccountPage
@@ -3252,6 +3258,7 @@ layout activity_account
 layout activity_forgot_password_page
 layout activity_login_page
 layout activity_main
+layout activity_post_reply
 layout activity_post_review
 layout activity_registration
 layout activity_registration_professor
@@ -3262,6 +3269,7 @@ layout activity_username_dialog
 layout browser_actions_context_menu_page
 layout browser_actions_context_menu_row
 layout color_spinner
+layout comments_from_database_layout
 layout custom_dialog
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
@@ -4075,9 +4083,6 @@ style Theme_AppCompat_Light_DialogWhenLarge
 style Theme_AppCompat_Light_NoActionBar
 style Theme_AppCompat_NoActionBar
 style Theme_CSE3311Project
-style Theme_CSE3311Project_AppBarOverlay
-style Theme_CSE3311Project_NoActionBar
-style Theme_CSE3311Project_PopupOverlay
 style Theme_Design
 style Theme_Design_BottomSheetDialog
 style Theme_Design_Light
