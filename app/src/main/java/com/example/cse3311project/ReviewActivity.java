@@ -33,7 +33,6 @@ public class ReviewActivity extends AppCompatActivity
     private RecyclerView review_database_result;
     private TextView ratingSumText;
 
-    Button viewCommentsBtn;
     String ratingSumAverage;
 
     FirebaseAuth fAuth;
@@ -52,7 +51,6 @@ public class ReviewActivity extends AppCompatActivity
         TextView professorName = findViewById(R.id.professorName_Review);
         TextView postReview_redirect = findViewById(R.id.postReview_redirect);
         ratingSumText = findViewById(R.id.rating);
-        viewCommentsBtn = (Button)findViewById(R.id.viewCommentsBtn);
 
         String professor_Name_set_text = "You are currently looking at reviews for " + professor_selected_name;
         professorName.setText(professor_Name_set_text);
@@ -241,7 +239,6 @@ public class ReviewActivity extends AppCompatActivity
     public static class ReviewViewHolder extends RecyclerView.ViewHolder
     {
         TextView review_username, review_text_from_database, review_rating_from_database, date_the_review_was_posted, classTaken_from_database;
-        Button viewCommentsBtn;
         View View1;
 
         public ReviewViewHolder(@NonNull View itemView)

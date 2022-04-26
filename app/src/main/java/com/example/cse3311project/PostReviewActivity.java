@@ -16,7 +16,9 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
 import java.text.SimpleDateFormat;
+import java.util.Arrays;
 import java.util.Date;
+import java.util.List;
 import java.util.Locale;
 
 public class PostReviewActivity extends AppCompatActivity
@@ -84,47 +86,57 @@ public class PostReviewActivity extends AppCompatActivity
             {
                 review_text.setError("Please enter a review that is no longer than 2,000 characters long");
             }
-
-            if (review_text_submission.length() == 0)
+            else if (review_text_submission.length() == 0)
             {
                 review_text.setError("Please enter a review that is not empty");
             }
-
-            FirebaseUser currentUser = FirebaseAuth.getInstance().getCurrentUser();
-            assert currentUser != null;
-            String userEmail = currentUser.getEmail();
-            assert userEmail != null;
-            String[] splits = userEmail.split("@");
-            String username = splits[0];
-
-            String currentDate = new SimpleDateFormat("MM-dd-yyyy", Locale.getDefault()).format(new Date());
-
-            // For making a new review each time
-            // To overwrite review, do differently
-            Reviews review = new Reviews();
-
-            review.setReview(review_text_submission);
-            review.setRating(ratingString);
-            review.setDate(currentDate);
-            review.setClassTaken(classTaken);
-
-            if (finalAnonymous_review[0] == true)
+            // Profanity filter
+            else if(review_text_submission.contains("fuck") || review_text_submission.contains("bitch") ||
+                review_text_submission.contains("gay") || review_text_submission.contains("queer") || review_text_submission.contains("bullshit") ||
+                review_text_submission.contains("dick") || review_text_submission.contains("pissed") ||
+                review_text_submission.contains("tits") || review_text_submission.contains("boobs") || review_text_submission.contains("cunt") ||
+                review_text_submission.contains("motherfucker") || review_text_submission.contains("pussy") || review_text_submission.contains("ass"))
             {
-                String anonymous_username = "Anonymous";
-                review.setUsername(anonymous_username);
+                review_text.setError("Please enter a review that is does not contain profanity.");
             }
             else
             {
-                review.setUsername(username);
+
+                FirebaseUser currentUser = FirebaseAuth.getInstance().getCurrentUser();
+                assert currentUser != null;
+                String userEmail = currentUser.getEmail();
+                assert userEmail != null;
+                String[] splits = userEmail.split("@");
+                String username = splits[0];
+
+                String currentDate = new SimpleDateFormat("MM-dd-yyyy", Locale.getDefault()).format(new Date());
+
+                // For making a new review each time
+                // To overwrite review, do differently
+                Reviews review = new Reviews();
+
+                review.setReview(review_text_submission);
+                review.setRating(ratingString);
+                review.setDate(currentDate);
+                review.setClassTaken(classTaken);
+
+                if (finalAnonymous_review[0] == true)
+                {
+                    String anonymous_username = "Anonymous";
+                    review.setUsername(anonymous_username);
+                } else
+                {
+                    review.setUsername(username);
+                }
+
+                DatabaseReference newRef = ref.child(professor_selected_name).push();
+                newRef.setValue(review);
+
+                Intent name_selection_intent = new Intent(getApplicationContext(), ReviewActivity.class);
+                name_selection_intent.putExtra("professor_name_from_list", professor_selected_name);
+
+                startActivity(name_selection_intent);
             }
-
-            DatabaseReference newRef = ref.child(professor_selected_name).push();
-            newRef.setValue(review);
-
-            Intent name_selection_intent = new Intent(getApplicationContext(), ReviewActivity.class);
-            name_selection_intent.putExtra("professor_name_from_list", professor_selected_name);
-
-            startActivity(name_selection_intent);
         });
     }
 }
