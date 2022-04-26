@@ -1,18 +1,23 @@
-com/example/cse3311project/PostReviewActivity.java
- com.example.cse3311project.PostReviewActivity
+com/example/cse3311project/ReviewActivity.java
+ com.example.cse3311project.ReviewActivity
+ com.example.cse3311project.ReviewActivity$1
+ com.example.cse3311project.ReviewActivity$2
+ com.example.cse3311project.ReviewActivity$3
+ com.example.cse3311project.ReviewActivity$ReviewViewHolder
 com/example/cse3311project/Replies.java
  com.example.cse3311project.Replies
-com/example/cse3311project/Professors.java
- com.example.cse3311project.Professors
+com/example/cse3311project/ReplyActivity.java
+ com.example.cse3311project.ReplyActivity
+ com.example.cse3311project.ReplyActivity$1
+ com.example.cse3311project.ReplyActivity$ReplyViewHolder
 com/example/cse3311project/AccountActivity.java
  com.example.cse3311project.AccountActivity
 com/example/cse3311project/BuildConfig.java
  com.example.cse3311project.BuildConfig
 com/example/cse3311project/ForgotPasswordPage.java
  com.example.cse3311project.ForgotPasswordPage
-com/example/cse3311project/UsernameDialog.java
- com.example.cse3311project.UsernameDialog
- com.example.cse3311project.UsernameDialog$ExampleDialogListener
+com/example/cse3311project/PostReplyActivity.java
+ com.example.cse3311project.PostReplyActivity
 com/example/cse3311project/Registration.java
  com.example.cse3311project.Registration
 com/example/cse3311project/MainActivity.java
@@ -27,15 +32,10 @@ com/example/cse3311project/RegistrationProfessor.java
  com.example.cse3311project.RegistrationProfessor
 com/example/cse3311project/Reviews.java
  com.example.cse3311project.Reviews
-com/example/cse3311project/ReviewActivity.java
- com.example.cse3311project.ReviewActivity
- com.example.cse3311project.ReviewActivity$1
- com.example.cse3311project.ReviewActivity$2
- com.example.cse3311project.ReviewActivity$3
- com.example.cse3311project.ReviewActivity$ReviewViewHolder
-com/example/cse3311project/ReplyActivity.java
- com.example.cse3311project.ReplyActivity
- com.example.cse3311project.ReplyActivity$1
- com.example.cse3311project.ReplyActivity$ReplyViewHolder
-com/example/cse3311project/PostReplyActivity.java
- com.example.cse3311project.PostReplyActivity
+com/example/cse3311project/UsernameDialog.java
+ com.example.cse3311project.UsernameDialog
+ com.example.cse3311project.UsernameDialog$ExampleDialogListener
+com/example/cse3311project/Professors.java
+ com.example.cse3311project.Professors
+com/example/cse3311project/PostReviewActivity.java
+ com.example.cse3311project.PostReviewActivity

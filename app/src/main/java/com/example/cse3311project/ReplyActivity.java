@@ -11,6 +11,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -25,8 +26,7 @@ import com.google.firebase.database.Query;
 public class ReplyActivity extends AppCompatActivity
 {
     RecyclerView comment_database_result;
-    TextView reviewUserName, reviewRating, reviewClass;
-    EditText reviewText;
+    TextView reviewUserName, reviewRating, reviewClass, reviewText;
     Button returnToReviewButton, replyButton;
     String professor_selected_name, usernameCommentSection, review_text_from_review, rating_text_from_review, class_taken_from_review;
 
@@ -45,6 +45,11 @@ public class ReplyActivity extends AppCompatActivity
         reviewText = findViewById(R.id.reviewText);
         returnToReviewButton = findViewById(R.id.returnToReviewButton);
         replyButton = findViewById(R.id.replyButton);
+        //reviewText.setEnabled(false);
+
+        // This needs to be here to keep all of our layout in place, without the line of code
+        // below, everything will be moved up once the keyboard is opened
+        getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_ADJUST_PAN);
 
         ref = FirebaseDatabase.getInstance().getReference("Replies");
 

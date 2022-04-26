@@ -15,7 +15,7 @@
         android:textColor="#FFFFFF"
         app:layout_constraintBottom_toTopOf="@+id/reviewText"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.084"
+        app:layout_constraintHorizontal_bias="0.119"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.493" />
@@ -51,6 +51,7 @@
         android:ems="10"
         android:gravity="start|top"
         android:inputType="textMultiLine"
+        android:focusable="false"
         android:textColor="#FFFFFF"
         app:layout_constraintBottom_toTopOf="@+id/comment_database_result"
         app:layout_constraintEnd_toEndOf="parent"
@@ -67,7 +68,7 @@
         android:textColor="#FFFFFF"
         app:layout_constraintBottom_toTopOf="@+id/reviewText"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.89"
+        app:layout_constraintHorizontal_bias="0.845"
         app:layout_constraintStart_toEndOf="@+id/reviewUserName"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0" />
@@ -80,15 +81,15 @@
         android:textColor="#FFFFFF"
         app:layout_constraintBottom_toTopOf="@+id/reviewText"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.917"
+        app:layout_constraintHorizontal_bias="0.877"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/reviewRating"
-        app:layout_constraintVertical_bias="0.578" />
+        app:layout_constraintVertical_bias="0.473" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/comment_database_result"
-        android:layout_width="381dp"
-        android:layout_height="373dp"
+        android:layout_width="364dp"
+        android:layout_height="381dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.523"
