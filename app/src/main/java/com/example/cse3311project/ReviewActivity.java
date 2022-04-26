@@ -46,7 +46,7 @@ public class ReviewActivity extends AppCompatActivity
 
         Intent intent = getIntent();
         String professor_selected_name = intent.getStringExtra("professor_name_from_list");
-
+        //Button commentButton = findViewById(R.id.viewCommentsBtn);
         Button returnHomeButton_ReviewPage = findViewById(R.id.returnHomeButton_ReviewPage);
         TextView professorName = findViewById(R.id.professorName_Review);
         TextView postReview_redirect = findViewById(R.id.postReview_redirect);
@@ -166,6 +166,7 @@ public class ReviewActivity extends AppCompatActivity
             startActivity(i);
         });
         returnHomeButton_ReviewPage.setOnClickListener(v -> startActivity(new Intent(getApplicationContext(), MainActivity.class)));
+
     }
 
     // This is our firebase function to view the reviews for the selected teacher
@@ -202,9 +203,11 @@ public class ReviewActivity extends AppCompatActivity
                 holder.review_rating_from_database.setText(rating_text);
                 holder.date_the_review_was_posted.setText(model.getDate());
                 holder.classTaken_from_database.setText(model.getClassTaken());
+                Button commentButton = findViewById(R.id.viewCommentsBtn);
 
                 // TODO: (Robert) Come back and make this better, this is not optimal but it works
                 // This allows us to click on the RecyclerView item and go to the right comment page
+
                 holder.itemView.setOnClickListener(view ->
                 {
                     // This is how we would get the selected reviews information for the comment page
