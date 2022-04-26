@@ -21,6 +21,8 @@ public class PostReplyActivity extends AppCompatActivity
     Button postReply, cancelButtonReply;
     EditText replyEditText;
 
+    String professor_selected_name, usernameCommentSection, review_text_from_review, rating_text_from_review, class_taken_from_review;
+
     FirebaseAuth fAuth;
     private DatabaseReference ref;
 
@@ -37,9 +39,23 @@ public class PostReplyActivity extends AppCompatActivity
         fAuth = FirebaseAuth.getInstance();
         ref = FirebaseDatabase.getInstance().getReference("Replies");
 
+        Intent intent = getIntent();
+        professor_selected_name = intent.getStringExtra("professor_name_from_list");
+        usernameCommentSection = intent.getStringExtra("usernameCommentSection");
+        review_text_from_review = intent.getStringExtra("review_text_from_review");
+        rating_text_from_review = intent.getStringExtra("rating_text_from_review");
+        class_taken_from_review = intent.getStringExtra("class_taken_from_review");
+
         cancelButtonReply.setOnClickListener(v ->
         {
+            Intent comment_selection_intent = new Intent(getApplicationContext(), ReplyActivity.class);
+            comment_selection_intent.putExtra("professor_name_from_list", professor_selected_name);
+            comment_selection_intent.putExtra("usernameCommentSection", usernameCommentSection);
+            comment_selection_intent.putExtra("review_text_from_review", review_text_from_review);
+            comment_selection_intent.putExtra("rating_text_from_review", rating_text_from_review);
+            comment_selection_intent.putExtra("class_taken_from_review", class_taken_from_review);
 
+            startActivity(comment_selection_intent);
         });
 
         postReply.setOnClickListener(v ->
@@ -63,18 +79,22 @@ public class PostReplyActivity extends AppCompatActivity
             reply.setDate(currentDate);
             reply.setUsername(username);
 
-            Intent intent = getIntent();
-            String professor_selected_name = intent.getStringExtra("professor_name_from_list");
-            String usernameCommentSection = intent.getStringExtra("usernameCommentSection");
-            usernameCommentSection = usernameCommentSection.replace(".", "");
+            //Intent intent = getIntent();
+            //String professor_selected_name = intent.getStringExtra("professor_name_from_list");
+            //String usernameCommentSection = intent.getStringExtra("usernameCommentSection");
+            //usernameCommentSection = usernameCommentSection.replace(".", "");
 
             DatabaseReference newRef = ref.child(professor_selected_name).child(usernameCommentSection).push();
             newRef.setValue(reply);
 
-            //Intent name_selection_intent = new Intent(getApplicationContext(), ReviewActivity.class);
-            //name_selection_intent.putExtra("professor_name_from_list", professor_selected_name);
+            Intent comment_selection_intent = new Intent(getApplicationContext(), ReplyActivity.class);
+            comment_selection_intent.putExtra("professor_name_from_list", professor_selected_name);
+            comment_selection_intent.putExtra("usernameCommentSection", usernameCommentSection);
+            comment_selection_intent.putExtra("review_text_from_review", review_text_from_review);
+            comment_selection_intent.putExtra("rating_text_from_review", rating_text_from_review);
+            comment_selection_intent.putExtra("class_taken_from_review", class_taken_from_review);
 
-            //startActivity(name_selection_intent);
+            startActivity(comment_selection_intent);
         });
 
     }

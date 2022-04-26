@@ -93,6 +93,9 @@ public class ReplyActivity extends AppCompatActivity
             Intent comment_selection_intent = new Intent(getApplicationContext(), PostReplyActivity.class);
             comment_selection_intent.putExtra("professor_name_from_list", professor_selected_name);
             comment_selection_intent.putExtra("usernameCommentSection", usernameCommentSection);
+            comment_selection_intent.putExtra("review_text_from_review", review_text_from_review);
+            comment_selection_intent.putExtra("rating_text_from_review", rating_text_from_review);
+            comment_selection_intent.putExtra("class_taken_from_review", class_taken_from_review);
 
             startActivity(comment_selection_intent);
         });

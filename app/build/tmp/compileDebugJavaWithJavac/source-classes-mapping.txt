@@ -27,8 +27,6 @@ com/example/cse3311project/RegistrationProfessor.java
  com.example.cse3311project.RegistrationProfessor
 com/example/cse3311project/Reviews.java
  com.example.cse3311project.Reviews
-com/example/cse3311project/PostReplyActivity.java
- com.example.cse3311project.PostReplyActivity
 com/example/cse3311project/ReviewActivity.java
  com.example.cse3311project.ReviewActivity
  com.example.cse3311project.ReviewActivity$1
@@ -39,3 +37,5 @@ com/example/cse3311project/ReplyActivity.java
  com.example.cse3311project.ReplyActivity
  com.example.cse3311project.ReplyActivity$1
  com.example.cse3311project.ReplyActivity$ReplyViewHolder
+com/example/cse3311project/PostReplyActivity.java
+ com.example.cse3311project.PostReplyActivity
