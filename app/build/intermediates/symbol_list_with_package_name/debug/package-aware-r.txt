@@ -3116,6 +3116,7 @@ id textView4
 id textView5
 id textView6
 id textView7
+id textView8
 id text_input_end_icon
 id text_input_error_icon
 id text_input_start_icon
@@ -3151,7 +3152,6 @@ id useLogo
 id userRegistration
 id username_from_database_reviews
 id vertical_only
-id viewCommentsBtn
 id view_offset_helper
 id view_transition
 id view_tree_lifecycle_owner
