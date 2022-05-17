@@ -90,12 +90,6 @@ public class ReviewActivity extends AppCompatActivity
             }
         });
 
-
-        // TODO: There may need to be some improvements and stability issues with the profRef.addValueEventListener(new ValueEventListener()
-        // below. I, Robert, have added some already, I do not get the issues any longer but we need to keep this in mind
-        // The issues can be repeating the loop forever, or putting a bunch of new ratings under the professors name
-        // POSSIBLE FIX (ROBERT): Changed the addValueEventListener to addListenerForSingleValueEvent, issues seem to be gone for now
-        // https://stackoverflow.com/questions/62844510/changing-value-in-firebase-results-in-infinite-loop
         final boolean[] matchFound = {false};
         // Push the new average to the professors rating on the database
         profRef.addListenerForSingleValueEvent(new ValueEventListener()
