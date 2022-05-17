@@ -1,7 +1,7 @@
 # Vision Statement
 To help nourish quality education among current and future students at the University of Texas at Arlington through open student and teacher discussions. We want to be successful in helping students avoid situations that can lead to stress, depression, and failure through poor choices of professors or class combinations while giving professors a medium to communicate and take feedback from reviewers.
 
-# Project Description - UTA Reviews
+# Project Description - UTA Reviews (currently in beta)
 Our app (UTAReviews) plans to provide current and future students (future students as in students who attend the university in the future but not currently) of the University of Texas at Arlington (UTA) a tool that allows detailed reviews and discussions of professors at UTA. An issue with other tools such as RateMyProfessor and Reddit is that RateMyProfessor does not allow for detailed reviews and discussions, the issue with Reddit is that it is not centralized. We hope to bring the ability for students to leave extensive reviews and allow them to discuss amongst each other, rate each other's reviews or comments, and review the professors being reviewed, and have it centralized to UTA specifically.
 
 There are currently only plans to make this application through Android development with Android Studio. We are looking at possibly making a website to allow more users the opportunity to use our application but for the time being, we only plan Android development.
@@ -31,10 +31,16 @@ If a website is made, the goal is to have the information containted on the webs
 
 # Screenshots
 ## Login Page
-<a href="https://ibb.co/rwDRM5G"><img src="https://i.ibb.co/71sdVrJ/Login-Page.png" alt="Login-Page" border="0"></a>
+<img src="https://i.ibb.co/D8W8M7g/Login-Page.png" alt="Login-Page" border="0">
 
 ## Professor Search
-<a href="https://ibb.co/fQfwRkq"><img src="https://i.ibb.co/ZN5DsBG/Search-Page.png" alt="Search-Page" border="0"></a>
+<img src="https://i.ibb.co/7ggSRQf/Search-Page.png" alt="Search-Page" border="0">
 
 ## Posting a Review
-<a href="https://ibb.co/Tq39Wdp"><img src="https://i.ibb.co/vvn0XRg/Screenshot-1652828032.png" alt="Screenshot-1652828032" border="0"></a>
+<img src="https://i.ibb.co/L0Q7Q1P/Post-Review.png" alt="Post-Review" border="0">
+
+## Review Page
+<img src="https://i.ibb.co/0Q2fH8z/Reviews.png" alt="Reviews" border="0">
+
+## Expanded Comment Section
+<img src="https://i.ibb.co/80Lc9nC/Comments.png" alt="Comments" border="0">
