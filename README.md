@@ -26,7 +26,7 @@ If a website is made, the goal is to have the information containted on the webs
    2. Once there, click the Invalidate and Restart Button, allow Android Studio to restart and then try running the app again.
 
 # Known Issues
-1. Formatting issues for longer replies. Formatting is fine if the comment is not large.
+1. Formatting issues for longer reviews or replies. Formatting is fine if the review or reply is not large.
 2. Performance for search results can be slow depending on the hardware being used.
 
 # Screenshots
