@@ -90,19 +90,8 @@ public class PostReviewActivity extends AppCompatActivity
             {
                 review_text.setError("Please enter a review that is not empty");
             }
-            // Profanity filter that does not work quite yet
-            /*else if(review_text_submission.contains("fuck") || review_text_submission.contains("bitch") ||
-                review_text_submission.contains("gay") || review_text_submission.contains("queer") || review_text_submission.contains("bullshit") ||
-                review_text_submission.contains("dick") || review_text_submission.contains("pissed") ||
-                review_text_submission.contains("tits") || review_text_submission.contains("boobs") || review_text_submission.contains("cunt") ||
-                review_text_submission.contains("motherfucker") || review_text_submission.contains("pussy") || review_text_submission.contains("ass"))
-            {
-                review_text.setError("Please enter a review that is does not contain profanity.");
-            }
-             */
             else
             {
-
                 FirebaseUser currentUser = FirebaseAuth.getInstance().getCurrentUser();
                 assert currentUser != null;
                 String userEmail = currentUser.getEmail();
