@@ -27,7 +27,7 @@ If a website is made, the goal is to have the information containted on the webs
 
 # Screenshots
 Login Page
-![Alt text](https://drive.google.com/file/d/1f42Q4rJenp3mUvtrGTUWoHiWFem3S0uW/view?usp=sharing)
+![foxdemo](https://github.com/foxdemo/foxdemo.github.io/blob/master/assets/images/avatar.png](https://drive.google.com/file/d/1f42Q4rJenp3mUvtrGTUWoHiWFem3S0uW/view?usp=sharing)
 
 # Known Issues
 1. Formatting issues for longer replies. Formatting is fine if the comment is not large.
