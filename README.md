@@ -25,10 +25,16 @@ If a website is made, the goal is to have the information containted on the webs
    1. If you are getting errors, it may be because of Gradle issues, a fix to this could be by going to File -> Invalidate Caches / Restart.
    2. Once there, click the Invalidate and Restart Button, allow Android Studio to restart and then try running the app again.
 
-# Screenshots
-Login Page
-![foxdemo](https://github.com/foxdemo/foxdemo.github.io/blob/master/assets/images/avatar.png](https://drive.google.com/file/d/1f42Q4rJenp3mUvtrGTUWoHiWFem3S0uW/view?usp=sharing)
-
 # Known Issues
 1. Formatting issues for longer replies. Formatting is fine if the comment is not large.
 2. Performance for search results can be slow depending on the hardware being used.
+
+# Screenshots
+## Login Page
+<a href="https://ibb.co/rwDRM5G"><img src="https://i.ibb.co/71sdVrJ/Login-Page.png" alt="Login-Page" border="0"></a>
+
+## Professor Search
+<a href="https://ibb.co/fQfwRkq"><img src="https://i.ibb.co/ZN5DsBG/Search-Page.png" alt="Search-Page" border="0"></a>
+
+## Posting a Review
+<a href="https://ibb.co/Tq39Wdp"><img src="https://i.ibb.co/vvn0XRg/Screenshot-1652828032.png" alt="Screenshot-1652828032" border="0"></a>
