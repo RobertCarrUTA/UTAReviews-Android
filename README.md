@@ -28,6 +28,7 @@ If a website is made, the goal is to have the information containted on the webs
 # Known Issues
 1. Formatting issues for longer reviews or replies. Formatting is fine if the review or reply is not large.
 2. Performance for search results can be slow depending on the hardware being used.
+3. When clicking on staff members who have any "." in there name, app will crash because of a Firebase contraint on "." being in the child name.
 
 # Screenshots
 ## Login Page
