@@ -3,7 +3,6 @@ package com.example.cse3311project;
 import android.app.AlertDialog;
 import android.app.Dialog;
 import android.content.Context;
-import android.content.DialogInterface;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -25,7 +24,7 @@ public class UsernameDialog extends AppCompatDialogFragment
         // building a dialog from the xml file named username_dialog
         AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
 
-        LayoutInflater inflater = getActivity().getLayoutInflater();
+        LayoutInflater inflater = requireActivity().getLayoutInflater();
         View view = inflater.inflate(R.layout.activity_username_dialog, null);
 
         // Documentation for setting up a username?:

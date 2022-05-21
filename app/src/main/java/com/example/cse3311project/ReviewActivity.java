@@ -26,6 +26,7 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.Query;
 import com.google.firebase.database.ValueEventListener;
 
+import java.util.Locale;
 import java.util.Objects;
 
 public class ReviewActivity extends AppCompatActivity
@@ -78,7 +79,10 @@ public class ReviewActivity extends AppCompatActivity
 
                 // To get the average we need to divide the sum by the number of reviews
                 float ratingSumAverageFloat = ratingSum/count;
-                ratingSumAverage = String.format("%.2f", ratingSumAverageFloat);
+                // Before, the below line of code would give: implicitly using the default locale is a common source of bugs use string.format(locale ...) instead
+                // Using Locale.US seems to have made the warning go away, look out for this in the case
+                // that a user does not have US locale
+                ratingSumAverage = String.format(Locale.US, "%.2f", ratingSumAverageFloat);
                 String ratingSetText = "Rating: " + ratingSumAverage;
                 ratingSumText.setText(ratingSetText);
             }

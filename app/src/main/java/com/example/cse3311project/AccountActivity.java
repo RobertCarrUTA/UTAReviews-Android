@@ -14,6 +14,8 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.firestore.FirebaseFirestore;
 
+import java.util.Objects;
+
 public class AccountActivity extends AppCompatActivity implements UsernameDialog.ExampleDialogListener
 {
     Button resendCode;
@@ -21,6 +23,7 @@ public class AccountActivity extends AppCompatActivity implements UsernameDialog
     FirebaseFirestore fStore;
     String userID;
     private TextView editTextTextUsername;
+
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
@@ -31,11 +34,12 @@ public class AccountActivity extends AppCompatActivity implements UsernameDialog
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_account);
 
-        Button returnHomeButton_AccountPage = (Button) findViewById(R.id.returnHomeButton_AccountPage);
-        TextView editTextTextEmailAddress = (TextView) findViewById(R.id.editTextTextEmailAddress);
-        editTextTextUsername = (TextView) findViewById(R.id.editTextTextUsername);
-        Button Credentials = (Button) findViewById(R.id.ChangingAccountCredentials);
-        Button Avatar = (Button) findViewById(R.id.changeAvatarButton_AccountPage);
+        Button returnHomeButton_AccountPage = findViewById(R.id.returnHomeButton_AccountPage);
+        TextView editTextTextEmailAddress = findViewById(R.id.editTextTextEmailAddress);
+        editTextTextUsername = findViewById(R.id.editTextTextUsername);
+        Button Credentials = findViewById(R.id.ChangingAccountCredentials);
+        // Leave the below code as a comment for now until a way to use avatars is found
+        //Button Avatar = findViewById(R.id.changeAvatarButton_AccountPage);
 
         editTextTextEmailAddress.setEnabled(false);
         editTextTextUsername.setEnabled(false);
@@ -47,7 +51,7 @@ public class AccountActivity extends AppCompatActivity implements UsernameDialog
 
         //declare variables for resending verified Code for the email
         resendCode = findViewById(R.id.resendCode);
-        userID = fAuth.getCurrentUser().getEmail();
+        userID = Objects.requireNonNull(fAuth.getCurrentUser()).getEmail();
         FirebaseUser user = fAuth.getCurrentUser();
 
         // this if statement is verified the email is not empty and it is an email address
@@ -55,14 +59,6 @@ public class AccountActivity extends AppCompatActivity implements UsernameDialog
         {
             String userEmail = currentUser.getEmail();
             editTextTextEmailAddress.setText(userEmail);
-
-            //String username = editTextTextEmailAddress.toString();
-            /*
-            assert userEmail != null;
-            String[] splits = userEmail.split("@");
-            String usernameString = "@" + splits[0];
-            editTextTextUsername.setText(usernameString);
-             */
         }
 
         Credentials.setOnClickListener(view -> showDialog());

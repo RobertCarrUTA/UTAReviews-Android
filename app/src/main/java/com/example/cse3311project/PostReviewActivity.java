@@ -16,9 +16,7 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
 import java.text.SimpleDateFormat;
-import java.util.Arrays;
 import java.util.Date;
-import java.util.List;
 import java.util.Locale;
 
 public class PostReviewActivity extends AppCompatActivity
@@ -48,9 +46,10 @@ public class PostReviewActivity extends AppCompatActivity
         review_text = findViewById(R.id.review_text);
         classTakenTextEntryBox = findViewById(R.id.classTakenTextEntryBox);
         ratingStar = findViewById(R.id.ratingBar_review);
-        toggle = (ToggleButton) findViewById(R.id.togglebutton);
+        toggle = findViewById(R.id.togglebutton);
 
-        professorName.setText("You are currently writing a review for " + professor_selected_name);
+        String professorName_setText = "You are currently writing a review for " + professor_selected_name;
+        professorName.setText(professorName_setText);
 
         fAuth = FirebaseAuth.getInstance();
         ref = FirebaseDatabase.getInstance().getReference("Reviews");
@@ -90,16 +89,6 @@ public class PostReviewActivity extends AppCompatActivity
             {
                 review_text.setError("Please enter a review that is not empty");
             }
-            // Profanity filter that does not work quite yet
-            /*else if(review_text_submission.contains("fuck") || review_text_submission.contains("bitch") ||
-                review_text_submission.contains("gay") || review_text_submission.contains("queer") || review_text_submission.contains("bullshit") ||
-                review_text_submission.contains("dick") || review_text_submission.contains("pissed") ||
-                review_text_submission.contains("tits") || review_text_submission.contains("boobs") || review_text_submission.contains("cunt") ||
-                review_text_submission.contains("motherfucker") || review_text_submission.contains("pussy") || review_text_submission.contains("ass"))
-            {
-                review_text.setError("Please enter a review that is does not contain profanity.");
-            }
-             */
             else
             {
 

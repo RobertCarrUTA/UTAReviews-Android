@@ -76,6 +76,7 @@ public class LoginPage extends AppCompatActivity
                 {
                     //If you can successfully login using the entered details, set the current user.
                     FirebaseUser currentUser = FirebaseAuth.getInstance().getCurrentUser();
+                    assert currentUser != null;
                     if(currentUser.isEmailVerified())
                     {
                         //If the user has verified their email, redirect to the home page,otherwise send a verification email and wait.
