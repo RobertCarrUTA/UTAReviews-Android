@@ -91,7 +91,6 @@ public class PostReviewActivity extends AppCompatActivity
             }
             else
             {
-
                 FirebaseUser currentUser = FirebaseAuth.getInstance().getCurrentUser();
                 assert currentUser != null;
                 String userEmail = currentUser.getEmail();

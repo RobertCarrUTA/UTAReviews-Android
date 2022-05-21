@@ -79,11 +79,6 @@ public class PostReplyActivity extends AppCompatActivity
             reply.setDate(currentDate);
             reply.setUsername(username);
 
-            //Intent intent = getIntent();
-            //String professor_selected_name = intent.getStringExtra("professor_name_from_list");
-            //String usernameCommentSection = intent.getStringExtra("usernameCommentSection");
-            //usernameCommentSection = usernameCommentSection.replace(".", "");
-
             DatabaseReference newRef = ref.child(professor_selected_name).child(usernameCommentSection).push();
             newRef.setValue(reply);
 
