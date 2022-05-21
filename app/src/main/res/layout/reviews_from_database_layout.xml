@@ -75,7 +75,7 @@
         app:layout_constraintHorizontal_bias="0.037"
         app:layout_constraintStart_toEndOf="@+id/imageView3"
         app:layout_constraintTop_toBottomOf="@+id/username_from_database_reviews"
-        app:layout_constraintVertical_bias="0.162" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/rating_from_database"
@@ -94,12 +94,12 @@
         android:id="@+id/class_from_database"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="16dp"
         android:text="@string/class_from_database_text"
         android:textColor="#FFFFFF"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.899"
+        app:layout_constraintHorizontal_bias="0.89"
         app:layout_constraintStart_toEndOf="@+id/date_the_review_was_posted"
         app:layout_constraintTop_toBottomOf="@+id/rating_from_database" />
 
@@ -107,7 +107,7 @@
         android:id="@+id/textView8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
+        android:layout_marginTop="8dp"
         android:text="Click to view comments"
         android:textColor="#FFFFFF"
         android:textStyle="bold"
