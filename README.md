@@ -26,9 +26,12 @@ If a website is made, the goal is to have the information containted on the webs
    2. Once there, click the Invalidate and Restart Button, allow Android Studio to restart and then try running the app again.
 
 # Known Issues
-1. Formatting issues for longer reviews or replies. Formatting is fine if the review or reply is not large.
-2. Performance for search results can be slow depending on the hardware being used.
-3. When clicking on staff members who have any "." in there name, app will crash because of a Firebase contraint on "." being in the child name.
+1. Performance for search results can be slow depending on the hardware being used.
+2. When clicking on staff members who have any "." in there name, app will crash because of a Firebase contraint on "." being in the child name.
+
+# Known Issues That Have Been Fixed
+1. Formatting issues for longer reviews or replies. Formatting is fine if the review or reply is not large. <-- fixed 5/21/22
+   1. Formatting should appear correctly now on both reviews and replies, even with larger texts.
 
 # Screenshots
 ## Login Page
