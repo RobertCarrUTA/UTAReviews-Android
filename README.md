@@ -7,7 +7,7 @@ Our app (UTAReviews) plans to provide current and future students (future studen
 There are currently only plans to make this application through Android development with Android Studio. We are looking at possibly making a website to allow more users the opportunity to use our application but for the time being, we only plan Android development.
 
 ## Link to Project Demo
-https://www.linkedin.com/posts/robert-carr-90561a238_java-xml-uta-activity-6933974191104806912-NG5d?utm_source=linkedin_share&utm_medium=member_desktop_web
+[YouTube Project Demo (with timestamps)](https://www.youtube.com/watch?v=FX2zMc2fj8c)
 
 # Requirements
 Since this application is designed for the UTA student body, you must have access to an email that ends in @mavs.uta.edu or @uta.edu. Students have @mavs.uta.edu emails and professors have @uta.edu.
