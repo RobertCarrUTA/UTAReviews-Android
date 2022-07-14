@@ -12,7 +12,7 @@ There are currently only plans to make this application through Android developm
 # Requirements
 Since this application is designed for the UTA student body, you must have access to an email that ends in @mavs.uta.edu or @uta.edu. Students have @mavs.uta.edu emails and professors have @uta.edu.
 
-If a website is made, the goal is to have the information containted on the website available to view to the public, but the only ones who can rate and leave reviews are verified students at the University of Texas at Arlington. Replies to comments and reviews will be avaiable to both verified students and professors.
+If a website is made, the goal is to have the information contained on the website available to view to the public, but the only ones who can rate and leave reviews are verified students at the University of Texas at Arlington. Replies to comments and reviews will be available to both verified students and professors.
 
 # Compile Instructions
 1. Download project into Android Studio
@@ -30,7 +30,7 @@ If a website is made, the goal is to have the information containted on the webs
 
 # Known Issues
 1. Performance for search results can be slow depending on the hardware being used.
-2. When clicking on staff members who have any "." in there name, app will crash because of a Firebase contraint on "." being in the child name.
+2. When clicking on staff members who have any "." in their name, app will crash because of a Firebase constraint on "." being in the child name.
 
 # Known Issues That Have Been Fixed
 1. Formatting issues for longer reviews or replies. Formatting is fine if the review or reply is not large. <-- fixed 5/21/22
